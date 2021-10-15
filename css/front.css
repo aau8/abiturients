@@ -2384,142 +2384,6 @@ h2 {
   margin-top: 20px;
 }
 
-.studenten-show .studenten__wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.studenten-show .students-box {
-  width: 100% !important;
-  margin-right: 0 !important;
-  margin-bottom: 0 !important;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-border-top-left-radius: 6px;
-          border-top-left-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-          border-bottom-left-radius: 6px;
-}
-
-.studenten-show .requests-info__text span {
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-right: 60px;
-}
-
-.studenten-show .requests-text__header {
-  display: block;
-  width: 100%;
-  font-size: 12px;
-  line-height: 14px;
-  color: #838383;
-  margin-bottom: 5px;
-}
-
-.studenten-show .requests-info__row {
-  width: 100% !important;
-}
-
-.studenten-show .requests-info__text {
-  width: 100% !important;
-}
-
-.studenten-show .requests-help {
-  width: 615px;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
-.studenten-show .requests-info {
-  padding-bottom: 0 !important;
-  position: relative;
-  display: block !important;
-}
-
-.studenten-show .requests-help__link {
-  font-size: 14px;
-  line-height: 16px;
-  color: #212C52;
-  padding: 12px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 2px 4px 6px #0000001a;
-          box-shadow: 2px 4px 6px #0000001a;
-  -webkit-border-radius: 6.37566px;
-          border-radius: 6.37566px;
-  margin-right: 12px;
-  margin-bottom: 13px;
-}
-
-.requests-call {
-  position: absolute;
-  bottom: 20px;
-  right: 11px;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.requests-call__title {
-  font-size: 12px;
-  line-height: 14px;
-  color: #838383;
-  font-family: 'MavenProRegular';
-  font-weight: normal;
-  text-transform: unset;
-}
-
-.requests-call__price {
-  font-size: 16px;
-  line-height: 19px;
-  margin-bottom: 10px;
-}
-
-.requests-call__icon {
-  width: 73px;
-  height: 73px;
-  background: #27B0C7;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media (max-width: 1023px) {
   .student-rating {
     font-size: 12px;
@@ -2631,6 +2495,7 @@ h2 {
             justify-content: center;
   }
   .studenten-page__wrap .students-box {
+    margin: auto;
     margin-bottom: 20px;
   }
   .studenten-page__wrap .students-box__city {
@@ -2739,7 +2604,7 @@ h2 {
 }
 
 @media (min-width: 1024px) and (max-width: 1080px) {
-  .studenten-page__wrap .studenten__wrapper {
+  .studenten-page__wrap .students-box {
     width: 30% !important;
   }
 }
@@ -2751,22 +2616,11 @@ h2 {
   .requests-info {
     padding-bottom: 85px !important;
   }
-  .studenten-page__wrap .studenten__wrapper {
-    width: 22%;
-    margin: 0 13px 26px;
-  }
   .studenten-page__wrap .students-box {
     width: 22%;
-    margin: 0;
   }
   .select__wrapper select {
     min-width: 256px !important;
-  }
-}
-
-@media (max-width: 1220px) {
-  .requests-call {
-    display: none;
   }
 }
 
@@ -2785,10 +2639,6 @@ h2 {
   text-align: center;
   width: 341px;
   max-width: 100%;
-}
-
-.studenten-page__wrap .requests-info {
-  display: none;
 }
 
 .requests__wrap {
@@ -3201,7 +3051,6 @@ h2 {
   .page-studenten .students-box {
     -webkit-filter: drop-shadow(2.55026px 5.10053px 15.3016px rgba(0, 0, 0, 0.25)) !important;
             filter: drop-shadow(2.55026px 5.10053px 15.3016px rgba(0, 0, 0, 0.25)) !important;
-    width: 100%;
   }
   .requests-info__btn {
     position: absolute;

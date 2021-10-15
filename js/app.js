@@ -221,10 +221,6 @@ $('.toggleMenu').click(function () {
     $('body').toggleClass('stop');
   });
 
-  $('.change-block').click(function () {
-    $(this).toggleClass('active');
-    $('.studenten-page__wrap').toggleClass('studenten-show');
-  });
   $('.main-menu__link').click(function () {
     $('.header__menu ').removeClass('active');
     $('body').removeClass('stop');
