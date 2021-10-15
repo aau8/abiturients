@@ -73,6 +73,107 @@
 }
 
 
+.studenten-show {
+    .studenten__wrapper {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .students-box {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .requests-info__text span {
+        flex-wrap: wrap;
+        margin-right: 60px;
+    }
+
+    .requests-text__header {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+        color: #838383;
+        margin-bottom: 5px;
+    }
+
+    .requests-info__row {
+        width: 100% !important;
+    }
+
+    .requests-info__text {
+        width: 100% !important;
+    }
+
+    .requests-help {
+        width: 615px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .requests-info {
+        padding-bottom: 0 !important;
+        position: relative;
+        display: block !important;
+    }
+
+    .requests-help__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: #212C52;
+        padding: 12px;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 6px #0000001a;
+        border-radius: 6.37566px;
+        margin-right: 12px;
+        margin-bottom: 13px;
+    }
+
+}
+
+.requests-call {
+    position: absolute;
+    bottom: 20px;
+    right: 11px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.requests-call__title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #838383;
+    font-family: 'MavenProRegular';
+    font-weight: normal;
+    text-transform: unset;
+}
+
+.requests-call__price {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.requests-call__icon {
+    width: 73px;
+    height: 73px;
+    background: #27B0C7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @media (max-width: 1023px) {
     .student-rating {
@@ -169,7 +270,6 @@
     .studenten-page__wrap {
         justify-content: center;
         .students-box {
-            margin: auto;
             margin-bottom: 20px;
         }
         .students-box__city {
@@ -293,7 +393,7 @@
 }
 
 @media (min-width:1024px) and (max-width: 1080px) {
-    .studenten-page__wrap .students-box {
+    .studenten-page__wrap .studenten__wrapper {
         width: 30% !important;
     }
 }
@@ -308,13 +408,24 @@
         padding-bottom: 85px !important;
     }
     .studenten-page__wrap {
+        .studenten__wrapper {
+            width: 22%;
+            margin: 0 13px 26px;
+        }
         .students-box {
             width: 22%;
+            margin: 0;
         }
     }
     .select__wrapper {
         select {
             min-width: 256px !important;
         }
+    }
+}
+
+@media (max-width: 1220px) {
+    .requests-call {
+        display: none;
     }
 }

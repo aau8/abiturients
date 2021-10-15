@@ -1,0 +1,89 @@
+.find-here {
+    .wrap {
+        align-items: unset;
+    }
+}
+
+.find-here__text {
+    width: 370px;
+    max-width: 100%;
+    .main-search__form {
+        border: 2px solid #212C52;
+        box-sizing: border-box;
+        border-radius: 7px;
+        overflow: hidden;
+        .input__row {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        button {
+            background-color: #fff;
+            background-image: url(../img/search_blue.svg);
+        }
+    }
+}
+
+.find-here__title {
+    text-align: left;
+    font-size: 28px;
+    color: #212329;
+}
+
+.find-here__info {
+    font-size: 22px;
+    color: #212329;
+    margin-bottom: 40px;
+}
+
+
+
+.find-here__img {
+    margin-top: -20px;
+    img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .find-here__text {
+        .title__wrap {
+            margin-bottom: 20px;
+        }
+    }
+
+    .find-here__title {
+        font-size: 20px;
+        color: #152142;
+        text-align: center;
+    }
+
+    .find-here__info {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .find-here__img {
+        margin-top: 29px;
+    }
+    .find-here__text {
+        width: 100%;
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .find-here__img {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1368px) {
+    .find-here__img {
+        img {
+            max-width: 501px;
+        }
+    }
+}
