@@ -251,6 +251,19 @@ section {
   width: 1368px;
 }
 
+@media screen and (max-width: 768px) {
+  .header .container {
+    max-width: none !important;
+  }
+  .header .header__btn {
+    display: none !important;
+  }
+}
+
+.header-main .toggleMenu span {
+  background: #fff;
+}
+
 .header__logo {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -306,6 +319,10 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header--fixed .header__btn .btn--border {
@@ -2629,12 +2646,6 @@ h2 {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1080px) {
-  .studenten-page__wrap .students-box {
-    width: 30% !important;
-  }
-}
-
 @media (min-width: 1024px) and (max-width: 1368px) {
   .studenten .container {
     max-width: 1055px;
@@ -2663,6 +2674,7 @@ h2 {
             flex-direction: row !important;
     width: 100% !important;
     max-width: none !important;
+    overflow: hidden !important;
   }
   .students-big-box .students-box__phone {
     display: none;

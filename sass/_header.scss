@@ -6,6 +6,24 @@
 	.container {
 		width: 1368px;
 	}
+
+	@media screen and (max-width: 768px) {
+	  
+		& .container {
+			max-width: none!important;
+		}
+
+		& .header__btn {
+			display: none!important;
+		}
+	}
+}
+
+.header-main {
+
+	& .toggleMenu span {
+		background: #fff;
+	}
 }
 
 .header__logo {
@@ -51,6 +69,7 @@
 
 .header--fixed .header__btn {
     display: flex;
+	align-items: center;
 	.btn--border {
 		display: block;
 		color: #27b0c7;

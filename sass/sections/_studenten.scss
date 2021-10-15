@@ -347,12 +347,6 @@
     }
 }
 
-@media (min-width:1024px) and (max-width: 1080px) {
-    .studenten-page__wrap .students-box {
-        width: 30% !important;
-    }
-}
-
 @media (min-width: 1024px) and (max-width: 1368px) {
     .studenten {
         .container {
@@ -384,6 +378,7 @@
         flex-direction: row!important;
         width: 100%!important;
         max-width: none!important;
+        overflow: hidden!important;
     
         & .students-box__phone {
             display: none;
