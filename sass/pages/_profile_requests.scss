@@ -180,7 +180,7 @@
             width: 100%;
             padding: 5px 15px 20px;
             border-radius: 0;
-            filter: none;
+            filter: none!important;
             &__info {
                 display: flex;
             }
@@ -335,7 +335,7 @@
 
     .requests__wrap {
         .students-box {
-            filter: none;
+            filter: none!important;
         }
     }
 
