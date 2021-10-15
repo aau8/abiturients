@@ -232,13 +232,11 @@ $('.toggleMenu').click(function () {
 	$(window).scroll(function(){
 		if ($(window).scrollTop() > 100) {
 			$('.header').addClass('header--fixed');
-			// $('main').addClass('header--fixed__padd');
-			document.querySelector('main').style.paddingTop = document.querySelector('.header').getBoundingClientRect().height + 'px'
+			document.querySelector('main').style.marginTop = document.querySelector('.header').getBoundingClientRect().height + 'px'
 		}
 		else {
 			$('.header').removeClass('header--fixed');
-			// $('main').removeClass('header--fixed__padd');
-			document.querySelector('main').style.paddingTop = 0;
+			document.querySelector('main').style.marginTop = 0;
 		}
 	});
 
