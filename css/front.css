@@ -3181,6 +3181,8 @@ h2 {
   .requests-info {
     padding-top: 0;
     margin-bottom: 30px;
+    -webkit-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
   }
   .requests-info .title__wrap {
     margin-bottom: 3px;
