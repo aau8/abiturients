@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="utf-8">
+	<title>Project name</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Описание проекта">
+	<link rel="icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/aos.css">
+	
+	<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+
+	<!-- Кастомые анимации -->
+	<link rel="stylesheet" href="../css/animation.css">
+	<!-- / Кастомые анимации -->
+
+	<link rel="stylesheet" href="../css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/front.css"> 
+
+
+</head> 
+
+
+<body>
+	<header class="header page--header">
+		<div class="container">
+			<div class="wrap">
+				<div class="header__logo">
+					<svg class="header-logo--gray" width="163" height="51" viewBox="0 0 163 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 45.1178L7.90467 26.6372H9.83996L17.7446 45.1178H15.3732L13.0018 39.5573H4.63377L2.28963 45.1178H0ZM5.47876 37.4584H12.1023L8.80417 29.6083L5.47876 37.4584Z" fill="#202021"/>
+						<path d="M23.3594 45.1177V26.7461H25.6217L32.5179 36.1772L39.1415 26.7461H41.2675V45.1177H39.0324V30.2623L32.5179 39.3936H32.1635L25.5672 30.3441V45.1177H23.3594Z" fill="#202021"/>
+						<path d="M49.2812 45.1177V26.7461H51.5436L58.4398 36.1772L65.0633 26.7461H67.1894V45.1177H64.9543V30.2623L58.4398 39.3936H58.0854L51.4891 30.3441V45.1177H49.2812Z" fill="#202021"/>
+						<path d="M72.832 45.1178L80.7367 26.6372H82.672L90.5767 45.1178H88.2053L85.8339 39.5573H77.4658L75.1217 45.1178H72.832ZM78.3108 37.4584H84.9344L81.6362 29.6083L78.3108 37.4584Z" fill="#202021"/>
+						<path d="M91.8857 28.8449V26.7461H106.986V28.8449H100.554V45.1177H98.3185V28.8449H91.8857Z" fill="#202021"/>
+						<path d="M103.605 28.8449V26.7461H118.706V28.8449H112.273V45.1177H110.038V28.8449H103.605Z" fill="#202021"/>
+						<path d="M127.756 44.5725V32.77H129.936V44.5725H127.756Z" fill="#202021"/>
+						<path d="M137.487 0.442871C127.756 0.442871 119.279 5.89437 114.972 13.9081H7.98633V18.0512H123.122V28.927H134.025V39.8572H144.983V50.3786C145.146 50.3241 145.31 50.2968 145.391 50.2696C155.613 46.9442 163 37.3223 163 25.9832C163.027 11.891 151.606 0.442871 137.487 0.442871ZM128.846 25.9014C127.347 25.9014 126.148 24.702 126.148 23.2029C126.148 21.7037 127.347 20.5044 128.846 20.5044C130.345 20.5044 131.545 21.7037 131.545 23.2029C131.517 24.702 130.318 25.9014 128.846 25.9014Z" fill="url(#paint0_linear)"/>
+						<defs>
+						<linearGradient id="paint0_linear" x1="7.98055" y1="25.4234" x2="163.029" y2="25.4234" gradientUnits="userSpaceOnUse">
+						<stop offset="0.00531915" stop-color="#0F2356"/>
+						<stop offset="0.3298" stop-color="#164193"/>
+						<stop offset="0.4342" stop-color="#12509B"/>
+						<stop offset="0.6551" stop-color="#0074B0"/>
+						<stop offset="0.9724" stop-color="#27AEC7"/>
+						<stop offset="1" stop-color="#2CB3C8"/>
+						</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="header__menu">
+					<nav class="main-menu">
+						<ul class="main-menu__list">
+							<li>
+								<a href="#" class="main-menu__link">Kategorien</a>
+							</li>
+							<li>
+								<a href="#" class="main-menu__link">Universitäten</a>
+							</li>
+							<li>
+								<a href="#" class="main-menu__link">Für Studenten </a>
+							</li>
+							<li>
+								<a href="#" class="main-menu__link">Studiengänge</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-profile">
+					<span class="header-profile__name">max f.</span>
+					<div class="header-profile__avatar">
+						<div class="header-profile__quantity">2</div>
+						<img src="../img/ava.png">
+					</div>
+				</div>
+				<div class="toggleMenu">
+					<span class="toggleMenu__top"></span>
+					<span class="toggleMenu__middle"></span>
+					<span class="toggleMenu__bottom"></span>
+				  </div>
+			</div>
+		</div>
+	</header>
+	<div class="profile-sidebar">
+		<ul>
+			<li>
+				<a href="#" class="profile-sidebar__link profile-sidebar__link--active">
+					<div class="profile-sidebar__icon">
+						<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip2)">
+							<path d="M23.0376 0C23.0253 0.0120568 23.0007 0.0120568 22.9638 0.0120568C10.5277 0.0120568 0.414062 9.93483 0.414062 22.1363C0.414062 27.1158 2.14677 31.9506 5.31726 35.845L2.03617 43.3202C1.76582 43.9351 2.06075 44.6465 2.67518 44.8997C2.89638 44.9961 3.14216 45.0202 3.37564 44.9841L15.4063 42.9103C17.8149 43.7663 20.3463 44.2004 22.9024 44.1883C35.3386 44.1883 45.4522 34.2655 45.4522 22.064C45.4767 9.89866 35.4369 0.0120568 23.0376 0ZM22.9147 41.789C20.543 41.789 18.1958 41.367 15.9716 40.5471C15.7627 40.4627 15.5415 40.4507 15.3203 40.4868L5.19437 42.223L7.87331 36.1102C8.05764 35.6882 7.9839 35.1939 7.67669 34.8442C6.22662 33.1925 5.07148 31.3116 4.26043 29.274C3.35106 26.9953 2.88409 24.5718 2.88409 22.1243C2.88409 11.249 11.904 2.41137 22.9761 2.41137C34.0237 2.38725 42.9944 11.1526 43.0067 21.9917C43.0067 22.0158 43.0067 22.0399 43.0067 22.064C43.0067 32.9513 33.9868 41.789 22.9147 41.789Z" fill="#c8c8c8"/>
+							<path d="M21.9556 17.6875H15.3197C14.6438 17.6875 14.0908 18.2301 14.0908 18.8932C14.0908 19.5563 14.6438 20.0989 15.3197 20.0989H21.9556C22.6315 20.0989 23.1845 19.5563 23.1845 18.8932C23.1845 18.2301 22.6315 17.6875 21.9556 17.6875Z" fill="#c8c8c8"/>
+							<path d="M30.5577 23.7158H15.3197C14.6438 23.7158 14.0908 24.2584 14.0908 24.9215C14.0908 25.5846 14.6438 26.1272 15.3197 26.1272H30.5577C31.2336 26.1272 31.7866 25.5846 31.7866 24.9215C31.7866 24.2584 31.2336 23.7158 30.5577 23.7158Z" fill="#c8c8c8"/>
+							</g>
+							<defs>
+							<clipPath id="clip2">
+							<rect width="45.8654" height="45" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="profile-sidebar__title">
+						requests
+					</div>
+				</a>
+			</li>
+
+			
+			<li>
+				<a href="#" class="profile-sidebar__link">
+					<div class="profile-sidebar__icon">
+						<svg width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M41.1058 8.60552V5.64979C41.1058 3.5553 39.3588 1.8513 37.2115 1.8513H18.9866L18.3065 0.767974C18.0705 0.392177 17.6513 0.163086 17.1995 0.163086H3.89423C1.74695 0.163086 0 1.86709 0 3.96157V36.0377C0 38.1322 1.74695 39.8362 3.89423 39.8362H41.1058C43.253 39.8362 45 38.1322 45 36.0377V12.404C45 10.3095 43.253 8.60552 41.1058 8.60552ZM37.2115 4.38363C37.9273 4.38363 38.5096 4.95163 38.5096 5.64979V8.60417H23.2264L21.4891 5.8371L20.5765 4.38363H37.2115ZM42.4038 36.0377C42.4038 36.7358 41.8215 37.3038 41.1058 37.3038H3.89423C3.17847 37.3038 2.59615 36.7358 2.59615 36.0377V3.96157C2.59615 3.26341 3.17847 2.69541 3.89423 2.69541H16.4723L17.1524 3.77848C17.1524 3.77857 17.1524 3.77865 17.1525 3.77874L19.655 7.76453L21.3931 10.533C21.6291 10.9087 22.0483 11.1378 22.5001 11.1378H41.1059C41.8216 11.1378 42.4039 11.7058 42.4039 12.404V36.0377H42.4038Z" fill="#C8C8C8"/>
+						</svg>
+					</div>
+					<div class="profile-sidebar__title">
+						faq
+					</div>
+				</a>
+			</li>
+
+			
+			<li>
+				<a href="#" class="profile-sidebar__link">
+					<div class="profile-sidebar__icon">
+						<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M38.4099 6.44363C34.1603 2.28842 28.5099 0 22.5 0C16.4898 0 10.8397 2.28842 6.59008 6.44363C2.34043 10.5988 0 16.1234 0 22C0 27.8763 2.34043 33.4012 6.59008 37.5564C10.8397 41.7116 16.4898 44 22.5 44C28.5099 44 34.1603 41.7116 38.4099 37.5564C42.6596 33.4012 45 27.8763 45 22C45 16.1234 42.6596 10.5988 38.4099 6.44363ZM11.2799 38.0176C12.2209 32.7197 16.9162 28.8119 22.5 28.8119C28.0841 28.8119 32.7791 32.7197 33.7201 38.0176C30.5255 40.1637 26.6604 41.4219 22.5 41.4219C18.3396 41.4219 14.4745 40.1637 11.2799 38.0176ZM15.3458 19.2386C15.3458 15.3811 18.5552 12.2434 22.5 12.2434C26.4448 12.2434 29.6542 15.3815 29.6542 19.2386C29.6542 23.0957 26.4448 26.2338 22.5 26.2338C18.5552 26.2338 15.3458 23.0957 15.3458 19.2386ZM36.0039 36.2294C35.2943 33.763 33.8849 31.5253 31.9094 29.7773C30.6975 28.7048 29.318 27.8585 27.8349 27.262C30.5156 25.5523 32.2912 22.5945 32.2912 19.2386C32.2912 13.9598 27.8988 9.66528 22.5 9.66528C17.1012 9.66528 12.7091 13.9598 12.7091 19.2386C12.7091 22.5945 14.4848 25.5523 17.1651 27.262C15.6823 27.8585 14.3025 28.7045 13.0906 29.777C11.1154 31.525 9.70573 33.7627 8.99609 36.229C5.08736 32.6797 2.63672 27.6148 2.63672 22C2.63672 11.2907 11.5473 2.57812 22.5 2.57812C33.4527 2.57812 42.3633 11.2907 42.3633 22C42.3633 27.6151 39.9126 32.6801 36.0039 36.2294Z" fill="#C0C0C0"/>
+						</svg>
+					</div>
+					<div class="profile-sidebar__title">
+						profile
+					</div>
+				</a>
+			</li>
+
+			
+			<li>
+				<a href="#" class="profile-sidebar__link">
+					<div class="profile-sidebar__icon">
+						<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M39.1358 20.1678V14.5458C39.1358 12.6395 37.6202 11.0892 35.7052 10.9388L30.3538 1.81965C29.8579 0.976257 29.0571 0.373454 28.0988 0.123146C27.1452 -0.125458 26.1479 0.00510802 25.2943 0.489788L6.94921 10.9095H3.72724C1.67165 10.9095 0 12.5403 0 14.5458V36.3637C0 38.3691 1.67157 40 3.72724 40H35.4086C37.4642 40 39.1358 38.3692 39.1358 36.3637V30.7417C40.2181 30.3652 40.9994 29.3656 40.9994 28.182V22.7275C40.9994 21.5439 40.2181 20.5443 39.1358 20.1678ZM33.5398 10.9095H25.4181L31.5094 7.44967L33.5398 10.9095ZM30.5835 5.87189L21.7143 10.9095H18.0355L29.6637 4.3045L30.5835 5.87189ZM26.2325 2.0611C26.6538 1.8205 27.146 1.75658 27.6165 1.87914C28.0925 2.0034 28.4892 2.30348 28.7358 2.72339L28.7378 2.72671L14.3318 10.9095H10.6531L26.2325 2.0611ZM37.2722 36.3637C37.2722 37.3659 36.4359 38.1818 35.4086 38.1818H3.72724C2.69993 38.1818 1.86366 37.3659 1.86366 36.3637V14.5458C1.86366 13.5436 2.69993 12.7277 3.72724 12.7277H35.4086C36.4359 12.7277 37.2722 13.5436 37.2722 14.5458V20.0003H31.6813C28.5983 20.0003 26.0905 22.447 26.0905 25.4547C26.0905 28.4625 28.5983 30.9092 31.6813 30.9092H37.2722V36.3637ZM39.1358 28.182C39.1358 28.6835 38.7182 29.0911 38.204 29.0911H31.6813C29.6257 29.0911 27.9541 27.4603 27.9541 25.4547C27.9541 23.4493 29.6257 21.8184 31.6813 21.8184H38.204C38.7181 21.8184 39.1358 22.2259 39.1358 22.7275V28.182Z" fill="#C8C8C8"/>
+						</svg>
+					</div>
+					<div class="profile-sidebar__title">
+						payment
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<main class="page page-kategorien">
+		<div class="container">
+			<div class="page__breadcrumbs">
+				<a href="#">Startseite</a> / <a href="#">Kategorien</a>
+			</div>
+            <div class="page-title__wrap">
+				<h1 class="page__title">Beliebte Kategorieen</h1>
+			</div>
+            <div class="page-categories__slider">
+                <div class="popular-categories__wrapper">
+                    <div class="category-swiper-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-3d1b81b93ae138e6" aria-disabled="true"></div>
+                    <div class="popular-categories__slider swiper swiper-container-initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper" id="swiper-wrapper-c7710c79d88d6b292" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide popular-categories__item swiper-slide-active" role="group" aria-label="1 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Wirtschaft</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_1.jpg" alt="Wirtschaft">
+                                </div>
+                                <div class="swiper-slide popular-categories__item swiper-slide-next" role="group" aria-label="2 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Informatik</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_2.jpg" alt="Informatik">
+                                </div>
+                                <div class="swiper-slide popular-categories__item" role="group" aria-label="3 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Technik</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_3.jpg" alt="Technik">
+                                </div>
+                                <div class="swiper-slide popular-categories__item" role="group" aria-label="4 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Medizin</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_4.jpg" alt="Medizin">
+                                </div>
+                                <div class="swiper-slide popular-categories__item" role="group" aria-label="5 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Design</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_5.jpg" alt="Design">
+                                </div>
+                                <div class="swiper-slide popular-categories__item" role="group" aria-label="6 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Wirtschaft</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_5.jpg" alt="Design">
+                                </div>
+                                <div class="swiper-slide popular-categories__item" role="group" aria-label="7 / 7" style="width: 190.6px; margin-right: 30px;">
+                                    <h2>Wirtschaft</h2>
+                                    <img src="../img/front-page/popular-categories/slider-item_5.jpg" alt="Design">
+                                </div>
+                            </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <div class="category-swiper-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-3d1b81b93ae138e6" aria-disabled="false"></div>
+                </div>
+            </div>
+			<div class="page-form__wrap">
+				<form action="#">
+					<div class="input__row active--input">
+						<input type="text" placeholder="Enter">
+						<button type="submit">
+							<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M24.922 23.1405L18.3435 16.5618C19.7858 14.8325 20.6562 12.6104 20.6562 10.1875C20.6562 4.69064 16.1844 0.21875 10.6875 0.21875C5.19064 0.21875 0.71875 4.69064 0.71875 10.1875C0.71875 15.6844 5.19064 20.1563 10.6875 20.1563C13.1104 20.1563 15.3325 19.2858 17.0618 17.8435L23.6405 24.4222C23.8175 24.5991 24.0495 24.6877 24.2812 24.6877C24.513 24.6877 24.745 24.5991 24.922 24.4222C25.2761 24.0681 25.2761 23.4944 24.922 23.1405ZM2.53125 10.1875C2.53125 5.69024 6.18978 2.03125 10.6875 2.03125C15.1852 2.03125 18.8437 5.69024 18.8437 10.1875C18.8437 14.6848 15.1852 18.3438 10.6875 18.3438C6.18978 18.3438 2.53125 14.6848 2.53125 10.1875Z" fill="white"/>
+							</svg>
+						</button>
+						<a class="btn-filter non--desctop"></a>
+					</div>
+					<div class="input__wrap">
+						<div class="select__wrapper">
+							<select name="privat" id="privat">
+								<option value="1">Privat/Staatlich</option>
+								<option value="2">Privat/Staatlich</option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="region" id="region">
+								<option value="1">Region</option>
+								<option value="2">Region</option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="stadt" id="stadt">
+								<option value="1">Stadt</option>
+								<option value="2">Stadt</option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="radius" id="radius">
+								<option value="1">Radius</option>
+								<option value="2">Radius</option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="kategorien " id="kategorien">
+								<option value="1">Kategorien </option>
+								<option value="2">Kategorien </option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="abschluss" id="abschluss">
+								<option value="1">Abschluss</option>
+								<option value="2">Abschluss</option>
+							</select>
+						</div>
+						
+						<div class="select__wrapper">
+							<select name="universitat" id="universitat">
+								<option value="1">Universität (Name)</option>
+								<option value="2">Universität (Name)</option>
+							</select>
+						</div>
+
+						<div class="select__wrapper">
+							<button class="btn-filter">More</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="page-title__wrap">
+				<h1 class="page__title">Suchergebnis</h1>
+                <p class="page__subtitle">6 von 15 Ergebnissen </p>
+			</div>
+			<div class="page-body">
+                <div class="suchergebnis__wrap">
+                    <div class="suchergebnis__item suchergebnis__item--message">
+                        <div class="suchergebnis-item__top">
+                            Sponsored
+                        </div>
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Köln</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_1.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>3D Animation for Film and Games</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Hochschule Köln
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Abschluss</span>
+                                <p>Master</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Berufsbegleitend, <br>
+                                    Internationaler Studiengang</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Bewerbungsfrist</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                2.1
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="suchergebnis__item suchergebnis__item--message">
+                        <div class="suchergebnis-item__top">
+                            Sponsored
+                        </div>
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Dresden</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_2.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>Abfallwirtschaft und Altlasten</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Universität Dresden
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Abschluss</span>
+                                <p>Master of Science</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Teilzeitstudium, Vollzeitstudium</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Bewerbungsfrist</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                1.3
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="suchergebnis__item suchergebnis__item--message">
+                        <div class="suchergebnis-item__top">
+                            Sponsored
+                        </div>
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Freiberg</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_3.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>Additive Fertigung (Technologie, Material, Design)</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Universität <br>
+Bergakademie Freiberg
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Degree</span>
+                                <p>Bachelor</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Vollzeitstudium</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Start of study</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                1.8
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="suchergebnis__item">
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Köln</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_1.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>3D Animation for Film and Games</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Hochschule Köln
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Abschluss</span>
+                                <p>Master</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Berufsbegleitend, <br>
+                                    Internationaler Studiengang</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Bewerbungsfrist</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                2.1
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="suchergebnis__item">
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Dresden</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_2.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>Abfallwirtschaft und Altlasten</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Universität Dresden
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Abschluss</span>
+                                <p>Master of Science</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Teilzeitstudium, Vollzeitstudium</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Bewerbungsfrist</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                1.3
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="suchergebnis__item">
+                        <div class="suchergebnis-item__header">
+                            <div class="students-box__header">
+                                <svg width="15" class="students-box__icon" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 0.000244141C3.91157 0.000244141 0.992188 3.09136 0.992188 6.89087C0.992188 8.10706 1.29566 9.30276 1.86978 10.3487C2.00362 10.5925 2.15323 10.8301 2.31454 11.055L7.21724 18.0002H7.78273L12.6855 11.055C12.8467 10.8301 12.9963 10.5925 13.1302 10.3487C13.7043 9.30276 14.0078 8.10706 14.0078 6.89087C14.0078 3.09136 11.0884 0.000244141 7.5 0.000244141ZM7.5 9.17603C6.30997 9.17603 5.3418 8.1509 5.3418 6.89087C5.3418 5.63083 6.30997 4.60571 7.5 4.60571C8.69003 4.60571 9.6582 5.63083 9.6582 6.89087C9.6582 8.1509 8.69003 9.17603 7.5 9.17603Z" fill="#8F9ABA"/>
+                                </svg>								
+                                <span class="students-box__city">Freiberg</span>
+                                <div class="student-rating">
+                                    <div class="student-rating__num">
+                                        3.5
+                                    </div>
+                                    <span class="star">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.19979 0.923939C8.49584 0.212152 9.50416 0.212151 9.80021 0.923938L11.4417 4.87066C11.5666 5.17073 11.8487 5.37576 12.1727 5.40173L16.4335 5.74331C17.2019 5.80492 17.5135 6.76389 16.9281 7.26541L13.6818 10.0462C13.435 10.2576 13.3272 10.5894 13.4026 10.9055L14.3944 15.0633C14.5732 15.8132 13.7575 16.4059 13.0996 16.004L9.45175 13.7759C9.17441 13.6065 8.82559 13.6065 8.54825 13.7759L4.90039 16.004C4.24251 16.4059 3.42676 15.8132 3.60563 15.0633L4.59742 10.9055C4.67283 10.5894 4.56504 10.2576 4.31822 10.0462L1.07193 7.26541C0.486465 6.76389 0.798054 5.80492 1.56649 5.74331L5.8273 5.40173C6.15125 5.37576 6.43345 5.17073 6.55826 4.87066L8.19979 0.923939Z" fill="#27B0C7"/>
+                                        </svg>
+                                    </span>
+                                    <div class="student-rating__all">
+                                        (15)
+                                    </div>
+                                    <div class="student-rating__fav">
+                                        <a href="#">
+                                            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 23.5535C12.6299 23.5535 12.273 23.4194 11.9949 23.1758C10.9445 22.2574 9.9319 21.3943 9.03847 20.633L9.03391 20.629C6.41451 18.3969 4.15256 16.4691 2.57874 14.5702C0.819443 12.4473 0 10.4345 0 8.23564C0 6.09926 0.732559 4.12831 2.06259 2.68561C3.40849 1.22585 5.25526 0.421875 7.26331 0.421875C8.76413 0.421875 10.1386 0.896362 11.3484 1.83205C11.959 2.30435 12.5124 2.88239 13 3.55663C13.4878 2.88239 14.041 2.30435 14.6518 1.83205C15.8616 0.896362 17.2361 0.421875 18.7369 0.421875C20.7447 0.421875 22.5917 1.22585 23.9376 2.68561C25.2676 4.12831 26 6.09926 26 8.23564C26 10.4345 25.1808 12.4473 23.4215 14.57C21.8476 16.4691 19.5859 18.3967 16.9669 20.6286C16.0719 21.3912 15.0576 22.2556 14.0049 23.1762C13.727 23.4194 13.3699 23.5535 13 23.5535ZM7.26331 1.94492C5.68571 1.94492 4.23647 2.57452 3.18216 3.7179C2.11218 4.87852 1.52284 6.48289 1.52284 8.23564C1.52284 10.085 2.21017 11.739 3.75127 13.5984C5.24078 15.3958 7.45631 17.2838 10.0216 19.47L10.0263 19.474C10.9231 20.2383 11.9397 21.1047 12.9978 22.0299C14.0622 21.1029 15.0804 20.2351 15.979 19.4696C18.5441 17.2834 20.7594 15.3958 22.2489 13.5984C23.7898 11.739 24.4772 10.085 24.4772 8.23564C24.4772 6.48289 23.8878 4.87852 22.8178 3.7179C21.7637 2.57452 20.3143 1.94492 18.7369 1.94492C17.5812 1.94492 16.5202 2.31229 15.5833 3.03671C14.7484 3.68259 14.1668 4.49905 13.8258 5.07034C13.6504 5.36412 13.3418 5.53947 13 5.53947C12.6582 5.53947 12.3496 5.36412 12.1742 5.07034C11.8334 4.49905 11.2518 3.68259 10.4167 3.03671C9.47983 2.31229 8.41878 1.94492 7.26331 1.94492Z" fill="#27B0C7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__logo">
+                            <img src="../img/pages/logo_3.jpg">
+                        </div>
+                        <div class="suchergebnis-item__title">
+                            <h3>Additive Fertigung (Technologie, Material, Design)</h3>
+                        </div>
+                        <div class="suchergebnis-item__richtung">
+                            <div class="students-box__school">
+                                <div class="icon__wrap">
+                                    <svg class="students-box__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4512 8.36379C9.17005 8.47068 8.85952 8.47104 8.57812 8.36481L3.27734 6.34538V10.923C3.27735 11.0061 3.30261 11.0872 3.34977 11.1556C3.39693 11.224 3.46376 11.2764 3.54141 11.306L8.86779 13.3341C8.96161 13.3698 9.06529 13.3698 9.1591 13.3341L14.4855 11.306C14.5631 11.2764 14.63 11.224 14.6771 11.1556C14.7243 11.0872 14.7495 11.0061 14.7496 10.923V6.34534L9.4512 8.36379Z" fill="#8F9ABA"/>
+                                        <path d="M17.7639 3.55472L9.1597 0.276949C9.06561 0.241342 8.96175 0.241342 8.86765 0.276949L0.263495 3.55472C0.185865 3.58427 0.119048 3.63671 0.0719028 3.7051C0.0247578 3.77349 -0.000488281 3.85459 -0.000488281 3.93765C-0.000488281 4.02071 0.0247578 4.10181 0.0719028 4.1702C0.119048 4.23859 0.185865 4.29103 0.263495 4.32058L8.86765 7.59835C8.96172 7.63408 9.06563 7.63408 9.1597 7.59835L17.7639 4.32058C17.8415 4.29103 17.9083 4.23859 17.9555 4.1702C18.0026 4.10181 18.0278 4.02071 18.0278 3.93765C18.0278 3.85459 18.0026 3.77349 17.9555 3.7051C17.9083 3.63671 17.8415 3.58427 17.7639 3.55472Z" fill="#8F9ABA"/>
+                                        <path d="M2.04815 12.5422C1.93948 12.5422 1.83527 12.499 1.75843 12.4222C1.68159 12.3454 1.63843 12.2412 1.63843 12.1325V4.56243C1.63843 4.45377 1.68159 4.34955 1.75843 4.27271C1.83527 4.19588 1.93948 4.15271 2.04815 4.15271C2.15681 4.15271 2.26103 4.19588 2.33787 4.27271C2.4147 4.34955 2.45787 4.45377 2.45787 4.56243V12.1325C2.45787 12.2412 2.4147 12.3454 2.33787 12.4222C2.26103 12.499 2.15681 12.5422 2.04815 12.5422Z" fill="#8F9ABA"/>
+                                        <path d="M2.04801 11.7224C1.72213 11.7228 1.40969 11.8524 1.17926 12.0828C0.948821 12.3133 0.819206 12.6257 0.818848 12.9516V14.5905C0.818848 14.6991 0.862015 14.8033 0.938852 14.8802C1.01569 14.957 1.1199 15.0002 1.22857 15.0002H2.86746C2.97612 15.0002 3.08034 14.957 3.15717 14.8802C3.23401 14.8033 3.27718 14.6991 3.27718 14.5905V12.9516C3.27682 12.6257 3.1472 12.3133 2.91677 12.0828C2.68633 11.8524 2.3739 11.7228 2.04801 11.7224Z" fill="#8F9ABA"/>
+                                    </svg>
+                                </div>
+                                <div class="students-text__wrap">
+                                    Technische Universität <br>
+Bergakademie Freiberg
+                                    <span>öffentlich-rechtlich</span>
+                                </div>
+                            </div>
+                            <div class="students-box__semester">
+                                <svg class="students-box__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.000244141C4.0372 0.000244141 0 4.03745 0 9.00024C0 13.963 4.0372 18.0002 9 18.0002C13.9628 18.0002 18 13.963 18 9.00024C18 4.03745 13.9628 0.000244141 9 0.000244141ZM13.2803 13.6554C13.134 13.8017 12.942 13.8753 12.75 13.8753C12.5581 13.8753 12.3659 13.8017 12.2198 13.6554L8.46977 9.90552C8.32874 9.7653 8.25005 9.57469 8.25005 9.37529V4.50024C8.25005 4.08551 8.58595 3.75029 9 3.75029C9.41405 3.75029 9.74995 4.08551 9.74995 4.50024V9.06479L13.2803 12.595C13.5735 12.8883 13.5735 13.3622 13.2803 13.6554Z" fill="#8F9ABA"/>
+                                </svg>
+                                4 semester
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__info">
+                            <div class="suchergebnis-info__row">
+                                <span>Degree</span>
+                                <p>Bachelor</p>
+                            </div>
+                            <div class="suchergebnis-info__row">
+                                <span>Studienmodell</span>
+                                <p>Vollzeitstudium</p>
+                            </div>
+                        </div>
+                        <div class="suchergebnis-item__footer">
+                            <div class="suchergebnis-info__row">
+                                <span>Start of study</span>
+                                <p>nur Wintersemester</p>
+                            </div>
+                            <div class="suchergebnis-item__status">
+                                <span>NC</span>
+                                1.8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__wrap other">
+                    <a href="#" class="btn btn--full ">Mehr anzeigen</a>
+                </div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer__wrap">
+				<div class="footer__logo">
+					<div class="footer-logo__img">
+						<svg width="163" height="50" viewBox="0 0 163 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 44.675L7.90467 26.1945H9.83996L17.7446 44.675H15.3732L13.0018 39.1145H4.63377L2.28963 44.675H0ZM5.47876 37.0157H12.1023L8.80417 29.1655L5.47876 37.0157Z" fill="white"/>
+							<path d="M23.3596 44.675V26.3035H25.622L32.5181 35.7346L39.1417 26.3035H41.2678V44.675H39.0327V29.8197L32.5181 38.951H32.1638L25.5675 29.9015V44.675H23.3596Z" fill="white"/>
+							<path d="M49.2815 44.675V26.3035H51.5439L58.44 35.7346L65.0636 26.3035H67.1897V44.675H64.9546V29.8197L58.44 38.951H58.0857L51.4893 29.9015V44.675H49.2815Z" fill="white"/>
+							<path d="M72.8323 44.675L80.737 26.1945H82.6722L90.5769 44.675H88.2055L85.8341 39.1145H77.4661L75.1219 44.675H72.8323ZM78.311 37.0157H84.9346L81.6364 29.1655L78.311 37.0157Z" fill="white"/>
+							<path d="M91.8853 28.4023V26.3035H106.986V28.4023H100.553V44.675H98.318V28.4023H91.8853Z" fill="white"/>
+							<path d="M103.606 28.4023V26.3035H118.706V28.4023H112.274V44.675H110.038V28.4023H103.606Z" fill="white"/>
+							<path d="M127.756 44.1299V32.3274H129.936V44.1299H127.756Z" fill="white"/>
+							<path d="M137.487 0C127.756 0 119.279 5.4515 114.972 13.4652H7.98633V17.6083H123.122V28.4841H134.025V39.4143H144.983V49.9357C145.146 49.8812 145.31 49.854 145.391 49.8267C155.613 46.5013 163 36.8794 163 25.5403C163.027 11.4481 151.606 0 137.487 0ZM128.846 25.4585C127.347 25.4585 126.148 24.2592 126.148 22.76C126.148 21.2609 127.347 20.0615 128.846 20.0615C130.345 20.0615 131.545 21.2609 131.545 22.76C131.517 24.2592 130.318 25.4585 128.846 25.4585Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="footer-logo__links">
+						<a href="#">Datenschutz</a>
+						<a href="#">Impressum</a>
+					</div>
+					<div class="footer-logo__social">
+						<a href="#" class="footer-social__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M18.8949 0.000976562H1.10383C0.494616 0.000976562 0 0.494613 0 1.10482V18.8961C0 19.5064 0.494616 20.0006 1.10383 20.0006H10.682V12.2556H8.07587V9.23681H10.682V7.01067C10.682 4.42789 12.259 3.02075 14.5635 3.02075C15.6683 3.02075 16.6157 3.10341 16.892 3.1393V5.83899L15.2936 5.83965C14.0406 5.83965 13.7989 6.43537 13.7989 7.30903V9.23582H16.7883L16.3974 12.2543H13.7985V19.9997H18.8945C19.5044 19.9997 19.9993 19.5047 19.9993 18.8961V1.10417C19.999 0.494613 19.5047 0.000976562 18.8949 0.000976562Z" fill="#8F9ABA"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="footer-social__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M18.4211 0H1.57895C0.706919 0 0 0.706289 0 1.57754V18.4046C0 19.2759 0.706919 19.9822 1.57895 19.9822H18.4211C19.2931 19.9822 20 19.2759 20 18.4046V1.57754C20 0.706289 19.2931 0 18.4211 0Z" fill="#8F9ABA"/>
+								<path d="M13.5353 5.99463H6.99055C6.729 5.99463 6.47002 6.04869 6.2284 6.15374C5.98678 6.25878 5.76726 6.41274 5.58238 6.60681C5.3975 6.80089 5.25089 7.03129 5.15092 7.28483C5.05095 7.53837 4.99958 7.8101 4.99976 8.08447V11.7976C4.99958 12.072 5.05095 12.3437 5.15092 12.5972C5.25089 12.8508 5.3975 13.0812 5.58238 13.2753C5.76726 13.4693 5.98678 13.6233 6.2284 13.7283C6.47002 13.8334 6.729 13.8874 6.99055 13.8874H13.5353C13.7968 13.8874 14.0558 13.8334 14.2974 13.7283C14.539 13.6233 14.7586 13.4693 14.9434 13.2753C15.1283 13.0812 15.2749 12.8508 15.3749 12.5972C15.4749 12.3437 15.5262 12.072 15.5261 11.7976V8.08447C15.5262 7.8101 15.4749 7.53837 15.3749 7.28483C15.2749 7.03129 15.1283 6.80089 14.9434 6.60681C14.7586 6.41274 14.539 6.25878 14.2974 6.15374C14.0558 6.04869 13.7968 5.99463 13.5353 5.99463ZM8.87607 11.6333V8.24873L11.6498 9.94104L8.87607 11.6333Z" fill="#1F2C51"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="20" height="19.9822" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="footer-social__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M14.4762 6.61343C14.3842 6.36411 14.2374 6.13843 14.0467 5.95319C13.8614 5.76245 13.6359 5.61566 13.3864 5.52365C13.1841 5.44507 12.8801 5.35153 12.3203 5.32605C11.7147 5.29843 11.5331 5.29248 9.99988 5.29248C8.46652 5.29248 8.28494 5.29828 7.67947 5.3259C7.11963 5.35153 6.81552 5.44507 6.61334 5.52365C6.36386 5.61566 6.13818 5.76245 5.95309 5.95319C5.76236 6.13843 5.61557 6.36395 5.52341 6.61343C5.44482 6.81577 5.35129 7.11987 5.32581 7.67972C5.29819 8.28519 5.29224 8.46677 5.29224 10.0001C5.29224 11.5333 5.29819 11.7149 5.32581 12.3205C5.35129 12.8804 5.44482 13.1843 5.52341 13.3867C5.61557 13.6361 5.76221 13.8617 5.95294 14.0469C6.13818 14.2376 6.36371 14.3844 6.61319 14.4764C6.81552 14.5552 7.11963 14.6487 7.67947 14.6742C8.28494 14.7018 8.46637 14.7076 9.99973 14.7076C11.5332 14.7076 11.7148 14.7018 12.3201 14.6742C12.88 14.6487 13.1841 14.5552 13.3864 14.4764C13.8872 14.2833 14.283 13.8875 14.4762 13.3867C14.5548 13.1843 14.6483 12.8804 14.674 12.3205C14.7016 11.7149 14.7074 11.5333 14.7074 10.0001C14.7074 8.46677 14.7016 8.28519 14.674 7.67972C14.6485 7.11987 14.5549 6.81577 14.4762 6.61343ZM9.99988 12.9486C8.37131 12.9486 7.05112 11.6285 7.05112 9.99997C7.05112 8.3714 8.37131 7.05136 9.99988 7.05136C11.6283 7.05136 12.9485 8.3714 12.9485 9.99997C12.9485 11.6285 11.6283 12.9486 9.99988 12.9486ZM13.0651 7.62387C12.6845 7.62387 12.376 7.31534 12.376 6.93478C12.376 6.55423 12.6845 6.2457 13.0651 6.2457C13.4456 6.2457 13.7542 6.55423 13.7542 6.93478C13.754 7.31534 13.4456 7.62387 13.0651 7.62387Z" fill="#8F9ABA"/>
+								<path d="M11.9141 10C11.9141 11.0571 11.0571 11.9141 10 11.9141C8.94287 11.9141 8.08594 11.0571 8.08594 10C8.08594 8.94287 8.94287 8.08594 10 8.08594C11.0571 8.08594 11.9141 8.94287 11.9141 10Z" fill="#8F9ABA"/>
+								<path d="M18.5576 0H1.44241C0.645752 0 0 0.645752 0 1.44241V18.5576C0 19.3542 0.645752 20 1.44241 20H18.5576C19.3542 20 20 19.3542 20 18.5576V1.44241C20 0.645752 19.3542 0 18.5576 0V0ZM15.7076 12.3674C15.6798 12.9787 15.5826 13.396 15.4407 13.7613C15.1424 14.5326 14.5326 15.1424 13.7613 15.4407C13.3961 15.5826 12.9787 15.6796 12.3676 15.7076C11.7552 15.7355 11.5596 15.7422 10.0002 15.7422C8.44055 15.7422 8.24509 15.7355 7.6326 15.7076C7.02148 15.6796 6.604 15.5826 6.23886 15.4407C5.85556 15.2965 5.50858 15.0705 5.22171 14.7783C4.92966 14.4916 4.70367 14.1444 4.55948 13.7613C4.41757 13.3961 4.32037 12.9787 4.2926 12.3676C4.26437 11.7551 4.25781 11.5594 4.25781 10C4.25781 8.44055 4.26437 8.24493 4.29245 7.6326C4.32022 7.02133 4.41727 6.604 4.55917 6.23871C4.70337 5.85556 4.9295 5.50842 5.22171 5.22171C5.50842 4.9295 5.85556 4.70352 6.23871 4.55933C6.604 4.41742 7.02133 4.32037 7.6326 4.29245C8.24493 4.26453 8.44055 4.25781 10 4.25781C11.5594 4.25781 11.7551 4.26453 12.3674 4.2926C12.9787 4.32037 13.396 4.41742 13.7613 4.55917C14.1444 4.70337 14.4916 4.9295 14.7784 5.22171C15.0705 5.50858 15.2966 5.85556 15.4407 6.23871C15.5827 6.604 15.6798 7.02133 15.7077 7.6326C15.7356 8.24493 15.7422 8.44055 15.7422 10C15.7422 11.5594 15.7356 11.7551 15.7076 12.3674Z" fill="#8F9ABA"/>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="footer-social__link">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M18.4211 0H1.57895C0.706919 0 0 0.706289 0 1.57754V18.4046C0 19.2759 0.706919 19.9822 1.57895 19.9822H18.4211C19.2931 19.9822 20 19.2759 20 18.4046V1.57754C20 0.706289 19.2931 0 18.4211 0Z" fill="#8F9ABA"/>
+								<g clip-path="url(#clip1)">
+								<path d="M8.70859 11.581L8.51009 14.3706C8.79409 14.3706 8.91709 14.2487 9.06459 14.1023L10.3961 12.8309L13.1551 14.8496C13.6611 15.1314 14.0176 14.983 14.1541 14.3845L15.9651 5.90611L15.9656 5.90561C16.1261 5.15827 15.6951 4.86603 15.2021 5.04937L4.55709 9.12124C3.83059 9.40299 3.84159 9.80763 4.43359 9.99096L7.15509 10.8367L13.4766 6.88473C13.7741 6.68791 14.0446 6.79681 13.8221 6.99364L8.70859 11.581Z" fill="#1F2C51"/>
+								</g>
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="20" height="19.9822" fill="white"/>
+								</clipPath>
+								<clipPath id="clip1">
+								<rect width="12" height="11.9893" fill="white" transform="translate(4 3.99646)"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="footer-menu__col">
+					<div class="footer-title__wrap">
+						<h4 class="footer-menu__title">Kategorien</h4>
+					</div>
+					<div class="footer__list">
+						<ul>
+							<li><a href="#" class="footer-menu__link">Wirtschaft</a></li>
+							<li><a href="#" class="footer-menu__link">Informatik</a></li>
+							<li><a href="#" class="footer-menu__link">Technik</a></li>
+							<li><a href="#" class="footer-menu__link">Medizin</a></li>
+							<li><a href="#" class="footer-menu__link">Design</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-menu__col">
+					<div class="footer-title__wrap">
+						<h4 class="footer-menu__title">Kategorien</h4>
+					</div>
+					<div class="footer__list">
+						<ul>
+							<li><a href="#" class="footer-menu__link">Wirtschaft</a></li>
+							<li><a href="#" class="footer-menu__link">Informatik</a></li>
+							<li><a href="#" class="footer-menu__link">Technik</a></li>
+							<li><a href="#" class="footer-menu__link">Medizin</a></li>
+							<li><a href="#" class="footer-menu__link">Design</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-kontakt">
+					<div class="footer-title__wrap">
+						<h4 class="footer-menu__title">Kontakt</h4>
+					</div>
+					<div class="footer__list">
+						<ul>
+							<li><a href="#" class="footer-kontakt__phone">Phone: +7(985) 777-21-21</a></li>
+							<li><a href="#" class="footer-kontakt__mail">E-mail: +7(985) 777-21-21</a></li>
+						</ul>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Подключение скриптов -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../js/app.js" defer></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+</body>
+</html>

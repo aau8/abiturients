@@ -1,0 +1,31 @@
+@import 'interface';
+@import 'grid';
+@import 'header';
+
+// Элементы
+@import 'elements/buttons';
+@import 'elements/callbackPhone';
+@import 'elements/forms';
+@import 'elements/swiper';
+@import 'elements/tables';
+@import 'elements/titles';
+
+
+// Секции
+@import 'sections/firstscreen';
+@import 'sections/popular-categories';
+@import 'sections/find-consultant';
+@import 'sections/how-work';
+@import 'sections/find-here';
+@import 'sections/studenten';
+
+// Страницы
+@import 'pages/profile_requests';
+@import 'pages/faq';
+@import 'pages/payments';
+@import 'pages/kategorien';
+
+
+@import 'all-pages';
+@import 'modal';
+@import 'footer';
