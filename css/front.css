@@ -2944,6 +2944,10 @@ h2 {
   background: #FD6467;
 }
 
+.page-requests {
+  position: relative;
+}
+
 .page-requests .title__wrap {
   -webkit-box-ordinal-group: unset;
   -webkit-order: unset;
@@ -3967,10 +3971,19 @@ select option {
   top: 0;
   width: 80px;
   height: 100%;
-  padding: 132px 10px 40px;
+  padding: 42px 10px 40px;
   background: #FFFFFF;
   -webkit-box-shadow: 2px 4px 12px #84848440;
           box-shadow: 2px 4px 12px #84848440;
+}
+
+.profile-sidebar ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .profile-sidebar li {

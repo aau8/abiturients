@@ -3,9 +3,16 @@
     top: 0;
     width: 80px;
     height: 100%;
-    padding: 132px 10px 40px;
+    padding: 42px 10px 40px;
     background: #FFFFFF;
     box-shadow: 2px 4px 12px #84848440;
+
+    ul {
+        position: sticky;
+        top: 0;
+        transition: .3s;
+    }
+
     li {
         margin-bottom: 33px;
     }

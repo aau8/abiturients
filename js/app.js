@@ -230,13 +230,17 @@ $('.toggleMenu').click(function () {
 
 	// фиксированное меню при скроле
 	$(window).scroll(function(){
+		let headerHeight = document.querySelector('.header').getBoundingClientRect().height
+
 		if ($(window).scrollTop() > 100) {
 			$('.header').addClass('header--fixed');
-			document.querySelector('main').style.marginTop = document.querySelector('.header').getBoundingClientRect().height + 'px'
+			document.querySelector('main').style.marginTop = headerHeight + 'px'
+			document.querySelector('.profile-sidebar ul').style.top = headerHeight + 42 + 'px'
 		}
 		else {
 			$('.header').removeClass('header--fixed');
 			document.querySelector('main').style.marginTop = 0;
+			document.querySelector('.profile-sidebar ul').style.top = 0
 		}
 	});
 
