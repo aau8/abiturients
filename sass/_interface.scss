@@ -7,7 +7,7 @@ $textcolor: #293862; // Text Color
 // Bootstrap compatible gutter variable => $gutter
 $subtitles_font: 'MavenProMedium';
 $titles_font: 'MavenProBold';
-$default_font: 'MavenProRegular';
+$default_font: 'MavenProRegular', sans-serif;
 
 
 // FONTS LOAD SECTION
@@ -22,9 +22,9 @@ $default_font: 'MavenProRegular';
     }
 }
 
-@include font('MavenProMedium', normal, 300, '../fonts/Maven_Pro/MavenProMedium.woff2');
-@include font('MavenProBold', normal, 300, '../fonts/Maven_Pro/MavenProBold.woff2');
-@include font('MavenProRegular', normal, 300, '../fonts/Maven_Pro/MavenProRegular.woff2');
+@include font('MavenProRegular', normal, 400, '../fonts/Maven_Pro/MavenProRegular.woff2');
+@include font('MavenProMedium', normal, 500, '../fonts/Maven_Pro/MavenProMedium.woff2');
+@include font('MavenProBold', normal, 700, '../fonts/Maven_Pro/MavenProBold.woff2');
 @include font('Montserrat', normal, normal, '../fonts/Montserrat/Montserrat-Regular.woff');
 @include font('Montserrat', normal, bold, '../fonts/Montserrat/Montserrat-Bold.woff');
 

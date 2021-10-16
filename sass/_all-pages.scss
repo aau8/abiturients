@@ -47,6 +47,10 @@
     padding: 50px 0;
 }
 
+.breadcrumbs {
+    padding: 32px 0;
+}
+
 .page__breadcrumbs {
     color: #838383;
 }
@@ -67,6 +71,7 @@
     background: #fff;
     position: relative;
     box-shadow: 2px 4px 12px rgba(132, 132, 132, 0.25);
+    // transition: .3s;
     .main-menu__link {
         color: #000;
     }
@@ -78,6 +83,7 @@
 }
 .header--fixed {
     position: fixed;
+    top: 0;
     background: #fff;
 	.header-logo--white {
 		display: none;
@@ -89,6 +95,10 @@
 		color: #000;
 	}
 }
+
+// .header--show {
+//     top: 0;
+// }
 
 .main-menu__link:hover {
     color: #212C52;
@@ -191,7 +201,7 @@
     }
     p {
         font-size: 16px;
-        margin-top: 10px;
+        // margin-top: 10px;
         text-align: left;
         width: 100%;
     }
@@ -218,7 +228,7 @@
     max-width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 30px;
+    // margin-top: 30px;
 }
 
 .page__subtitle {
@@ -252,7 +262,7 @@
         top: 0;
     }
     .page__subtitle {
-        margin-top: 16px;
+        // margin-top: 16px;
     }
     .page-faq {
         .page-body {
