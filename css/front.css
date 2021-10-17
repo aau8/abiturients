@@ -1151,6 +1151,7 @@ h2 {
   -o-transition: 0.3s;
   transition: 0.3s;
   margin: 0 5px 5px 0;
+  text-transform: none;
 }
 
 .main__content__tag:last-child {
