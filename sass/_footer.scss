@@ -1,95 +1,80 @@
-footer {
-    position: relative;
-    background: #212C52;
-    color: #fff;
-    font-size: 14px;
-    padding: 46px 0;
+.footer {
+    background: $main;
+    padding: 36px 0 47px 0;
 }
 
-.footer__wrap {
-    display: flex;
-    justify-content: space-between;
+.footer__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    
+    @media screen and (max-width: $wwa2 + px) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-.footer-logo__img {
-    margin-bottom: 20px;
-}
-
-.footer-logo__links {
-    line-height: 30px;
-    margin-bottom: 20px;
-	a {
-		display: block;
-	}
-}
-
-.footer-menu__title {
-    font-size: 16px;
-    color: #8F9ABA;
-    margin-bottom: 10px;
-}
-
-.footer__list {
-    line-height: 22px;
-}
+.footer__block {
 
 
-
-.footer-kontakt {
-	a {
-		display: block;
-	}
-}
-
-@media (max-width: 1023px) {
-    .footer__wrap {
-        flex-direction: column;
+    @media screen and (max-width: 500px) {
         text-align: center;
     }
-
-    .footer__logo {
-        order: 5;
-    }
-
-    .footer-logo__social {
-        display: flex;
-        justify-content: space-between;
-        width: 113px;
-        margin: auto;
-    }
-
-    .footer-menu__col {
-        margin-bottom: 25px;
-    }
-
-    .footer-kontakt {
-        margin-bottom: 35px;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    footer {
-        .container {
-            max-width: 768px;
+.logo {
+
+}
+
+.footer-logo {
+
+}
+
+.logo-link {
+
+}
+
+.footer__links {
+    margin: 10px 0 0 0;
+}
+
+.footer__links-item {
+
+    &:not(:last-child) {
+        margin: 0 0 6px 0;
+    }
+    
+    & a {
+        font-size: 14px;
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
+}
 
-    .footer__wrap {
-        flex-direction: row;
-        text-align: left;
-    }
+.footer__social {
+    margin: 24px 0 0 0;
+}
 
-    .footer__logo {
-        order: 0;
-    }
+.social-link {
 
-    .footer-logo__social {
-        margin: 0;
+    &:not(:last-child) {
+        margin: 0 12px 0 0;
     }
 }
 
-@media (min-width: 1024px) {
-    .footer-logo__img {
-        margin-top: -11px;
-    }
+.social-link-icon {
+
+}
+
+.footer__block-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8F9ABA;
 }

@@ -1,164 +1,179 @@
+@import '_fonts';
+
 // USER VARIABLES SECTION
+$ffMain: 'Maven Pro', sans-serif;
+// $ffHeader: 'PT Sans Narrow', sans-serif;
 
-$accent: #27B0C7; // Accent Color
-$fontsize: 16px; // Body Font Size
+$minHover: 768; // если хочешь убрать hover на телефонах, укажи - 768px
+$tr: .3s;
 
-$textcolor: #293862; // Text Color
-// Bootstrap compatible gutter variable => $gutter
-$subtitles_font: 'MavenProMedium';
-$titles_font: 'MavenProBold';
-$default_font: 'MavenProRegular', sans-serif;
+// Переменные разрешения экрана (адаптив)
+$wwa: 1200;
+$wwa2: 900;
+$wwa3: 670;
 
-
-// FONTS LOAD SECTION
-
-@mixin font($fname, $fstyle, $fweight, $furl){
-    @font-face{
-        font-family: $fname;
-        font-style: $fstyle;
-        font-weight: $fweight;
-        // font-display: swap // Uncomment to initially display system fonts
-        src: local($fname), url($furl) format('woff2');
-    }
+// Переменные цвета
+:root {
+    --main: #152142;
+    --second: #C8C8C8;
+    --accent: #27B0C7;
+    --accent-hover: #212C52;
+    --accent2: #4744E9;
+    --accent2-hover: #4744E9;
+    --outline: #CCCCCC;
+    --bg-light: #F0F7F9;
+    --bg-modal: rgba(0, 0, 0, .5);
 }
 
-@include font('MavenProRegular', normal, 400, '../fonts/Maven_Pro/MavenProRegular.woff2');
-@include font('MavenProMedium', normal, 500, '../fonts/Maven_Pro/MavenProMedium.woff2');
-@include font('MavenProBold', normal, 700, '../fonts/Maven_Pro/MavenProBold.woff2');
-@include font('Montserrat', normal, normal, '../fonts/Montserrat/Montserrat-Regular.woff');
-@include font('Montserrat', normal, bold, '../fonts/Montserrat/Montserrat-Bold.woff');
+$main: var(--main);
+$second: var(--second);
+$accent: var(--accent);
+$accent-hover: var(--accent-hover);
+$accent2: var(--accent2);
+$outline: var(--outline);
+$bg-light: var(--bg-light);
+$bg-modal: var(--bg-modal);
 
 
+@import '_reset';
 
 
 // GENERAL DOCUMENT STYLES
 
-*{
-    box-sizing: border-box;
-    outline: none;
-    margin: 0;
-    padding: 0;
-}
-    
-.pagination {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    .swiper-pagination-bullet {
-        width: 14px;
-        height: 14px;
-        background-color: #F0F7F9;
-    }
-    .swiper-pagination-bullet-active {
-        background-color: #212C52;
-    }
-}
+body {
+    color: $main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
 
-html,body {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: $default_font;
-    font-size: $fontsize;
-    position: relative;
-    color: $textcolor;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    &.stop{
+    &._lock {
         overflow: hidden;
     }
-}
-    
 
-
-
-a{
-    text-decoration: none;
-    color: inherit;
+    @media screen and (max-width: $wwa3 + px) {
+        font-size: 14px;
+    }
 }
 
-ul {
-    list-style: none;
-}
-    
-img{
-    max-width: 100%;
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
 }
 
-button {
-    cursor: pointer;
+$maxWidthContainer: 1042;
+$maxWidthContainerwwa: 840;
+$maxWidthContainerwwa2: 612;
+
+// 24: 24;
+$paddingContainerwwa2: 16;
+
+.container {
+    max-width: 1208px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    @media screen and (max-width: $wwa + px) {
+        max-width: 888px;
+        padding: 0 24px;
+    }
+
+    @media screen and (max-width: $wwa2 + px) {
+        max-width: 644px;
+        padding: 0 16px;
+    }
 }
+
+.section {
+    padding: 80px 0;
+
+    @media screen and (max-width: $wwa + px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: $wwa2 + px) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: $wwa3 + px) {
+        padding: 50px 0;
+    }
+}
+
 
 // Для ленивой загрузки изображений
-img[data-src]{
-    opacity: 0;
-    transition: all 0.2s;
-}
-  
-section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+// img[data-src] {
+//     opacity: 0;
+//     transition: all 0.2s;
+// }
+
+// section {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
 
 .gray--section {
     background-color: #F0F7F9;
-} 
-
-
-.text--success {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #63CEA1;
-    font-weight: 600;
-    margin-left: 20px;
-}
-.centred--elem {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    min-height: 460px;
-    .page__breadcrumbs {
-        position: absolute;
-        top: 60px;
-    }
 }
 
-.blockquote{
-    background-color: #EFEFEF;
-    border-left: 4px solid $accent;
-    width: 100%;
-    display: block;
-    margin-left: 0;
-    padding: 20px 16px;
-    font-size: 16px;
-    color: $textcolor;
-    font-family: 'Roboto-Bold';
-    p{
-        margin: 0;
-    }
-}
-    
-.non--desctop {
-    display: none;
-}
-.section-desr{
-    display: block;
-}
-    
 
-@media (max-width: 1023px) {
-    section {
-        padding: 30px 0;
-    }
-    .non--desctop {
-        display: block;
-    }
-}
-   
+// .text--success {
+//     font-size: 15px;
+//     text-transform: uppercase;
+//     color: #63CEA1;
+//     font-weight: 600;
+//     margin-left: 20px;
+// }
+
+// .centred--elem {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content: center;
+//     height: 100%;
+//     min-height: 460px;
+
+//     .page__breadcrumbs {
+//         position: absolute;
+//         top: 60px;
+//     }
+// }
+
+// .blockquote {
+//     background-color: #EFEFEF;
+//     border-left: 4px solid $accent;
+//     width: 100%;
+//     display: block;
+//     margin-left: 0;
+//     padding: 20px 16px;
+//     font-size: 16px;
+//     color: $textcolor;
+//     font-family: 'Roboto-Bold';
+
+//     p {
+//         margin: 0;
+//     }
+// }
+
+// .non--desctop {
+//     display: none;
+// }
+
+// .section-desr {
+//     display: block;
+// }
+
+
+// @media (max-width: 1023px) {
+//     section {
+//         padding: 30px 0;
+//     }
+
+//     .non--desctop {
+//         display: block;
+//     }
+// }

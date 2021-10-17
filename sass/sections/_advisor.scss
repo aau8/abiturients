@@ -1,0 +1,213 @@
+// Основная информация
+.advisor-title {
+
+    @media screen and (max-width: $wwa2 + px) {
+      text-align: center;
+    }
+}
+
+.advisor__body {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $wwa2 + px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+}
+
+.advisor__content {
+}
+
+.advisor__content__block__list {
+    margin: 30px 0 0 0;
+}
+
+.advisor__content__block {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin: 0 0 24px 0;
+    }
+}
+
+.advisor__content__block-icon {
+    width: 36px;
+    height: 36px;
+
+    & svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.advisor__content__block-text {
+    font-size: 22px;
+    margin: 0 0 0 27px;
+
+    & a {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 18px;
+      margin: 0 0 0 16px;
+    }
+}
+
+.advisor__content-find {
+    margin: 60px 0 0 0;
+
+    @media screen and (max-width: $wwa2 + px) {
+        display: none;
+    }
+}
+
+// Чат
+.advisor__chat {
+    max-width: 622px;
+    width: 100%;
+    margin: 0 0 0 24px;
+
+    @media screen and (max-width: $wwa + px) {
+      max-width: 450px;
+    }
+
+    @media screen and (max-width: $wwa2 + px) {
+        max-width: none;
+        margin: 42px 0 0 0;
+    }
+}
+
+.advisor__chat__block {
+    display: flex;
+
+    &:not(:last-child) {
+        margin: 0 0 36px 0;
+    }
+}
+
+.advisor__chat__block-odd {
+    margin: 0 auto 0 0;
+    
+    & .advisor__chat__message {
+        background: #27B0C7;
+        margin: 0 0 0 8px;
+
+        &::before {
+            content: '';
+            width: 21px;
+            height: 24px;
+            background: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 20 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.519425 12.8682L10.9846 18.8483C12.2309 19.5605 13 20.8859 13 22.3213V24H20V0H13V1.67871C13 3.11414 12.2309 4.43951 10.9846 5.15168L0.519426 11.1318C-0.152389 11.5157 -0.15239 12.4843 0.519425 12.8682Z' fill='%2327B0C7'/%3E%3C/svg%3E") no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 28px;
+            left: -12px;
+
+            @media screen and (max-width: 450px) {
+                top: 18px;
+            }
+        }
+
+        & .advisor__chat__message-label {        
+            left: 24px;
+        }
+    }
+}
+
+.advisor__chat__block-even {
+    flex-direction: row-reverse;
+    margin: 0 0 0 auto;
+    
+    & .advisor__chat__message {
+        background: #CF99DE;
+        margin: 0 8px 0 0;
+
+        &::before {
+            content: '';
+            width: 21px;
+            height: 24px;
+            background: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 20 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.4806 12.8682L9.01544 18.8483C7.76914 19.5605 7 20.8859 7 22.3213V24H0V0H7V1.67871C7 3.11414 7.76914 4.43951 9.01544 5.15168L19.4806 11.1318C20.1524 11.5157 20.1524 12.4843 19.4806 12.8682Z' fill='%23CF99DE'/%3E%3C/svg%3E") no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 28px;
+            right: -12px;
+
+            @media screen and (max-width: 450px) {
+                top: 18px;
+            }
+        }
+    }
+
+    & .advisor__chat__message-label {      
+        right: 24px;
+    }
+}
+
+.advisor__char-img {
+    min-width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 450px) {
+        min-width: 60px;
+        height: 60px;
+    }
+}
+
+.advisor__chat__message {
+    // max-width: 440px;
+    // width: 100%;
+    position: relative;
+    border-radius: 16px;
+    padding: 24px;
+
+    @media screen and (max-width: $wwa3 + px) {
+        padding: 18px;
+    }
+}
+
+.advisor__chat__message-text {
+    font-size: 21px;
+    color: #fff;
+
+    @media screen and (max-width: $wwa3 + px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 14px;
+    }
+}
+
+.advisor__chat__message-label {
+    position: absolute;
+    top: -2px;
+    // left: 24px;
+    transform: translate(0, -100%);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.advisor-find {
+    display: none;
+
+    @media screen and (max-width: $wwa2 + px) {
+        width: fit-content;
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+}
