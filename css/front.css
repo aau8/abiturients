@@ -985,7 +985,7 @@ h2 {
 
 .main {
   width: 100%;
-  background: url(../img/main-bg.png) center no-repeat;
+  background: url(../img/main-bg.png) center no-repeat, var(--main);
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
