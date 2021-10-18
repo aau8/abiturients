@@ -502,7 +502,7 @@ footer {
     width: 99px !important;
   }
   .main-screen .students-box__message {
-    font-size: 10px;
+    font-size: 12px;
     padding: 11px;
   }
   .main-screen .main-screen__offer {
@@ -1274,6 +1274,13 @@ h2 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-screen__offer .students-box__phone {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
 .main__subtitle {
   text-align: left;
   font-size: 28px;
@@ -1627,16 +1634,6 @@ h2 {
   .students-box__img img {
     width: 75px;
   }
-  .students-box__phone {
-    width: 24px;
-    height: 24px;
-    right: 21px;
-    bottom: 4px;
-  }
-  .students-box__phone svg {
-    width: 12px;
-    height: 12px;
-  }
   .students-box__title {
     font-size: 12px;
   }
@@ -1671,6 +1668,38 @@ h2 {
   }
   .students-box__semester svg {
     margin-left: -11px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 1023px) {
+  .students-box__phone {
+    width: 24px;
+    height: 24px;
+    right: 21px;
+    bottom: 4px;
+  }
+  .students-box__phone svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .students-box__phone {
+    width: 24px;
+    height: 24px;
+    right: 21px !important;
+    bottom: 4px !important;
+  }
+  .students-box__phone svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .students-box__message {
+    line-height: 15px !important;
+  }
+  .students-box__city {
+    font-size: 7px;
   }
 }
 
