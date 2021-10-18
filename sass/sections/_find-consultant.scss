@@ -1,6 +1,6 @@
 .find-consultant {
     .section__btn {
-        margin-top: -30px;
+        // margin-top: -30px;
     }
 }
 
@@ -23,6 +23,7 @@
         display: flex;
         align-items: center;
         font-family: $subtitles_font;
+        font-weight: 500;
     }
     img {
         margin-right: 27px;
@@ -58,6 +59,7 @@
     position: relative;
     font-family: $default_font;
     font-size: 21px;
+    font-weight: 400;
     width: 440px;
     max-width: 100%;
     padding: 24px;
@@ -105,7 +107,7 @@
     font-size: 11px;
     color: #000;
     font-family: $default_font;
-    font-weight: normal;
+    font-weight: 400;
     position: absolute;
     top: -15px;
 }

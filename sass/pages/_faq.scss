@@ -18,7 +18,7 @@
     background-position: center right 23px;
     padding: 20px 65px 20px 0;
     h3 {
-        font-family: 'MavenProBold';
+        font-weight: 700;
         font-size: 18px;
         line-height: 21px;
         text-transform: uppercase;
@@ -38,7 +38,6 @@
             letter-spacing: 0.3px;
             color: #212329;
             text-transform: unset;
-            font-family: 'MavenProRegular';
         }
     }
     &__icon {

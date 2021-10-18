@@ -40,8 +40,7 @@
 
 .main__title {
     font-size: 22px;
-    font-family: 'MavenProMedium';
-    font-weight: normal;
+    font-weight: 500;
     color: #fff;
     letter-spacing: 0.9px;
     margin-bottom: 13px;
@@ -51,7 +50,7 @@
 
 .main__subtitle {
     text-align: left;
-    font-family: 'MavenProBold';
+    font-weight: 700;
     color: #fff;
 }
 
@@ -130,7 +129,7 @@
 .students-box__header {
     display: flex;
     font-size: 15px;
-    font-family: 'MavenProMedium';
+    font-weight: 500;
     color: #818CB2;
     margin-bottom: 11px;
     margin-top: 5px;
@@ -169,6 +168,7 @@
     top: 0;
     right: -205px;
     font-size: 15px;
+    text-align: left;
 }
 
 .students-box.swiper-slide-active {
@@ -180,9 +180,10 @@
 }
 
 .students-box__title {
+    font-family: $subtitles_font;
+    font-weight: 500;
     font-size: 27px;
     color: #212329;
-    font-family: $subtitles_font;
 }
 
 .students-box__school {
@@ -198,8 +199,8 @@
 }
 
 .students-box__specialization {
-    font-family: 'MavenProMedium';
     font-size: 18px;
+    font-weight: 500;
     margin-bottom: 9.6px;
 }
 
@@ -209,7 +210,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 @media (max-width: 1023px) {
     .main-screen {
@@ -235,7 +235,6 @@
 
     .main__subtitle {
         font-size: 14px;
-        font-family: 'MavenProRegular';
         font-weight: normal;
         font-weight: 600;
         line-height: 19px;

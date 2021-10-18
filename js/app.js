@@ -246,23 +246,29 @@ var d = document;
 // фиксированное меню при скроле
 $(window).scroll(function () {
 	let headerHeight = document.querySelector('.header').getBoundingClientRect().height
+	const sidebar = document.querySelector('.profile-sidebar ul')
+	const header = document.querySelector('.header')
 
 	if ($(window).scrollTop() > 200) {
-		// $('.header').addClass('header--fixed');
-		// document.querySelector('body').style.marginTop = headerHeight + 'px'
-		// document.querySelector('.profile-sidebar ul').style.top = headerHeight + 42 + 'px'
+		$('.header').addClass('header--fixed');
 
-		// setTimeout(() => {
-		// 	$('.header').addClass('header--show');
-		// }, 300)
+		if (!header.classList.contains('header-main')) {
+			document.querySelector('body').style.paddingTop = headerHeight + 'px'
+		}
+
+		if (sidebar) {
+			sidebar.style.top = headerHeight + 42 + 'px'
+		}
 	} else {
-		// $('.header').removeClass('header--fixed');
-		// document.querySelector('.profile-sidebar ul').style.top = 0
-		// document.querySelector('body').style.marginTop = 0;
+		$('.header').removeClass('header--fixed');
+		
+		if (!header.classList.contains('header-main')) {
+			document.querySelector('body').style.paddingTop = 0;
+		}
 
-		// setTimeout(() => {
-		// 	$('.header').removeClass('header--show');
-		// }, 300)
+		if (sidebar) {
+			sidebar.style.top = 0
+		}
 	}
 });
 

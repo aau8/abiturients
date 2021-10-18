@@ -8,8 +8,9 @@
     flex-direction: column;
 
     .students-box__img {
-        width: 142px;
-        height: 142px;
+        max-width: 142px;
+        // width: 100%;
+        // height: 142px;
         border-radius: 100%;
         margin: auto;
     }
@@ -63,7 +64,8 @@
     flex-wrap: wrap;
 
     .students-box__phone {
-        right: 20px;
+        right: 0;
+        // right: 20px;
     }
 
     .students-box {
@@ -299,7 +301,7 @@
         .students-box__school {
             font-size: 12px;
             margin-top: 5px;
-            margin-left: -17px;
+            // margin-left: -17px;
 
             svg {
                 margin-right: 0;

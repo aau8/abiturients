@@ -28,9 +28,13 @@
 
 .header__logo {
     flex-grow: 1;
-	svg {
-		margin-top: 6px;
-	}
+}
+
+.header__logo-link {
+	width: fit-content;
+	height: 100%;
+	display: block;
+	object-fit: contain;
 }
 
 .header__menu.active {
@@ -106,7 +110,7 @@
 	&__quantity {
 		position: absolute;
 		font-size: 10px;
-		font-family: 'MavenProBold';
+        font-weight: 700;
 		width: 18px;
 		height: 18px;
 		border-radius: 100%;
@@ -256,14 +260,6 @@ footer {
 	
 	.header-profile {
 		display: none;
-	}
-
-	.header__logo {
-		svg {
-			margin: 0;
-			width: 108px;
-			height: auto;
-		}
 	}
 
 	.header__menu {
