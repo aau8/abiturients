@@ -211,6 +211,10 @@
     align-items: center;
 }
 
+.students-box__header .students-box__icon { 
+    margin-top: 1px;
+}
+
 @media (max-width: 1023px) {
     .main-screen {
         padding-top: 36px;
@@ -297,7 +301,7 @@
     }
 
     .students-box__header .students-box__icon { 
-        margin-top: -5px;
+        margin-top: -4px;
     }
 
     .students-box__semester svg {

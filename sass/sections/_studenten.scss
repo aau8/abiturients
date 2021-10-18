@@ -31,6 +31,13 @@
     }
 }
 
+.studenten {
+    
+    & .title__wrap {
+        margin-bottom: 40px;
+    }
+}
+
 .studenten__wrap {
     display: flex;
     justify-content: space-between;
@@ -236,6 +243,7 @@
         .students-box {
             padding: 7px 21px 28px;
             margin: 0 13px 26px;
+            // margin: 0 13px 0;
             max-width: 241px;
             filter: unset !important;
         }
@@ -244,7 +252,8 @@
             padding: 0; 
 
             & .students__briefly {
-                width: 23%;
+                max-width: 240px;
+                width: 100%;
                 position: relative;
                 padding: 7px 21px 20px;
             }
@@ -295,7 +304,7 @@
         }
 
         .students-box__phone {
-            bottom: -9px;
+            bottom: 5px;
         }
 
         .students-box__school {

@@ -11,6 +11,7 @@
     padding: 20px 40px 30px;
     height: 100%;
     text-align: center;
+    margin: 0 0 0 16px;
     &__title {
         font-size: 20px;
     }
@@ -74,7 +75,15 @@
 }
 
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
+    .payment-card {
+        margin-bottom: 50px;
+    }
+
+    .payment__wrap {
+        flex-direction: column;
+    }
+
     .payment-card {
         .input__row {
             flex-direction: column;
@@ -90,6 +99,7 @@
     }
     .payment-price {
         flex-shrink: 0;
+        margin: 0;
     }
 
     .page-payment {
@@ -104,12 +114,9 @@
 
 
 @media (max-width: 768px) {
-    .payment__wrap {
-        flex-direction: column;
-    }
     .payment-card {
-        margin-bottom: 50px;
-        .btn__row  {
+
+        & .btn__row  {
             text-align: center;
         }
     }

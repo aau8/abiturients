@@ -184,9 +184,9 @@ var swiper = new Swiper('.studenten__wrap', {
 
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
+			slidesPerView: 1.17,
 			spaceBetween: 26,
-			centeredSlides: 'true',
+			// centeredSlides: 'true',
 
 		},
 		768: {
