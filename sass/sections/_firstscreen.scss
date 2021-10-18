@@ -419,8 +419,16 @@
             margin-left: -11px;
         }
     }
-    
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    & .main-offer__wrap .students-box__message {
+        top: -60px;
+        line-height: 16px;
+        letter-spacing: 0.0px;
+        padding: 14px 11px 14px 20px;
+    }
 }
 
 @media (max-width: 768px) and (max-width: 1023px) {
