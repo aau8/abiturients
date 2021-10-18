@@ -196,12 +196,20 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
     .suchergebnis__item {
         width: 31%;
     }
-    .suchergebnis__wrap {
-        margin-right: -18px;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    & .suchergebnis__wrap {
+        justify-content: center;
+    }
+
+    .suchergebnis__item {
+        width: 40%;
     }
 }
 
