@@ -74,15 +74,18 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+  
+    .payment__wrap {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 1024px) {
     .payment-card {
         margin-bottom: 50px;
     }
 
-    .payment__wrap {
-        flex-direction: column;
-    }
 
     .payment-card {
         .input__row {
