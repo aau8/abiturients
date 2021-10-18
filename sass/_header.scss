@@ -35,6 +35,16 @@
 	height: 100%;
 	display: block;
 	object-fit: contain;
+
+	@media screen and (max-width: 768px) {
+	  max-width: 108px;
+	}
+
+	& svg {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
 }
 
 .header__menu.active {
