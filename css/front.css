@@ -1268,6 +1268,12 @@ h2 {
   margin-bottom: -4px;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-screen__text {
+    max-width: 465px;
+  }
+}
+
 .main__subtitle {
   text-align: left;
   font-size: 28px;

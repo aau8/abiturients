@@ -30,6 +30,10 @@
     .input__row {
         margin-bottom: -4px;
     }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 465px;
+    }
 }
 
 
@@ -119,6 +123,11 @@
         z-index: 0;
         left: -105px;
         top: 110px;
+
+        // @media screen and (max-width: 1200px) {
+        //   left: -90px;
+        // }
+
         .students-box__img {
             img {
                 width: 168px;

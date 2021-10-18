@@ -41,9 +41,9 @@ var swiper = new Swiper('.main-screen__offer', {
 	slidesPerView: 1,
 	spaceBetween: 10,
 	allowTouchMove: false,
-	autoplay: {
-		delay: 5000,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// },
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
