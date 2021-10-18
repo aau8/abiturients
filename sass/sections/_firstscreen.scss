@@ -168,7 +168,7 @@
     top: 0;
     right: -205px;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .students-box.swiper-slide-active {
@@ -377,7 +377,7 @@
         width: 158px;
         font-size: 12.7px;
         padding: 16px 16px 16px 17px;
-        text-align: center;
+        text-align: left;
         right: -151px;
     }
 
@@ -481,7 +481,8 @@
         }
         
 		.students-box__message {
-			right: -153px;
+            top: -10px;
+			right: -200px;
 		}
     }
 
