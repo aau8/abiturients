@@ -25,12 +25,11 @@
 
 <body>
     <div class="wrapper">
-        <header class="header header--auth">
-            <div class="container">
+        <header class="header header_auth">
+            <div class="container container_header">
                 <div class="header__body">
                     <div class="logo logo_header">
                         <a href="#" class="logo__link">
-                            <!-- <img src="../img/logo.png" alt=""> -->
                             <svg width="163" height="50" viewBox="0 0 163 50" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -80,14 +79,14 @@
                         </div>
                     </nav>
                     <div class="auth">
-                        <a href="#" class="btn btn_border auth_signup">Registrieren</a>
-                        <a href="#" class="btn auth_login"> Log In</a>
+                        <a href="#" class="btn btn_border auth__signup">Registrieren</a>
+                        <a href="#" class="btn auth__login"> Log In</a>
                     </div>
-                    <a href="#" class="header__auth">
-                        <span class="header__auth-name">max f.</span>
-                        <div class="header__auth-img__block">
-                            <div class="header__auth-img"><img src="../img/avatar.png" alt=""></div>
-                            <div class="header__auth-notif"><span>2</span></div>
+                    <a href="#" class="user">
+                        <span class="user__name">max f.</span>
+                        <div class="user__img-block">
+                            <div class="user__img"><img src="../img/avatar.png" alt=""></div>
+                            <div class="user__notif"><span>2</span></div>
                         </div>
                     </a>
                     <button class="burger"><span></span></button>
@@ -134,7 +133,7 @@
                             </span>
                             <span class="aside__link-text">faq</span>
                         </a>
-                        <a class="aside__link _current" href="#">
+                        <a class="aside__link aside__link_current" href="#">
                             <span class="aside__link-icon">
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -168,9 +167,7 @@
                     <div class="container">
                         <div class="bread__body">
                             <span>
-                                <a class="bread__link" href="#">
-                                    <span>Главная</span>
-                                </a>
+                                <a class="bread__link" href="#"><span>Startseite</span></a>
                             </span>
                             <span class="bread__separator">/</span>
                             <span class="bread__current">Блог</span>
