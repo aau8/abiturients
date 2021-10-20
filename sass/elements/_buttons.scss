@@ -21,11 +21,11 @@
     }
 }
     
-.btn--border {
+.btn_border {
     border: 2px solid;
 }
 
-.btn--accent{
+.btn_accent{
     overflow: hidden;
     position: relative;
     &:after{
@@ -45,7 +45,7 @@
     }
 }
     
-.btn--full{
+.btn_full{
     border: 2px solid transparent;
     background: $accent;
     color: #fff!important;
@@ -55,7 +55,7 @@
     
 }
 
-.btn--border:hover {
+.btn_border:hover {
     color: #212C52 !important;
 }
 
@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 
-.btn--center {
+.btn_center {
     width: fit-content;
     display: flex;
     margin: 40px auto 0 auto;

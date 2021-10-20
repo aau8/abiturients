@@ -1,0 +1,33 @@
+.bread {
+    padding: 30px 0;
+}
+
+.bread__body {
+
+    & span {
+        font-size: 16px;
+        color: #838383;
+    }
+}
+
+.bread {
+
+}
+
+.bread__link {
+
+    &:hover {
+
+        & span {
+            color: $accent;
+        }
+    }
+}
+
+.bread__separator {
+
+}
+
+.bread__current {
+
+}

@@ -1,6 +1,7 @@
 .footer {
     background: $main;
     padding: 36px 0 47px 0;
+    margin: auto 0 0 0;
 }
 
 .footer__body {
@@ -34,15 +35,15 @@
 
 }
 
-.logo-link {
+.logo__link {
 
 }
 
-.footer__links {
+.footer__link-list {
     margin: 10px 0 0 0;
 }
 
-.footer__links-item {
+.footer__link {
 
     &:not(:last-child) {
         margin: 0 0 6px 0;
@@ -58,22 +59,22 @@
     }
 }
 
-.footer__social {
+.social {
     margin: 24px 0 0 0;
 }
 
-.social-link {
+.social__link {
 
     &:not(:last-child) {
         margin: 0 12px 0 0;
     }
 }
 
-.social-link-icon {
+.social__link-icon {
 
 }
 
-.footer__block-title {
+.footer__title {
     font-size: 16px;
     font-weight: 700;
     color: #8F9ABA;

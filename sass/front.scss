@@ -1,14 +1,19 @@
 @import '_interface';
 @import '_grid';
+@import '_section';
 
 
 // Элементы
-@import 'elements/_buttons';
-@import 'elements/_student__card'; 
 @import 'elements/_titles'; 
+@import 'elements/_buttons';
 @import 'elements/_swiper';
+@import 'elements/_student__card'; 
+@import 'elements/_search';
+@import 'elements/_page';
+@import 'elements/_aside';
+@import 'elements/_breadcrumbs';
 
-// Главная страница
+// Главная страница 
 @import 'pages/from-page/main';
 
 // Секции

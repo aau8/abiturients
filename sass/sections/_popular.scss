@@ -122,7 +122,7 @@
     // z-index: 1;
 }
 
-.popular-arrow {
+.popular__slider-arrow {
     position: relative;
     z-index: 2;
     min-width: 60px;
@@ -157,14 +157,14 @@
     }
 }
 
-.popular-arrow {
+.popular__slider-arrow {
 
     @media screen and (max-width: 670px) {
       display: none;
     }
 }
 
-.popular-arrow-next {
+.popular__slider-arrow_next {
     position: absolute;
     top: 50%;
     right: 0px;
@@ -176,7 +176,7 @@
     }
 }
 
-.popular-arrow-prev {
+.popular__slider-arrow_prev {
     position: absolute;
     top: 50%;
     left: -10px;

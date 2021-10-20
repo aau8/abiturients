@@ -12,21 +12,21 @@
 
 }
 
-.works-title {
+.works__title {
 }
 
-.works__tabs {
+.works-tabs {
 }
 
-.works__tabs__header {
+.works-tabs__header {
     max-width: 682px;
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
-.works__tabs__header-btn {
+.works-tabs__tab {
     width: 50%;
     font-size: 16px;
     font-weight: 400;
@@ -63,7 +63,7 @@
 }
 
 
-.works__tabs__body {
+.works-tabs__body {
     position: relative;
     display: none;
     margin: 40px 0 0 0;
@@ -78,13 +78,13 @@
     width: 100%;
 }
 
-.works__card {
+.works-card {
     border-radius: 5px;
     padding: 20px 24px 50px;
     overflow: hidden;
 
     &:hover {
-        & .works__card-img {
+        & .works-card__img {
 
             &::before {
                 transform: scale(4);
@@ -93,7 +93,7 @@
     }
 }
 
-.works__card-img {
+.works-card__img {
     width: 90px;
     height: 90px;
     display: flex;
@@ -121,13 +121,13 @@
     }
 }
 
-.works__card-title {
+.works-card__title {
     font-size: 18px;
     font-weight: 700;
     margin: 30px 0 0 0;
 }
 
-.works__card-text {
+.works-card__text {
     font-size: 16px;
     margin: 20px 0 0 0;
 }

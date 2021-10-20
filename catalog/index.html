@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Project name</title>
 	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Описание проекта">
 	<link rel="icon" href="../img/favicon.ico">
 	<!-- <link rel="stylesheet" href="../css/normalize.css"> -->
@@ -23,11 +24,11 @@
 <body>
 	<div class="wrapper">
 		<main class="main">
-			<header class="header header-main">
-				<div class="container">
+			<header class="header header_page-main">
+				<div class="container container_header">
 					<div class="header__body">
-						<div class="logo header__logo">
-							<a href="#" class="logo-link">
+						<div class="logo logo_header">
+							<a href="#" class="logo__link logo__link_light">
 								<!-- <img src="../img/logo.png" alt=""> -->
 								<svg width="163" height="50" viewBox="0 0 163 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0 44.6749L7.90467 26.1943H9.83996L17.7446 44.6749H15.3732L13.0018 39.1144H4.63377L2.28963 44.6749H0ZM5.47876 37.0156H12.1023L8.80417 29.1654L5.47876 37.0156Z" fill="#202021"/>
@@ -51,35 +52,34 @@
 								</svg>
 							</a>
 						</div>
-						<nav class="header__menu">
-							<div class="header__menu__body">
-								<ul class="header__menu__list">
-									<li class="header__menu-item"><a href="#">Kategorien</a></li>
-									<li class="header__menu-item"><a href="#">Universitäten</a></li>
-									<li class="header__menu-item"><a href="#">Für Studenten </a></li>
-									<li class="header__menu-item"><a href="#">Studiengänge</a></li>
+						<nav class="menu">
+							<div class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#">Kategorien</a></li>
+									<li class="menu__item"><a href="#">Universitäten</a></li>
+									<li class="menu__item"><a href="#">Für Studenten </a></li>
+									<li class="menu__item"><a href="#">Studiengänge</a></li>
 								</ul>
 							</div>
 						</nav>
-						<div class="header__reg">
-							<a href="#" class="btn btn--border header__reg-signup">Registrieren</a>
-							<a href="#" class="btn header__reg-login"> Log In</a>
+						<div class="auth">
+							<a href="#" class="btn btn_border auth_signup">Registrieren</a>
+							<a href="#" class="btn auth_login"> Log In</a>
 						</div>
 						<button class="burger"><span></span></button>
 					</div>
 				</div>
 			</header>
 			<div class="container">
-				<div class="main__body">
-					<div class="main__content">
-						<span class="main__content-slogan">Zukunft, Wissen, Erfolg</span>
-						<h1 class="main__content-title">Erfahre aus erster Hand, was dich die nächsten Jahre im Studium erwartet.</h1>
-						<div class="main__content__search">
-							<form class="main__content__search__form" action="#" method="GET" role="search">
-								<input class="main__content__search-input" id="search" type="text" name="s" placeholder="Informatik">
-								<!-- <label for="search">Informatik</label> -->
-								<button class="main__content__search-btn" type="submit">
-									<div class="main__content__search-btn-icon">
+				<div class="main-body">
+					<div class="main-content">
+						<span class="main__slogan">Zukunft, Wissen, Erfolg</span>
+						<h1 class="main__title">Erfahre aus erster Hand, was dich die nächsten Jahre im Studium erwartet.</h1>
+						<div class="search search_main">
+							<form class="search__form" action="#" method="GET" role="search">
+								<input class="search__input" type="text" name="s" placeholder="Informatik">
+								<button class="search__send" type="submit">
+									<div class="search__send-icon">
 										<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M27.4474 26.638L20.7261 19.9165C22.1997 18.1496 23.0891 15.8793 23.0891 13.4038C23.0891 7.78769 18.5201 3.21875 12.9039 3.21875C7.28772 3.21875 2.71875 7.78769 2.71875 13.4038C2.71875 19.02 7.28772 23.5889 12.9039 23.5889C15.3794 23.5889 17.6497 22.6996 19.4166 21.226L26.1381 27.9475C26.3189 28.1282 26.556 28.2188 26.7928 28.2188C27.0296 28.2188 27.2666 28.1282 27.4474 27.9475C27.8092 27.5857 27.8092 26.9995 27.4474 26.638ZM4.5706 13.4038C4.5706 8.80898 8.30855 5.07058 12.9039 5.07058C17.4993 5.07058 21.2372 8.80898 21.2372 13.4038C21.2372 17.9987 17.4993 21.7371 12.9039 21.7371C8.30855 21.7371 4.5706 17.9987 4.5706 13.4038Z" fill="white"/>
 										</svg>									
@@ -87,18 +87,18 @@
 								</button>
 							</form>
 						</div>
-						<div class="main__content__tags">
-							<a href="#" class="main__content__tag">Informatik</a>
-							<a href="#" class="main__content__tag">Nordrhein-Westfalen</a>
-							<a href="#" class="main__content__tag">HMKW </a>
+						<div class="main__tag-list">
+							<a href="#" class="main__tag">Informatik</a>
+							<a href="#" class="main__tag">Nordrhein-Westfalen</a>
+							<a href="#" class="main__tag">HMKW </a>
 						</div>
 					</div>
-					<div class="main__slider swiper-container">
-						<div class="swiper-wrapper">
-							<div class="main__slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+					<div class="main-slider swiper-container">
+						<div class="main-slider-wrapper swiper-wrapper">
+							<div class="main-slide swiper-slide">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -121,122 +121,39 @@
 													<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path class="like-full" d="M7.26331 2.94492C5.68571 2.94492 4.23647 3.57452 3.18216 4.7179C2.11218 5.87852 1.52284 7.48289 1.52284 9.23564C1.52284 11.085 2.21017 12.739 3.75127 14.5984C5.24049 16.3954 7.45544 18.2831 10.02 20.4687L10.0216 20.47L10.0263 20.474C10.9231 21.2383 11.9397 22.1047 12.9978 23.0299C14.0622 22.1029 15.0804 21.2351 15.979 20.4696L15.986 20.4637C18.5481 18.28 20.7608 16.3942 22.2489 14.5984C23.7898 12.739 24.4772 11.085 24.4772 9.23564C24.4772 7.48289 23.8878 5.87852 22.8178 4.7179C21.7637 3.57452 20.3143 2.94492 18.7369 2.94492C17.5812 2.94492 16.5202 3.31229 15.5833 4.03671C14.7484 4.68259 14.1668 5.49905 13.8258 6.07034C13.6504 6.36412 13.3418 6.53947 13 6.53947C12.6582 6.53947 12.3496 6.36412 12.1742 6.07034C11.8334 5.49905 11.2518 4.68259 10.4167 4.03671C9.47983 3.31229 8.41878 2.94492 7.26331 2.94492Z" fill="none"/>
 														<path d="M13 24.5535C12.6299 24.5535 12.273 24.4194 11.9949 24.1758C10.9445 23.2574 9.9319 22.3943 9.03847 21.633L9.03391 21.629C6.41451 19.3969 4.15256 17.4691 2.57874 15.5702C0.819443 13.4473 0 11.4345 0 9.23564C0 7.09926 0.732559 5.12831 2.06259 3.68561C3.40849 2.22585 5.25526 1.42188 7.26331 1.42188C8.76413 1.42188 10.1386 1.89636 11.3484 2.83205C11.959 3.30435 12.5124 3.88239 13 4.55663C13.4878 3.88239 14.041 3.30435 14.6518 2.83205C15.8616 1.89636 17.2361 1.42188 18.7369 1.42188C20.7447 1.42188 22.5917 2.22585 23.9376 3.68561C25.2676 5.12831 26 7.09926 26 9.23564C26 11.4345 25.1808 13.4473 23.4215 15.57C21.8476 17.4691 19.5859 19.3967 16.9669 21.6286C16.0719 22.3912 15.0576 23.2556 14.0049 24.1762C13.727 24.4194 13.3699 24.5535 13 24.5535V24.5535ZM7.26331 2.94492C5.68571 2.94492 4.23647 3.57452 3.18216 4.7179C2.11218 5.87852 1.52284 7.48289 1.52284 9.23564C1.52284 11.085 2.21017 12.739 3.75127 14.5984C5.24078 16.3958 7.45631 18.2838 10.0216 20.47L10.0263 20.474C10.9231 21.2383 11.9397 22.1047 12.9978 23.0299C14.0622 22.1029 15.0804 21.2351 15.979 20.4696C18.5441 18.2834 20.7594 16.3958 22.2489 14.5984C23.7898 12.739 24.4772 11.085 24.4772 9.23564C24.4772 7.48289 23.8878 5.87852 22.8178 4.7179C21.7637 3.57452 20.3143 2.94492 18.7369 2.94492C17.5812 2.94492 16.5202 3.31229 15.5833 4.03671C14.7484 4.68259 14.1668 5.49905 13.8258 6.07034C13.6504 6.36412 13.3418 6.53947 13 6.53947C12.6582 6.53947 12.3496 6.36412 12.1742 6.07034C11.8334 5.49905 11.2518 4.68259 10.4167 4.03671C9.47983 3.31229 8.41878 2.94492 7.26331 2.94492V2.94492Z" fill="#27B0C7"/>
-													</svg>                              
+													</svg>
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
-											</div>
-										</div>
-									</div> 
-									<div class="student__about">
-										<div class="student__about__call__block">
-											<span class="student__about__call-label">Call vereinbaren</span>
-											<span class="student__about__call-price"><span>2</span>$ per min</span>
-											<a href="tel:123" class="student__about__call">
-												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<g clip-path="url(#clip0_2:3147)">
-													<path d="M36.6836 26.387C34.2653 26.387 31.8967 26.0094 29.6517 25.2687C28.5561 24.8911 27.3119 25.182 26.5918 25.9166L22.1411 29.2778C17.0343 26.5521 13.766 23.2858 11.0775 18.2161L14.3478 13.8707C15.1711 13.0474 15.4662 11.8424 15.1134 10.7138C14.3664 8.45441 13.9868 6.08362 13.9868 3.6695C13.9868 1.96307 12.5982 0.574463 10.8918 0.574463H3.66998C1.96356 0.574463 0.574951 1.96307 0.574951 3.6695C0.574951 23.5788 16.7744 39.7782 36.6836 39.7782C38.3901 39.7782 39.7787 38.3896 39.7787 36.6831V29.4821C39.7787 27.7756 38.3901 26.387 36.6836 26.387Z" fill="white"/>
-													</g>
-													<defs>
-													<clipPath id="clip0_2:3147">
-													<rect width="39.2037" height="39.2037" fill="white" transform="translate(0.574951 0.574463)"/>
-													</clipPath>
-													</defs>
-												</svg>                                                
-											</a>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">about</h3>
-											<p class="student__about-tex">Sie möchten sich für den Masterstudiengang 3D Animation for Film & Games an der TH Köln bewerben? Alle Informationen rund um die Bewerbung haben wir hier für Sie zusammengestellt.</p>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">Semester abroad</h3>
-											<div class="student__about__abroad">
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Universität</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3123)">
-																<path d="M7.35096 8.06063C7.13229 8.14376 6.89076 8.14405 6.6719 8.06143L2.54907 6.49075V10.0512C2.54908 10.1158 2.56872 10.1789 2.6054 10.232C2.64208 10.2852 2.69407 10.326 2.75446 10.349L6.8972 11.9264C6.97017 11.9542 7.05081 11.9542 7.12378 11.9264L11.2665 10.349C11.3269 10.326 11.3789 10.2852 11.4156 10.232C11.4523 10.1789 11.4719 10.1158 11.4719 10.0512V6.49072L7.35096 8.06063Z" fill="#8F9ABA"/>
-																<path d="M13.8162 4.32015L7.1241 1.77077C7.05092 1.74308 6.97014 1.74308 6.89696 1.77077L0.204832 4.32015C0.144453 4.34313 0.0924842 4.38392 0.0558159 4.43711C0.0191476 4.4903 -0.000488281 4.55338 -0.000488281 4.61798C-0.000488281 4.68259 0.0191476 4.74566 0.0558159 4.79885C0.0924842 4.85204 0.144453 4.89283 0.204832 4.91581L6.89696 7.46519C6.97012 7.49298 7.05094 7.49298 7.1241 7.46519L13.8162 4.91581C13.8766 4.89283 13.9286 4.85204 13.9652 4.79885C14.0019 4.74566 14.0215 4.68259 14.0215 4.61798C14.0215 4.55338 14.0019 4.4903 13.9652 4.43711C13.9286 4.38392 13.8766 4.34313 13.8162 4.32015Z" fill="#8F9ABA"/>
-																<path d="M1.59284 11.3106C1.50833 11.3106 1.42727 11.277 1.36751 11.2172C1.30774 11.1575 1.27417 11.0764 1.27417 10.9919V5.10407C1.27417 5.01956 1.30774 4.9385 1.36751 4.87874C1.42727 4.81897 1.50833 4.7854 1.59284 4.7854C1.67736 4.7854 1.75841 4.81897 1.81818 4.87874C1.87794 4.9385 1.91151 5.01956 1.91151 5.10407V10.9919C1.91151 11.0764 1.87794 11.1575 1.81818 11.2172C1.75841 11.277 1.67736 11.3106 1.59284 11.3106Z" fill="#8F9ABA"/>
-																<path d="M1.59274 10.6729C1.33927 10.6731 1.09626 10.7739 0.917037 10.9532C0.737809 11.1324 0.636997 11.3754 0.636719 11.6289V12.9036C0.636719 12.9881 0.670293 13.0691 0.730056 13.1289C0.789819 13.1887 0.870874 13.2222 0.955391 13.2222H2.23008C2.3146 13.2222 2.39565 13.1887 2.45542 13.1289C2.51518 13.0691 2.54875 12.9881 2.54875 12.9036V11.6289C2.54848 11.3754 2.44766 11.1324 2.26844 10.9532C2.08921 10.7739 1.8462 10.6731 1.59274 10.6729V10.6729Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3123">
-																<rect width="14" height="14" fill="white"/>
-																</clipPath>
-																</defs>
-															</svg>                                                        
-														</span>
-														<span class="student__about__abroad__info-text">MSU</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Faculty</h4>
-													<div class="student__about__abroad__info">
-														<!-- <span class="student__about__abroad__item-icon"></span> -->
-														<span class="student__about__abroad__info-text">Design</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Studiendauer</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3118)">
-																<path d="M7 0.719727C3.14005 0.719727 0 3.85977 0 7.71973C0 11.5797 3.14005 14.7197 7 14.7197C10.86 14.7197 14 11.5797 14 7.71973C14 3.85977 10.86 0.719727 7 0.719727ZM10.3291 11.3404C10.2153 11.4542 10.066 11.5114 9.9167 11.5114C9.76738 11.5114 9.61795 11.4542 9.5043 11.3404L6.5876 8.42383C6.47791 8.31477 6.4167 8.16652 6.4167 8.01143V4.21973C6.4167 3.89716 6.67796 3.63643 7 3.63643C7.32204 3.63643 7.5833 3.89716 7.5833 4.21973V7.76993L10.3291 10.5156C10.5571 10.7438 10.5571 11.1124 10.3291 11.3404V11.3404Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3118">
-																<rect width="14" height="14" fill="white" transform="translate(0 0.719727)"/>
-																</clipPath>
-																</defs>
-															</svg>                                                                                                              
-														</span>
-														<span class="student__about__abroad__info-text"><span>2</span> semester</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="student__about__content student__about__content-help">
-											<h3 class="student__about-title">how can i help</h3>
-											<div class="student__about__list">
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">BaFög Antrag</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="main__slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+							<div class="main-slide swiper-slide">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -263,118 +180,35 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
-											</div>
-										</div>
-									</div> 
-									<div class="student__about">
-										<div class="student__about__call__block">
-											<span class="student__about__call-label">Call vereinbaren</span>
-											<span class="student__about__call-price"><span>2</span>$ per min</span>
-											<a href="tel:123" class="student__about__call">
-												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<g clip-path="url(#clip0_2:3147)">
-													<path d="M36.6836 26.387C34.2653 26.387 31.8967 26.0094 29.6517 25.2687C28.5561 24.8911 27.3119 25.182 26.5918 25.9166L22.1411 29.2778C17.0343 26.5521 13.766 23.2858 11.0775 18.2161L14.3478 13.8707C15.1711 13.0474 15.4662 11.8424 15.1134 10.7138C14.3664 8.45441 13.9868 6.08362 13.9868 3.6695C13.9868 1.96307 12.5982 0.574463 10.8918 0.574463H3.66998C1.96356 0.574463 0.574951 1.96307 0.574951 3.6695C0.574951 23.5788 16.7744 39.7782 36.6836 39.7782C38.3901 39.7782 39.7787 38.3896 39.7787 36.6831V29.4821C39.7787 27.7756 38.3901 26.387 36.6836 26.387Z" fill="white"/>
-													</g>
-													<defs>
-													<clipPath id="clip0_2:3147">
-													<rect width="39.2037" height="39.2037" fill="white" transform="translate(0.574951 0.574463)"/>
-													</clipPath>
-													</defs>
-												</svg>                                                
-											</a>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">about</h3>
-											<p class="student__about-tex">Sie möchten sich für den Masterstudiengang 3D Animation for Film & Games an der TH Köln bewerben? Alle Informationen rund um die Bewerbung haben wir hier für Sie zusammengestellt.</p>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">Semester abroad</h3>
-											<div class="student__about__abroad">
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Universität</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3123)">
-																<path d="M7.35096 8.06063C7.13229 8.14376 6.89076 8.14405 6.6719 8.06143L2.54907 6.49075V10.0512C2.54908 10.1158 2.56872 10.1789 2.6054 10.232C2.64208 10.2852 2.69407 10.326 2.75446 10.349L6.8972 11.9264C6.97017 11.9542 7.05081 11.9542 7.12378 11.9264L11.2665 10.349C11.3269 10.326 11.3789 10.2852 11.4156 10.232C11.4523 10.1789 11.4719 10.1158 11.4719 10.0512V6.49072L7.35096 8.06063Z" fill="#8F9ABA"/>
-																<path d="M13.8162 4.32015L7.1241 1.77077C7.05092 1.74308 6.97014 1.74308 6.89696 1.77077L0.204832 4.32015C0.144453 4.34313 0.0924842 4.38392 0.0558159 4.43711C0.0191476 4.4903 -0.000488281 4.55338 -0.000488281 4.61798C-0.000488281 4.68259 0.0191476 4.74566 0.0558159 4.79885C0.0924842 4.85204 0.144453 4.89283 0.204832 4.91581L6.89696 7.46519C6.97012 7.49298 7.05094 7.49298 7.1241 7.46519L13.8162 4.91581C13.8766 4.89283 13.9286 4.85204 13.9652 4.79885C14.0019 4.74566 14.0215 4.68259 14.0215 4.61798C14.0215 4.55338 14.0019 4.4903 13.9652 4.43711C13.9286 4.38392 13.8766 4.34313 13.8162 4.32015Z" fill="#8F9ABA"/>
-																<path d="M1.59284 11.3106C1.50833 11.3106 1.42727 11.277 1.36751 11.2172C1.30774 11.1575 1.27417 11.0764 1.27417 10.9919V5.10407C1.27417 5.01956 1.30774 4.9385 1.36751 4.87874C1.42727 4.81897 1.50833 4.7854 1.59284 4.7854C1.67736 4.7854 1.75841 4.81897 1.81818 4.87874C1.87794 4.9385 1.91151 5.01956 1.91151 5.10407V10.9919C1.91151 11.0764 1.87794 11.1575 1.81818 11.2172C1.75841 11.277 1.67736 11.3106 1.59284 11.3106Z" fill="#8F9ABA"/>
-																<path d="M1.59274 10.6729C1.33927 10.6731 1.09626 10.7739 0.917037 10.9532C0.737809 11.1324 0.636997 11.3754 0.636719 11.6289V12.9036C0.636719 12.9881 0.670293 13.0691 0.730056 13.1289C0.789819 13.1887 0.870874 13.2222 0.955391 13.2222H2.23008C2.3146 13.2222 2.39565 13.1887 2.45542 13.1289C2.51518 13.0691 2.54875 12.9881 2.54875 12.9036V11.6289C2.54848 11.3754 2.44766 11.1324 2.26844 10.9532C2.08921 10.7739 1.8462 10.6731 1.59274 10.6729V10.6729Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3123">
-																<rect width="14" height="14" fill="white"/>
-																</clipPath>
-																</defs>
-															</svg>                                                        
-														</span>
-														<span class="student__about__abroad__info-text">MSU</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Faculty</h4>
-													<div class="student__about__abroad__info">
-														<!-- <span class="student__about__abroad__item-icon"></span> -->
-														<span class="student__about__abroad__info-text">Design</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Studiendauer</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3118)">
-																<path d="M7 0.719727C3.14005 0.719727 0 3.85977 0 7.71973C0 11.5797 3.14005 14.7197 7 14.7197C10.86 14.7197 14 11.5797 14 7.71973C14 3.85977 10.86 0.719727 7 0.719727ZM10.3291 11.3404C10.2153 11.4542 10.066 11.5114 9.9167 11.5114C9.76738 11.5114 9.61795 11.4542 9.5043 11.3404L6.5876 8.42383C6.47791 8.31477 6.4167 8.16652 6.4167 8.01143V4.21973C6.4167 3.89716 6.67796 3.63643 7 3.63643C7.32204 3.63643 7.5833 3.89716 7.5833 4.21973V7.76993L10.3291 10.5156C10.5571 10.7438 10.5571 11.1124 10.3291 11.3404V11.3404Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3118">
-																<rect width="14" height="14" fill="white" transform="translate(0 0.719727)"/>
-																</clipPath>
-																</defs>
-															</svg>                                                                                                              
-														</span>
-														<span class="student__about__abroad__info-text"><span>2</span> semester</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="student__about__content student__about__content-help">
-											<h3 class="student__about-title">how can i help</h3>
-											<div class="student__about__list">
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">BaFög Antrag</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="main__slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+							<div class="main-slide swiper-slide">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -401,121 +235,32 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
-											</div>
-										</div>
-									</div> 
-									<div class="student__about">
-										<div class="student__about__call__block">
-											<span class="student__about__call-label">Call vereinbaren</span>
-											<span class="student__about__call-price"><span>2</span>$ per min</span>
-											<a href="tel:123" class="student__about__call">
-												<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<g clip-path="url(#clip0_2:3147)">
-													<path d="M36.6836 26.387C34.2653 26.387 31.8967 26.0094 29.6517 25.2687C28.5561 24.8911 27.3119 25.182 26.5918 25.9166L22.1411 29.2778C17.0343 26.5521 13.766 23.2858 11.0775 18.2161L14.3478 13.8707C15.1711 13.0474 15.4662 11.8424 15.1134 10.7138C14.3664 8.45441 13.9868 6.08362 13.9868 3.6695C13.9868 1.96307 12.5982 0.574463 10.8918 0.574463H3.66998C1.96356 0.574463 0.574951 1.96307 0.574951 3.6695C0.574951 23.5788 16.7744 39.7782 36.6836 39.7782C38.3901 39.7782 39.7787 38.3896 39.7787 36.6831V29.4821C39.7787 27.7756 38.3901 26.387 36.6836 26.387Z" fill="white"/>
-													</g>
-													<defs>
-													<clipPath id="clip0_2:3147">
-													<rect width="39.2037" height="39.2037" fill="white" transform="translate(0.574951 0.574463)"/>
-													</clipPath>
-													</defs>
-												</svg>                                                
-											</a>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">about</h3>
-											<p class="student__about-tex">Sie möchten sich für den Masterstudiengang 3D Animation for Film & Games an der TH Köln bewerben? Alle Informationen rund um die Bewerbung haben wir hier für Sie zusammengestellt.</p>
-										</div>
-										<div class="student__about__content">
-											<h3 class="student__about-title">Semester abroad</h3>
-											<div class="student__about__abroad">
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Universität</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3123)">
-																<path d="M7.35096 8.06063C7.13229 8.14376 6.89076 8.14405 6.6719 8.06143L2.54907 6.49075V10.0512C2.54908 10.1158 2.56872 10.1789 2.6054 10.232C2.64208 10.2852 2.69407 10.326 2.75446 10.349L6.8972 11.9264C6.97017 11.9542 7.05081 11.9542 7.12378 11.9264L11.2665 10.349C11.3269 10.326 11.3789 10.2852 11.4156 10.232C11.4523 10.1789 11.4719 10.1158 11.4719 10.0512V6.49072L7.35096 8.06063Z" fill="#8F9ABA"/>
-																<path d="M13.8162 4.32015L7.1241 1.77077C7.05092 1.74308 6.97014 1.74308 6.89696 1.77077L0.204832 4.32015C0.144453 4.34313 0.0924842 4.38392 0.0558159 4.43711C0.0191476 4.4903 -0.000488281 4.55338 -0.000488281 4.61798C-0.000488281 4.68259 0.0191476 4.74566 0.0558159 4.79885C0.0924842 4.85204 0.144453 4.89283 0.204832 4.91581L6.89696 7.46519C6.97012 7.49298 7.05094 7.49298 7.1241 7.46519L13.8162 4.91581C13.8766 4.89283 13.9286 4.85204 13.9652 4.79885C14.0019 4.74566 14.0215 4.68259 14.0215 4.61798C14.0215 4.55338 14.0019 4.4903 13.9652 4.43711C13.9286 4.38392 13.8766 4.34313 13.8162 4.32015Z" fill="#8F9ABA"/>
-																<path d="M1.59284 11.3106C1.50833 11.3106 1.42727 11.277 1.36751 11.2172C1.30774 11.1575 1.27417 11.0764 1.27417 10.9919V5.10407C1.27417 5.01956 1.30774 4.9385 1.36751 4.87874C1.42727 4.81897 1.50833 4.7854 1.59284 4.7854C1.67736 4.7854 1.75841 4.81897 1.81818 4.87874C1.87794 4.9385 1.91151 5.01956 1.91151 5.10407V10.9919C1.91151 11.0764 1.87794 11.1575 1.81818 11.2172C1.75841 11.277 1.67736 11.3106 1.59284 11.3106Z" fill="#8F9ABA"/>
-																<path d="M1.59274 10.6729C1.33927 10.6731 1.09626 10.7739 0.917037 10.9532C0.737809 11.1324 0.636997 11.3754 0.636719 11.6289V12.9036C0.636719 12.9881 0.670293 13.0691 0.730056 13.1289C0.789819 13.1887 0.870874 13.2222 0.955391 13.2222H2.23008C2.3146 13.2222 2.39565 13.1887 2.45542 13.1289C2.51518 13.0691 2.54875 12.9881 2.54875 12.9036V11.6289C2.54848 11.3754 2.44766 11.1324 2.26844 10.9532C2.08921 10.7739 1.8462 10.6731 1.59274 10.6729V10.6729Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3123">
-																<rect width="14" height="14" fill="white"/>
-																</clipPath>
-																</defs>
-															</svg>                                                        
-														</span>
-														<span class="student__about__abroad__info-text">MSU</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Faculty</h4>
-													<div class="student__about__abroad__info">
-														<!-- <span class="student__about__abroad__item-icon"></span> -->
-														<span class="student__about__abroad__info-text">Design</span>
-													</div>
-												</div>
-												<div class="student__about__abroad__item">
-													<h4 class="student__about__abroad-title">Studiendauer</h4>
-													<div class="student__about__abroad__info">
-														<span class="student__about__abroad__info-icon">
-															<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g clip-path="url(#clip0_2:3118)">
-																<path d="M7 0.719727C3.14005 0.719727 0 3.85977 0 7.71973C0 11.5797 3.14005 14.7197 7 14.7197C10.86 14.7197 14 11.5797 14 7.71973C14 3.85977 10.86 0.719727 7 0.719727ZM10.3291 11.3404C10.2153 11.4542 10.066 11.5114 9.9167 11.5114C9.76738 11.5114 9.61795 11.4542 9.5043 11.3404L6.5876 8.42383C6.47791 8.31477 6.4167 8.16652 6.4167 8.01143V4.21973C6.4167 3.89716 6.67796 3.63643 7 3.63643C7.32204 3.63643 7.5833 3.89716 7.5833 4.21973V7.76993L10.3291 10.5156C10.5571 10.7438 10.5571 11.1124 10.3291 11.3404V11.3404Z" fill="#8F9ABA"/>
-																</g>
-																<defs>
-																<clipPath id="clip0_2:3118">
-																<rect width="14" height="14" fill="white" transform="translate(0 0.719727)"/>
-																</clipPath>
-																</defs>
-															</svg>                                                                                                              
-														</span>
-														<span class="student__about__abroad__info-text"><span>2</span> semester</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="student__about__content student__about__content-help">
-											<h3 class="student__about-title">how can i help</h3>
-											<div class="student__about__list">
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">BaFög Antrag</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
-												<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
-												<a href="#" class="student__about__list__item">Bei der Anmeldung und Unterlage</a>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- <div class="swiper-pagination"></div> -->
-						<!-- <div class="swiper__arrow">
-							<div class="swiper__arrow-next">Next</div>
-							<div class="swiper__arrow-prev">Prev</div>
-						</div> -->
-						<!-- <div class="swiper-scrollbar"></div> -->
 					</div>
 				</div>
 			</div>
@@ -524,16 +269,16 @@
 		<section class="popular">
 			<div class="container">
 				<div class="popular__header">
-					<h2 class="popular__header-title title-center">Beliebte Kategorien</h2>
+					<h2 class="popular__header-title title_center">Beliebte Kategorien</h2>
 				</div>
 				<div class="popular__body">
-					<button class="popular-arrow popular-arrow-prev">
+					<button class="popular__slider-arrow popular__slider-arrow_prev">
 						<svg style="transform: rotate(180deg);" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M7.60724 1.2656C6.7976 2.06376 6.79759 3.35784 7.60722 4.15601L20.1346 16.5061L7.60796 28.8428C6.79792 29.6406 6.79726 30.9347 7.60649 31.7332C8.41572 32.5318 9.7284 32.5324 10.5384 31.7347L26 16.5075L10.5392 1.26562C9.72956 0.467456 8.41688 0.467448 7.60724 1.2656Z" fill="#27B0C7"/>
 						</svg>									
 					</button>
 					<div class="popular__slider swiper-container">
-						<div class="swiper-wrapper">
+						<div class="popular__slider-wrapper swiper-wrapper">
 							<a class="popular__slide swiper-slide" href="#">
 								<h3 class="popular__slide-title">Wirtschaft</h3>
 								<div class="popular__slide-img"><img src="../img/categories/category-1.png" alt=""></div>
@@ -555,10 +300,8 @@
 								<div class="popular__slide-img"><img src="../img/categories/category-5.png" alt=""></div>
 							</a>
 						</div>
-						<!-- <div class="swiper-pagination"></div> -->
-						<!-- <div class="swiper-scrollbar"></div> -->
 					</div>
-					<button class="popular-arrow popular-arrow-next">
+					<button class="popular__slider-arrow popular__slider-arrow_next">
 						<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M7.60724 1.2656C6.7976 2.06376 6.79759 3.35784 7.60722 4.15601L20.1346 16.5061L7.60796 28.8428C6.79792 29.6406 6.79726 30.9347 7.60649 31.7332C8.41572 32.5318 9.7284 32.5324 10.5384 31.7347L26 16.5075L10.5392 1.26562C9.72956 0.467456 8.41688 0.467448 7.60724 1.2656Z" fill="#27B0C7"/>
 						</svg>									
@@ -568,13 +311,13 @@
 		</section>
 
 		<section class="section advisor">
-			<div class="container">
+			<div class="container advisor__container">
 				<div class="advisor__body">
-					<div class="advisor__content">
+					<div class="advisor-content">
 						<h2 class="advisor-title">Finde den passenden<br>Berater für dich</h2>
-						<div class="advisor__content__block__list">
-							<div class="advisor__content__block">
-								<span class="advisor__content__block-icon">
+						<div class="advisor-content__block-list">
+							<div class="advisor-content__block">
+								<span class="advisor-content__block-icon">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_2:499)">
 										<path d="M27.8832 18.6566C27.0531 18.6566 26.2692 18.2913 25.7266 17.6501C25.2288 17.0617 24.9881 16.3115 25.0457 15.5535H20.5684C20.1801 15.5535 19.8652 15.2388 19.8652 14.8504V10.1087C19.8652 9.9 19.9579 9.70207 20.1183 9.56848C20.2786 9.43488 20.4903 9.37955 20.6953 9.41709L20.7374 9.42483C21.1603 9.50231 21.5922 9.38855 21.9225 9.1132C22.2528 8.83779 22.4423 8.43321 22.4423 8.00311C22.4423 7.57308 22.2529 7.16857 21.9226 6.89323C21.5923 6.61795 21.1603 6.50447 20.7373 6.58181L20.6952 6.58955C20.4898 6.62716 20.2785 6.57169 20.1183 6.43809C19.958 6.3045 19.8653 6.10664 19.8653 5.89795V0.703125C19.8653 0.314789 20.1802 0 20.5684 0H32.2328C33.9895 0 35.4188 1.42924 35.4188 3.18607V14.8504C35.4188 15.2388 35.1041 15.5535 34.7157 15.5535H30.7222C30.7884 16.2949 30.5626 17.0338 30.0854 17.6149C29.5519 18.2645 28.7643 18.6441 27.9245 18.6564C27.9107 18.6566 27.897 18.6566 27.8832 18.6566ZM21.2716 14.1473H25.8727C26.0814 14.1473 26.2792 14.24 26.4129 14.4002C26.5464 14.5605 26.602 14.7717 26.5644 14.977L26.4686 15.5007C26.3874 15.9443 26.5083 16.3967 26.8002 16.7418C27.083 17.0759 27.4756 17.2556 27.904 17.2502C28.3292 17.244 28.7283 17.0516 28.9987 16.7224C29.269 16.3932 29.38 15.9642 29.3033 15.5452L29.1994 14.9769C29.1618 14.7717 29.2174 14.5604 29.351 14.4001C29.4845 14.2399 29.6824 14.1472 29.891 14.1472H34.0125V3.18607C34.0125 2.20465 33.2141 1.40625 32.2328 1.40625H21.2716V5.16459C21.836 5.21866 22.3766 5.44099 22.8229 5.81309C23.4747 6.35639 23.8485 7.15465 23.8485 8.00311C23.8485 8.85164 23.4747 9.64997 22.8229 10.1933C22.3765 10.5654 21.836 10.7878 21.2716 10.842V14.1473Z" fill="#212C52"/>
@@ -588,10 +331,10 @@
 										</defs>
 									</svg>									
 								</span>
-								<span class="advisor__content__block-text">Was macht dir <a href="#">Spaß</a></span>
+								<span class="advisor-content__block-text">Was macht dir <a href="#">Spaß</a></span>
 							</div>
-							<div class="advisor__content__block">
-								<span class="advisor__content__block-icon">
+							<div class="advisor-content__block">
+								<span class="advisor-content__block-icon">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_2:516)">
 										<path d="M35.8847 4.66721C35.777 4.4108 35.5262 4.24397 35.2481 4.24397L31.791 4.26192L31.7759 0.687513C31.7742 0.306217 31.4639 -0.00163328 31.0825 6.5206e-06C30.8994 0.000783266 30.7241 0.0742289 30.5952 0.204204L26.4678 4.36273C26.3402 4.49132 26.2683 4.66488 26.2675 4.84604V8.8064L25.4431 9.63355C25.4203 9.59454 25.3932 9.55821 25.3624 9.52515C19.121 3.93276 9.52796 4.45887 3.93557 10.7001C-1.65683 16.9413 -1.1308 26.5345 5.11053 32.1269C11.3519 37.7193 20.9449 37.1933 26.5373 30.9519C31.2282 25.7168 31.7093 17.9454 27.7002 12.1716C27.4821 11.8586 27.0514 11.7816 26.7384 11.9997C26.4254 12.2178 26.3484 12.6484 26.5665 12.9615C30.9193 19.2292 29.367 27.8389 23.0992 32.1917C16.8314 36.5445 8.22182 34.9922 3.86894 28.7245C-0.483941 22.4568 1.06851 13.847 7.33625 9.49425C12.5948 5.84226 19.6734 6.28112 24.4406 10.5547C24.4558 10.5685 24.4765 10.5733 24.4931 10.5858L21.5401 13.5381C19.7911 12.0069 17.545 11.1639 15.2205 11.1664C9.88199 11.166 5.55396 15.4933 5.55362 20.8318C5.55327 26.1703 9.88061 30.4983 15.2191 30.4987C20.5576 30.499 24.8856 26.1717 24.886 20.8332C24.886 19.2881 24.5158 17.7655 23.8061 16.393C23.6305 16.0544 23.2136 15.9222 22.875 16.0978C22.5365 16.2734 22.4042 16.6903 22.5799 17.0289C23.1919 18.2031 23.5096 19.5084 23.5058 20.8325C23.5172 25.4198 19.8078 29.1478 15.2206 29.1593C10.6334 29.1708 6.90533 25.4614 6.89385 20.8742C6.88237 16.2869 10.5918 12.5589 15.179 12.5474C17.1504 12.5425 19.0594 13.2389 20.5645 14.5122L17.617 17.459C15.7518 16.1373 13.1683 16.578 11.8466 18.4432C10.525 20.3085 10.9656 22.8919 12.8309 24.2136C14.6961 25.5353 17.2795 25.0946 18.6012 23.2294C19.0976 22.5287 19.3639 21.6911 19.3631 20.8325C19.3631 20.4512 19.054 20.1421 18.6727 20.1421C18.2914 20.1421 17.9822 20.4512 17.9822 20.8325C17.9822 22.3578 16.7457 23.5943 15.2205 23.5943C13.6952 23.5943 12.4587 22.3578 12.4587 20.8325C12.4587 19.3072 13.6952 18.0707 15.2205 18.0707C15.7121 18.073 16.194 18.208 16.6152 18.4615L14.7323 20.3444C14.4581 20.6092 14.4505 21.0464 14.7154 21.3206C14.9803 21.5949 15.4174 21.6025 15.6917 21.3376C15.6975 21.332 15.7031 21.3263 15.7086 21.3206L18.1479 18.8813L27.2438 9.78545H31.1234C31.3079 9.78467 31.4844 9.7101 31.6136 9.57831L35.7383 5.41772C35.9339 5.21991 35.9915 4.92406 35.8847 4.66721ZM27.6484 5.13257L30.3991 2.35769L30.4102 4.66721L27.6484 7.42897V5.13257ZM30.8355 8.40457H28.6261L31.3878 5.6428L33.5862 5.63176L30.8355 8.40457Z" fill="#212C52"/>
@@ -603,10 +346,10 @@
 										</defs>
 									</svg>																		
 								</span>
-								<span class="advisor__content__block-text">Wo willst du <a href="#">Hin</a></span>
+								<span class="advisor-content__block-text">Wo willst du <a href="#">Hin</a></span>
 							</div>
-							<div class="advisor__content__block">
-								<span class="advisor__content__block-icon">
+							<div class="advisor-content__block">
+								<span class="advisor-content__block-icon">
 									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M19.266 4.87194C13.3427 4.17024 7.97215 8.40317 7.27045 14.3264C6.82473 18.0891 8.38338 21.8102 11.3778 24.1319C12.1386 24.7025 12.5909 25.5942 12.6018 26.5451V30.5999C12.6041 32.0921 13.2213 33.5171 14.3082 34.5395C15.3049 35.4815 16.6256 36.0043 17.997 35.9999C18.117 35.9999 18.237 35.9963 18.357 35.9885C21.2364 35.7516 23.4408 33.3257 23.4018 30.4367V26.5433C23.4094 25.5986 23.8566 24.7115 24.6114 24.1433C29.3307 20.4956 30.1994 13.7129 26.5518 8.99357C24.776 6.69617 22.1499 5.21049 19.266 4.87194ZM18.2808 34.7909H18.2838C17.1217 34.8733 15.9784 34.4645 15.132 33.6641C15.1098 33.6437 15.0912 33.6209 15.072 33.5999H20.8974C20.1986 34.3013 19.2686 34.7246 18.2808 34.7909ZM21.7518 32.3999H14.208C14.1154 32.2063 14.0382 32.0057 13.977 31.7999H21.9882C21.924 32.0054 21.845 32.2059 21.7518 32.3999ZM22.194 30.5999H13.8018V29.9999H22.2018C22.2018 29.9999 22.1964 30.5453 22.194 30.5999ZM22.2018 28.7999H13.8018V28.1999H22.2018V28.7999ZM27.5352 16.7249C27.2328 19.2847 25.9136 21.6154 23.8746 23.1923L23.88 23.1917C22.8287 23.9862 22.2081 25.2256 22.2018 26.5433V26.9999H13.8018V26.5451C13.7919 25.2237 13.1682 23.982 12.114 23.1851C7.92475 19.9353 7.1632 13.9049 10.413 9.71567C12.2292 7.37447 15.0249 6.00309 17.988 5.99994C18.3689 6.00024 18.7495 6.02184 19.128 6.06474C24.3933 6.68687 28.1574 11.4596 27.5352 16.7249Z" fill="#212C52"/>
 										<path d="M21.2141 7.83361C20.9069 7.70918 20.557 7.85731 20.4327 8.16444C20.3098 8.46781 20.4527 8.81363 20.7539 8.94181C23.1463 9.92708 24.8238 12.1231 25.1453 14.6904C25.1847 15.0194 25.4834 15.2543 25.8125 15.2148C26.1415 15.1754 26.3763 14.8766 26.3369 14.5476C25.9632 11.5502 24.0063 8.98553 21.2141 7.83361Z" fill="#212C52"/>
@@ -622,98 +365,95 @@
 										<path d="M24.302 5.28737C24.589 5.45305 24.9559 5.35472 25.1216 5.06777L26.3216 2.98937C26.4853 2.70129 26.3845 2.33499 26.0965 2.17127C25.8111 2.00904 25.4484 2.10624 25.2824 2.38937L24.0824 4.46777C23.9168 4.75472 24.0151 5.12169 24.302 5.28737Z" fill="#212C52"/>
 									</svg>																			
 								</span>
-								<span class="advisor__content__block-text">Was ist dir <a href="#">Wichtig</a></span>
+								<span class="advisor-content__block-text">Was ist dir <a href="#">Wichtig</a></span>
 							</div>
 						</div>
-						<a href="#" class="btn btn--full advisor__content-find">Berater finden</a>
+						<a href="#" class="btn btn_full advisor-content__find">Berater finden</a>
 					</div>
-					<div class="advisor__chat">
-						<div class="advisor__chat__block advisor__chat__block-odd">
-							<div class="advisor__char-img"><img src="../img/avatar.png" alt=""></div>
-							<div class="advisor__chat__message">
-								<p class="advisor__chat__message-text">Ich liebe es zu zeichnen<br>alle sagen aber, dass ich damit später<br>nichts verdiene</p>
-								<span class="advisor__chat__message-label">Maria Student</span>
+					<div class="advisor-chat">
+						<div class="advisor-message advisor-message_odd">
+							<div class="advisor-message__avatar"><img src="../img/avatar.png" alt=""></div>
+							<div class="advisor-message__content">
+								<span class="advisor-message__content-label">Maria Student</span>
+								<p class="advisor-message__content-text">Ich liebe es zu zeichnen<br>alle sagen aber, dass ich damit später<br>nichts verdiene</p>
 							</div>
 						</div>
-						<div class="advisor__chat__block advisor__chat__block-even">
-							<div class="advisor__char-img"><img src="../img/avatar.png" alt=""></div>
-							<div class="advisor__chat__message">
-								<p class="advisor__chat__message-text">Hey ich studiere Kunst und arbeite<br>nebenbei als Illustratorin, finanziere<br>mich dabei selber.<br>Kann dir gerne ein paar Tipps geben</p>
-								<span class="advisor__chat__message-label">Jane Abiturient</span>
+						<div class="advisor-message advisor-message_even">
+							<div class="advisor-message__avatar"><img src="../img/avatar.png" alt=""></div>
+							<div class="advisor-message__content">
+								<span class="advisor-message__content-label">Jane Abiturient</span>
+								<p class="advisor-message__content-text">Hey ich studiere Kunst und arbeite<br>nebenbei als Illustratorin, finanziere<br>mich dabei selber.<br>Kann dir gerne ein paar Tipps geben</p>
 							</div>
 						</div>
 					</div>
-					<a href="#" class="btn btn--full advisor-find">Berater finden</a>
+					<a href="#" class="btn btn_full advisor__find">Berater finden</a>
 				</div>
 			</div>
 		</section>
 
 		<section class="works">
-			<div class="container">
+			<div class="container works__container">
 				<div class="works__header">
-					<h2 class="works-title title-center">wie es funktioniert</h2>
+					<h2 class="works__title title_center">wie es funktioniert</h2>
 				</div>
-				<div class="tabs works__tabs">
-					<div class="tabs__header works__tabs__header">
-						<button class="tabs-btn works__tabs__header-btn _active" data-tabs-header="1">Für Interessenten</button>
-						<button class="tabs-btn works__tabs__header-btn" data-tabs-header="2">Für Interessenten</button>
+				<div class="tabs works-tabs">
+					<div class="tabs__header works-tabs__header">
+						<button class="tabs-btn works-tabs__tab _active" data-tabs-header="1">Für Interessenten</button>
+						<button class="tabs-btn works-tabs__tab" data-tabs-header="2">Für Interessenten</button>
 					</div>
-					<!-- <div class="works__tabs__body__block">
-					</div> -->
-					<div class="tabs__body works__tabs__body _active" data-tabs-body="1">
-						<div class="works-slider works-slider1 swiper-container">
-							<div class="swiper-wrapper">
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-2.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+					<div class="tabs__body works-tabs__body _active" data-tabs-body="1">
+						<div class="works-slider works-slider_1 swiper-container">
+							<div class="works-wrapper swiper-wrapper">
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-2.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-1.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-1.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-3.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-3.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-4.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-4.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
 							</div>
 						</div>
-						<div class="works-pagination1 swiper-pagination"></div>
+						<div class="works-slider__pagination_1 swiper-pagination"></div>
 					</div>
-					<div class="tabs__body works__tabs__body" data-tabs-body="2">
-						<div class="works-slider works-slider2 swiper-container">
+					<div class="tabs__body works-tabs__body" data-tabs-body="2">
+						<div class="works-slider works-slider_2 swiper-container">
 							<div class="swiper-wrapper">
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-1.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-1.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-2.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-2.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-3.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-3.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
-								<a href="#" class="works__card swiper-slide">
-									<div class="works__card-img"><img src="../img/works/interesting-4.svg" alt=""></div>
-									<h3 class="works__card-title">Studiengangwahl</h3>
-									<p class="works__card-text">Finde den Studiengang, der der dich interessiert</p>
+								<a href="#" class="works-card swiper-slide">
+									<div class="works-card__img"><img src="../img/works/interesting-4.svg" alt=""></div>
+									<h3 class="works-card__title">Studiengangwahl</h3>
+									<p class="works-card__text">Finde den Studiengang, der der dich interessiert</p>
 								</a>
 							</div>
 						</div>
-						<div class="works-pagination2 swiper-pagination"></div>
-
+						<div class="works-slider__pagination_2 swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -723,36 +463,38 @@
 			<div class="container">
 				<div class="about__body">
 					<div class="about__content">
-						<h2 class="about-title">Was findest du hier</h2>
-						<p class="about-text">Ammatti hilft dir die richtige Entscheidung für deine Zukunft zu treffen. Indem du mit echten Menschen sprichst, die bereits das machen, wofür du dich Interessiert."</p>
-						<form action="#" method="GET" class="about__search">
-							<input class="about__search-input" type="text" name="s" placeholder="Informatik">
-							<button class="about__search-btn" type="submit">
-								<span class="about__search-btn-icon">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M27.422 26.1405L20.8435 19.5618C22.2858 17.8325 23.1562 15.6104 23.1562 13.1875C23.1562 7.69064 18.6844 3.21875 13.1875 3.21875C7.69064 3.21875 3.21875 7.69064 3.21875 13.1875C3.21875 18.6844 7.69064 23.1563 13.1875 23.1563C15.6104 23.1563 17.8325 22.2858 19.5618 20.8435L26.1405 27.4222C26.3175 27.5991 26.5495 27.6877 26.7812 27.6877C27.013 27.6877 27.245 27.5991 27.422 27.4222C27.7761 27.0681 27.7761 26.4944 27.422 26.1405ZM5.03125 13.1875C5.03125 8.69024 8.68978 5.03125 13.1875 5.03125C17.6852 5.03125 21.3437 8.69024 21.3437 13.1875C21.3437 17.6848 17.6852 21.3438 13.1875 21.3438C8.68978 21.3438 5.03125 17.6848 5.03125 13.1875Z" fill="#27B0C7"/>
-									</svg>										
-								</span>
-							</button>
-						</form>
+						<h2 class="about__title">Was findest du hier</h2>
+						<p class="about__text">Ammatti hilft dir die richtige Entscheidung für deine Zukunft zu treffen. Indem du mit echten Menschen sprichst, die bereits das machen, wofür du dich Interessiert."</p>
+						<div class="search search_about">
+							<form class="search__form" action="#" method="GET" role="search">
+								<input class="search__input" type="text" name="s" placeholder="Informatik">
+								<button class="search__send" type="submit">
+									<div class="search__send-icon">
+										<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.4474 26.638L20.7261 19.9165C22.1997 18.1496 23.0891 15.8793 23.0891 13.4038C23.0891 7.78769 18.5201 3.21875 12.9039 3.21875C7.28772 3.21875 2.71875 7.78769 2.71875 13.4038C2.71875 19.02 7.28772 23.5889 12.9039 23.5889C15.3794 23.5889 17.6497 22.6996 19.4166 21.226L26.1381 27.9475C26.3189 28.1282 26.556 28.2188 26.7928 28.2188C27.0296 28.2188 27.2666 28.1282 27.4474 27.9475C27.8092 27.5857 27.8092 26.9995 27.4474 26.638ZM4.5706 13.4038C4.5706 8.80898 8.30855 5.07058 12.9039 5.07058C17.4993 5.07058 21.2372 8.80898 21.2372 13.4038C21.2372 17.9987 17.4993 21.7371 12.9039 21.7371C8.30855 21.7371 4.5706 17.9987 4.5706 13.4038Z" fill="white"/>
+										</svg>									
+									</div>
+								</button>
+							</form>
+						</div>
 					</div>
 					<div class="about__img"><img src="../img/about/browser.png" alt=""></div>
 				</div>
 			</div>
 		</section>
 
-		<section class="section students">
-			<div class="container">
-				<div class="students__header">
-					<h2 class="students-title title-center">Studenten</h2>
+		<section class="section section_dark students">
+			<div class="container container_students">
+				<div class="section-header">
+					<h2 class="section-header__title">Studenten</h2>
 				</div>
 				<div class="students__body">
-					<div class="students__slider swiper-container">
+					<div class="students-slider swiper-container">
 						<div class="swiper-wrapper">
 							<div class="students-slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -779,35 +521,35 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="students-slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -834,35 +576,35 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="students-slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -889,35 +631,35 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="students-slide swiper-slide">
-								<div class="student__card">
-									<div class="student__briefly">
-										<div class="student__briefly__header">
+								<div class="student-card">
+									<div class="student-briefly">
+										<div class="student-briefly__header">
 											<div class="estim">
 												<div class="estim__city">
 													<span class="estim__city-icon">
@@ -944,26 +686,26 @@
 												</button>
 											</div>
 										</div>
-										<div class="student__briefly__avatar">
-											<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-											<a href="tel:123" class="student__briefly-call">
-												<div class="student__briefly-call-icon">
+										<div class="student-briefly__avatar">
+											<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+											<a href="tel:123" class="student-briefly__call">
+												<div class="student-briefly__call-icon">
 													<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 													</svg>										
 												</div>
 											</a>
 										</div>
-										<div class="student__briefly__info">
-											<h3 class="student__briefly__info-title">Michael</h3>
-											<div class="student__briefly__info__block">
-												<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-												<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+										<div class="student-briefly__info">
+											<h3 class="student-briefly__info-title">Michael</h3>
+											<div class="student-briefly__info-block">
+												<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+												<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 											</div>
-											<h4 class="student__briefly__info-subtitle">Informatik</h4>
-											<div class="student__briefly__info__block">
-												<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-												<span class="student__briefly__info__block-text">4 semester</span>
+											<h4 class="student-briefly__info-subtitle">Informatik</h4>
+											<div class="student-briefly__info-block">
+												<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+												<span class="student-briefly__info-block-text">4 semester</span>
 											</div>
 										</div>
 									</div>
@@ -971,7 +713,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="btn btn--full btn--center">Studenten suchen</a>
+					<a href="#" class="btn btn_full btn_center">Studenten suchen</a>
 				</div>
 			</div>
 		</section>
@@ -980,8 +722,8 @@
 			<div class="container">
 				<nav class="footer__body">
 					<div class="footer__block">
-						<div class="logo footer-logo">
-							<a href="#" class="logo-link">
+						<div class="logo">
+							<a href="#" class="logo__link logo__link_light">
 								<svg width="163" height="50" viewBox="0 0 163 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0 44.6749L7.90467 26.1943H9.83996L17.7446 44.6749H15.3732L13.0018 39.1144H4.63377L2.28963 44.6749H0ZM5.47876 37.0156H12.1023L8.80417 29.1654L5.47876 37.0156Z" fill="#202021"/>
 									<path d="M23.3594 44.6748V26.3032H25.6217L32.5179 35.7343L39.1415 26.3032H41.2675V44.6748H39.0324V29.8194L32.5179 38.9507H32.1635L25.5672 29.9012V44.6748H23.3594Z" fill="#202021"/>
@@ -1004,13 +746,13 @@
 								</svg>
 							</a>
 						</div>
-						<ul class="footer__links">
-							<li class="footer__links-item"><a href="#">Datenschutz</a></li>
-							<li class="footer__links-item"><a href="#">Impressum</a></li>
+						<ul class="footer__link-list">
+							<li class="footer__link"><a href="#">Datenschutz</a></li>
+							<li class="footer__link"><a href="#">Impressum</a></li>
 						</ul>
-						<div class="footer__social">
-							<a href="#" class="social-link">
-								<span class="social-link-icon">
+						<div class="social">
+							<a href="#" class="social__link">
+								<span class="social__link-icon">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_385:1233)">
 										<path d="M18.8949 0.000976562H1.10383C0.494616 0.000976562 0 0.494613 0 1.10482V18.8961C0 19.5064 0.494616 20.0006 1.10383 20.0006H10.682V12.2556H8.07587V9.23681H10.682V7.01067C10.682 4.42789 12.259 3.02075 14.5635 3.02075C15.6683 3.02075 16.6157 3.10341 16.892 3.1393V5.83899L15.2936 5.83965C14.0406 5.83965 13.7989 6.43537 13.7989 7.30903V9.23582H16.7883L16.3974 12.2543H13.7985V19.9997H18.8945C19.5044 19.9997 19.9993 19.5047 19.9993 18.8961V1.10417C19.999 0.494613 19.5047 0.000976562 18.8949 0.000976562Z" fill="#8F9ABA"/>
@@ -1023,8 +765,8 @@
 									</svg>										
 								</span>
 							</a>
-							<a href="#" class="social-link">
-								<span class="social-link-icon">
+							<a href="#" class="social__link">
+								<span class="social__link-icon">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_385:1236)">
 										<path d="M18.4211 0H1.57895C0.706919 0 0 0.706289 0 1.57754V18.4046C0 19.2759 0.706919 19.9822 1.57895 19.9822H18.4211C19.2931 19.9822 20 19.2759 20 18.4046V1.57754C20 0.706289 19.2931 0 18.4211 0Z" fill="#8F9ABA"/>
@@ -1038,8 +780,8 @@
 									</svg>																			
 								</span>
 							</a>
-							<a href="#" class="social-link">
-								<span class="social-link-icon">
+							<a href="#" class="social__link">
+								<span class="social__link-icon">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_385:1249)">
 										<path d="M14.4769 6.61343C14.3849 6.36411 14.2381 6.13843 14.0474 5.95319C13.8622 5.76245 13.6366 5.61566 13.3871 5.52365C13.1848 5.44507 12.8809 5.35153 12.321 5.32605C11.7154 5.29843 11.5338 5.29248 10.0006 5.29248C8.46725 5.29248 8.28568 5.29828 7.68021 5.3259C7.12036 5.35153 6.81625 5.44507 6.61407 5.52365C6.36459 5.61566 6.13892 5.76245 5.95383 5.95319C5.76309 6.13843 5.6163 6.36395 5.52414 6.61343C5.44556 6.81577 5.35202 7.11987 5.32654 7.67972C5.29892 8.28519 5.29297 8.46677 5.29297 10.0001C5.29297 11.5333 5.29892 11.7149 5.32654 12.3205C5.35202 12.8804 5.44556 13.1843 5.52414 13.3867C5.6163 13.6361 5.76294 13.8617 5.95367 14.0469C6.13892 14.2376 6.36444 14.3844 6.61392 14.4764C6.81625 14.5552 7.12036 14.6487 7.68021 14.6742C8.28568 14.7018 8.4671 14.7076 10.0005 14.7076C11.534 14.7076 11.7155 14.7018 12.3209 14.6742C12.8807 14.6487 13.1848 14.5552 13.3871 14.4764C13.8879 14.2833 14.2838 13.8875 14.4769 13.3867C14.5555 13.1843 14.649 12.8804 14.6747 12.3205C14.7023 11.7149 14.7081 11.5333 14.7081 10.0001C14.7081 8.46677 14.7023 8.28519 14.6747 7.67972C14.6492 7.11987 14.5557 6.81577 14.4769 6.61343ZM10.0006 12.9486C8.37204 12.9486 7.05185 11.6285 7.05185 9.99997C7.05185 8.3714 8.37204 7.05136 10.0006 7.05136C11.629 7.05136 12.9492 8.3714 12.9492 9.99997C12.9492 11.6285 11.629 12.9486 10.0006 12.9486ZM13.0658 7.62387C12.6852 7.62387 12.3767 7.31534 12.3767 6.93478C12.3767 6.55423 12.6852 6.2457 13.0658 6.2457C13.4464 6.2457 13.7549 6.55423 13.7549 6.93478C13.7547 7.31534 13.4464 7.62387 13.0658 7.62387Z" fill="#8F9ABA"/>
@@ -1054,8 +796,8 @@
 									</svg>																			
 								</span>
 							</a>
-							<a href="#" class="social-link">
-								<span class="social-link-icon">
+							<a href="#" class="social__link">
+								<span class="social__link-icon">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_385:1242)">
 										<path d="M18.4211 0H1.57895C0.706919 0 0 0.706289 0 1.57754V18.4046C0 19.2759 0.706919 19.9822 1.57895 19.9822H18.4211C19.2931 19.9822 20 19.2759 20 18.4046V1.57754C20 0.706289 19.2931 0 18.4211 0Z" fill="#8F9ABA"/>
@@ -1077,28 +819,28 @@
 						</div>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__block-title">Kategorien</h3>
-						<ul class="footer__links">
-							<li class="footer__links-item"><a href="#">Wirtschaft</a></li>
-							<li class="footer__links-item"><a href="#">Informatik</a></li>
-							<li class="footer__links-item"><a href="#">Technik</a></li>
-							<li class="footer__links-item"><a href="#">Medizin</a></li>
-							<li class="footer__links-item"><a href="#">Design</a></li>
+						<h3 class="footer__title">Kategorien</h3>
+						<ul class="footer__link-list">
+							<li class="footer__link"><a href="#">Wirtschaft</a></li>
+							<li class="footer__link"><a href="#">Informatik</a></li>
+							<li class="footer__link"><a href="#">Technik</a></li>
+							<li class="footer__link"><a href="#">Medizin</a></li>
+							<li class="footer__link"><a href="#">Design</a></li>
 						</ul>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__block-title">Universitäten</h3>
-						<ul class="footer__links">
-							<li class="footer__links-item"><a href="#">Rating</a></li>
-							<li class="footer__links-item"><a href="#">Beliebt</a></li>
-							<li class="footer__links-item"><a href="#">Top 15</a></li>
+						<h3 class="footer__title">Universitäten</h3>
+						<ul class="footer__link-list">
+							<li class="footer__link"><a href="#">Rating</a></li>
+							<li class="footer__link"><a href="#">Beliebt</a></li>
+							<li class="footer__link"><a href="#">Top 15</a></li>
 						</ul>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__block-title">Kontakt</h3>
-						<ul class="footer__links">
-							<li class="footer__links-item"><a href="tel:123">Телефон: +7(985) 777-21-21</a></li>
-							<li class="footer__links-item"><a href="mailto:@gmail.ru">@mail: mail@mail.com</a></li>
+						<h3 class="footer__title">Kontakt</h3>
+						<ul class="footer__link-list">
+							<li class="footer__link"><a href="tel:123">Телефон: +7(985) 777-21-21</a></li>
+							<li class="footer__link"><a href="mailto:@gmail.ru">@mail: mail@mail.com</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -1107,9 +849,9 @@
 
 		<section style="display: none;">
 			<div class="container">
-				<div class="student__card">
-					<div class="student__briefly">
-						<div class="student__briefly__header">
+				<div class="student-card students-big-box">
+					<div class="student-briefly">
+						<div class="student-briefly__header">
 							<div class="estim">
 								<div class="estim__city">
 									<span class="estim__city-icon">
@@ -1136,26 +878,26 @@
 								</button>
 							</div>
 						</div>
-						<div class="student__briefly__avatar">
-							<div class="student__briefly-img"><img src="../img/avatar.png" alt="Аватар"></div>
-							<a href="tel:123" class="student__briefly-call">
-								<div class="student__briefly-call-icon">
+						<div class="student-briefly__avatar">
+							<div class="student-briefly__avatar-img"><img src="../img/avatar.png" alt="Аватар"></div>
+							<a href="tel:123" class="student-briefly__call">
+								<div class="student-briefly__call-icon">
 									<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M20.4164 14.7738C19.0913 14.7738 17.7934 14.5669 16.5633 14.1609C15.963 13.954 15.2812 14.1135 14.8867 14.516L12.4479 16.3577C9.6497 14.8642 7.85882 13.0745 6.38566 10.2966L8.17765 7.9155C8.62876 7.46439 8.79046 6.8041 8.59712 6.18568C8.18783 4.94766 7.97981 3.6486 7.97981 2.32579C7.97981 1.39076 7.21893 0.629883 6.2839 0.629883H2.32677C1.39174 0.629883 0.630859 1.39076 0.630859 2.32579C0.630859 13.235 9.50724 22.1114 20.4164 22.1114C21.3515 22.1114 22.1123 21.3505 22.1123 20.4155V16.4697C22.1123 15.5346 21.3515 14.7738 20.4164 14.7738Z" fill="white"/>
 									</svg>										
 								</div>
 							</a>
 						</div>
-						<div class="student__briefly__info">
-							<h3 class="student__briefly__info-title">Michael</h3>
-							<div class="student__briefly__info__block">
-								<div class="student__briefly__info__block-icon"><img src="../img/icons/university.svg" alt=""></div>
-								<p class="student__briefly__info__block-text">Fachhochschule Aachen</p>
+						<div class="student-briefly__info">
+							<h3 class="student-briefly__info-title">Michael</h3>
+							<div class="student-briefly__info-block">
+								<div class="student-briefly__info-block-icon"><img src="../img/icons/university.svg" alt=""></div>
+								<p class="student-briefly__info-block-text">Fachhochschule Aachen</p>
 							</div>
-							<h4 class="student__briefly__info-subtitle">Informatik</h4>
-							<div class="student__briefly__info__block">
-								<span class="student__briefly__info__block-icon"><img src="../img/icons/time.svg" alt=""></span>
-								<span class="student__briefly__info__block-text">4 semester</span>
+							<h4 class="student-briefly__info-subtitle">Informatik</h4>
+							<div class="student-briefly__info-block">
+								<span class="student-briefly__info-block-icon"><img src="../img/icons/time.svg" alt=""></span>
+								<span class="student-briefly__info-block-text">4 semester</span>
 							</div>
 						</div>
 					</div> 
@@ -1177,11 +919,11 @@
 							</a>
 						</div>
 						<div class="student__about__content">
-							<h3 class="student__about-title">about</h3>
+							<h3 class="student__about__title">about</h3>
 							<p class="student__about-tex">Sie möchten sich für den Masterstudiengang 3D Animation for Film & Games an der TH Köln bewerben? Alle Informationen rund um die Bewerbung haben wir hier für Sie zusammengestellt.</p>
 						</div>
 						<div class="student__about__content">
-							<h3 class="student__about-title">Semester abroad</h3>
+							<h3 class="student__about__title">Semester abroad</h3>
 							<div class="student__about__abroad">
 								<div class="student__about__abroad__item">
 									<h4 class="student__about__abroad-title">Universität</h4>
@@ -1232,7 +974,7 @@
 							</div>
 						</div>
 						<div class="student__about__content student__about__content-help">
-							<h3 class="student__about-title">how can i help</h3>
+							<h3 class="student__about__title">how can i help</h3>
 							<div class="student__about__list">
 								<a href="#" class="student__about__list__item">Generelle Infos übers Studium</a>
 								<a href="#" class="student__about__list__item">BaFög Antrag</a>
@@ -1245,7 +987,6 @@
 				</div>
 			</div>
 		</section>
-
 	</div>
 	
 	<!-- Подключение скриптов -->

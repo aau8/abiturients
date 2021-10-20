@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle()
     function menuToggle() {
         const burger = document.querySelector('.burger')
-        const menu = document.querySelector('.header__menu')
+        const menu = document.querySelector('.menu')
 
         burger.addEventListener('click', () => {
             burger.classList.toggle('_active')
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    const mainSlider = new Swiper('.main__slider', {
+    const mainSlider = new Swiper('.main-slider', {
   
     slidesPerView: 1,
     spaceBetween: 0,
@@ -86,12 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     navigation: {
-        nextEl: '.popular-arrow-next',
-        prevEl: '.popular-arrow-prev',
+        nextEl: '.popular__slider-arrow_next',
+        prevEl: '.popular__slider-arrow_prev',
     },
     });
 
-    const worksSlider1 = new Swiper('.works-slider1', {
+    const worksSlider1 = new Swiper('.works-slider_1', {
         slidesPerView: 1.5,
         spaceBetween: 16,
         observer: true,
@@ -112,12 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         pagination: {
-            el: '.works-pagination1',
+            el: '.works-slider__pagination_1',
             clickable: true,
         },
     });
 
-    const worksSlider2 = new Swiper('.works-slider2', {
+    const worksSlider2 = new Swiper('.works-slider_2', {
         slidesPerView: 1.5,
         spaceBetween: 16,
         observer: true,
@@ -138,12 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     
         pagination: {
-            el: '.works-pagination2',
+            el: '.works-slider__pagination_2',
             clickable: true,
         },
     });
 
-    const studentsSlider = new Swiper('.students__slider', {
+    const studentsSlider = new Swiper('.students-slider', {
     
         slidesPerView: 1.5,
         spaceBetween: 32,
@@ -174,8 +174,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     
         // navigation: {
-        //     nextEl: '.popular-arrow-next',
-        //     prevEl: '.popular-arrow-prev',
+        //     nextEl: '.popular__slider-arrow_next',
+        //     prevEl: '.popular__slider-arrow_prev',
         // },
     });
     
@@ -492,12 +492,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // $('.toggleMenu').click(function () {
 // 	$(this).toggleClass('active');
-// 	$('.header__menu').toggleClass('active');
+// 	$('.menu').toggleClass('active');
 // 	$('body').toggleClass('stop');
 // });
 
 // $('.main-menu__link').click(function () {
-// 	$('.header__menu ').removeClass('active');
+// 	$('.menu ').removeClass('active');
 // 	$('body').removeClass('stop');
 // 	$('.toggleMenu').removeClass('active');
 // });

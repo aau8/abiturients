@@ -87,22 +87,6 @@ $paddingContainerwwa2: 16;
     }
 }
 
-.section {
-    padding: 80px 0;
-
-    @media screen and (max-width: $wwa + px) {
-        padding: 70px 0;
-    }
-
-    @media screen and (max-width: $wwa2 + px) {
-        padding: 60px 0;
-    }
-
-    @media screen and (max-width: $wwa3 + px) {
-        padding: 50px 0;
-    }
-}
-
 
 // Для ленивой загрузки изображений
 // img[data-src] {
@@ -115,9 +99,6 @@ $paddingContainerwwa2: 16;
 //     padding-bottom: 60px;
 // }
 
-.gray--section {
-    background-color: #F0F7F9;
-}
 
 
 // .text--success {
