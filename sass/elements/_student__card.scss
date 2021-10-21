@@ -7,16 +7,25 @@
     padding: 12px 18px 30px;
 }
 
-.student-card-big {
+.student-card_big {
     padding: 0;
 
-    & .student-briefly {
-        width: 23%;
-        position: relative;
-        padding: 7px 21px 20px;
+    @media screen and (max-width: $wwa2 + px) {
+      max-width: none;
     }
 
-    & .student__about {
+    & .student-briefly {
+        width: 25%;
+        position: relative;
+        padding: 7px 21px 20px;
+
+        @media screen and (max-width: $wwa2 + px) {
+            width: 100%;
+        }
+    }
+
+    & .student-about,
+    & .student-message {
         position: relative;
         width: 77%;
         display: flex;
@@ -24,9 +33,13 @@
         align-items: flex-start;
         padding: 15px 21px 28px;
         background: #F0F7F9;
+
+        @media screen and (max-width: $wwa2 + px) {
+            width: 100%;
+        }
     }
 
-    @media screen and (min-width: 1023px) {
+    @media screen and (min-width: $wwa2 + px) {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -49,100 +62,6 @@
 
 }
 
-.estim {
-    display: flex;
-    align-items: center;
-}
-
-// .estim-title {
-//     font-size: 18px;
-//     font-weight: 500;
-//     color: #fff;
-
-//     @media screen and (max-width: 500px) {
-//         font-size: 14px;
-//     }
-// }
-
-.estim__city {
-    display: flex;
-    align-items: center;
-    margin: 0 auto 0 0;
-}
-
-.estim__city-icon {
-    width: 16px;
-    height: 16px;
-
-    & svg {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-.estim__city-text {
-    font-size: 12px;
-    font-weight: 500px;
-    margin: 0 0 0 5px;
-}
-
-.estim__rating {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 24px;
-
-    @media screen and (max-width: 500px) {
-        margin: 0 0 0 16px;
-    }
-}
-
-.estim__rating-text {
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.estim__rating-icon {
-    width: 20px;
-    height: 20px;
-    display: flex; 
-    margin: -2px 4px 0 4px  ;
-
-    & svg {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.estim__rating-quantity {
-    font-size: 12px;
-    font-weight: 400;
-
-}
-
-.estim-like {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    background: none;
-    margin: 0 0 0 16px;
-
-    & svg {
-        width: 100%;
-        height: 100%;
-
-        & .like-full {
-            transition: $tr;
-        }
-    }
-
-    &._full {
-        
-        & .like-full {
-            fill: #27B0C7;
-        }
-    }
-}
 
 .student-briefly__avatar {
     position: relative;
@@ -233,11 +152,11 @@
 
 
 // Подробнее о студенте
-.student__about {
+.student-about {
     // display: none;
 }
 
-.student__about__content {
+.student-about__content {
     text-align: left;
 
     &:not(:last-child) {
@@ -249,42 +168,44 @@
     }
 }
 
-.student__about__title {
+.student-about__title {
     font-size: 15px;
     font-weight: 500;
     margin: 0 0 11px 0;
     text-transform: uppercase;
 }
 
-.student__about-tex {
+.student-about__text {
 
 }
 
-.student__about__abroad {
+.student-abroad {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.student__about__abroad-title {
+.student-abroad__title {
     font-size: 12px;
     font-weight: 500;
     color: #838383;
     margin: 0 0 5px 0;
 }
 
-.student__about__abroad__item {
+.student-abroad__item {
+    margin: 6px 0;
 
     &:not(:last-child) {
-        margin: 0 60px 0 0;
+        margin-right: 60px;
     }
 }
 
-.student__about__abroad__info {
+.student-abroad__info {
     display: flex;
     align-items: center;
 }
 
-.student__about__abroad__info-icon {
+.student-abroad__info-icon {
     display: flex;
     width: 14px;
     height: 14px;
@@ -296,21 +217,21 @@
     }
 }
 
-.student__about__abroad__info-text {
+.student-abroad__info-text {
     font-size: 16px;
     font-weight: 400;
 }
 
-.student__about__content-help {
+.student-about__content-help {
 
 }
 
-.student__about__list {
+.student-about__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.student__about__list__item {
+.student-about__list-item {
     background: #fff;
     padding: 12px;
     border-radius: 6px;
@@ -323,7 +244,7 @@
     }
 }
 
-.student__about__call__block {
+.student-call__block {
     position: absolute;
     bottom: 20px;
     right: 11px;
@@ -332,26 +253,31 @@
     align-items: center;
 }
 
-.student__about__call-label {
+.student-call__label {
     font-size: 12px;
     font-weight: 500;
     color: #838383;
 }
 
-.student__about__call-price {
+.student-call__price {
     font-size: 16px;
     font-weight: 400;
 }
 
-.student__about__call {
+.student-call__link {
     width: 70px;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #27B0C7;
+    background: $accent;
     border-radius: 100px;
     margin: 10px 0 0 0;
+    transition: $tr;
+
+    &:hover {
+        background: $accent-hover;
+    }
     
     & svg {
         width: 50%;
@@ -359,5 +285,5 @@
     }
 }
 
-.student__about__call-icon {
+.student-call-icon {
 }

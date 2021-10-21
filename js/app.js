@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    const studentsSlider = new Swiper('.students-slider', {
+    const studentsSlider = new Swiper('.students-section-slider', {
     
         slidesPerView: 1.5,
         spaceBetween: 32,
@@ -178,33 +178,45 @@ document.addEventListener("DOMContentLoaded", () => {
         //     prevEl: '.popular__slider-arrow_prev',
         // },
     });
-    
 
+    headerFixed()
+    function headerFixed() {
+        const header = document.querySelector('.header')
+        const headerHeight = header.scrollHeight
+        let headerMain = false
 
-    // if (document.querySelector('.accordion')) {
-    //     const accHeaderElems = document.querySelectorAll('.price__faq__header');
-        
-    //     accHeaderElems.forEach(accHeader => {
-          
-    //       accHeader.addEventListener('click', () => {
-    //         const accParent = accHeader.closest('.price__faq__item');
-    //         const accBody = accHeader.nextElementSibling;
-      
-    //         accParent.classList.toggle('_show');
-            
-    //         if (accParent.classList.contains('_show')) {
-    //           accBody.style.maxHeight = accBody.scrollHeight + 'px';
-    //         }
-    //         else {
-    //           accBody.style.maxHeight = 0;
-    //         }
-    //       })
-    //     });
-    // }
+        window.addEventListener('scroll', () => {
 
-    // accordion()
+            if (header.classList.contains('header_page-main')) {
+                headerMain = true
+            }
+
+            if (pageYOffset > 200) {
+                header.classList.add('_fixed')
+                body.style.paddingTop = headerHeight + 'px'
+                if (headerMain == true) {
+                    header.classList.remove('header_page-main')
+                }
+            }
+            else {
+                header.classList.remove('_fixed')
+                body.style.paddingTop = 0
+                if (headerMain == true) {
+                    header.classList.add('header_page-main')
+                }
+            }
+        })
+    }
+
+    accordion()
     function accordion() {
         const accHeaderElems = document.querySelectorAll('.accordion__header')
+        const accBodyElems = document.querySelectorAll('.accordion__body')
+
+        for (let i = 0; i < accBodyElems.length; i++) {
+            const accBody = accBodyElems[i];
+            accBody.style.maxHeight = 0
+        }
 
         for (let i = 0; i < accHeaderElems.length; i++) {
             const accHeader = accHeaderElems[i];
@@ -212,16 +224,62 @@ document.addEventListener("DOMContentLoaded", () => {
                 const accParent = accHeader.parentElement
                 const accBody = accHeader.nextElementSibling
 
-                accParent.classList.toggle('_show')
+                accHeader.classList.toggle('_show')
 
-                if (accParent.classList.contains('_show')) {
-                    accBody.style.maxHeight = accBody.scrollHeight + 'px'
+                if (accHeader.classList.contains('_show')) {
+                    accBody.style.maxHeight = 'none'
                 }
                 else {
                     accBody.style.maxHeight = 0
                 }
             })
         }
+    }
+
+    if (document.querySelector('.filter__more_mobile')) { filterAccordionMobile() }
+    function filterAccordionMobile() {
+        const btn = document.querySelector('.filter__more_mobile')
+        const filter = document.querySelector('.filter__body')
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('filter_show')
+
+            if (btn.classList.contains('filter_show')) {
+                filter.style.maxHeight = filter.scrollHeight + 'px'
+            }
+            else {
+                filter.style.maxHeight = 0
+            }
+        })
+    }
+
+    if (document.querySelector('.filter__more')) { filterAccordion() }
+    function filterAccordion() {
+        const btn = document.querySelector('.filter__more')
+        const btnText = btn.querySelector('.filter__more-text')
+        const selectElems = document.querySelectorAll('.filter__select')
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('filter_show')
+            
+            for (let i = 7; i < selectElems.length; i++) {
+                const select = selectElems[i];
+                
+                if (btn.classList.contains('filter_show')) {
+                    select.style.display = 'block'
+                }
+                else {
+                    select.style.display = 'none'
+                }
+            }
+            
+            if (btn.classList.contains('filter_show')) {
+                btnText.innerHTML = 'Close'    
+            }
+            else {
+                btnText.innerText = 'More'
+            }
+        })
     }
 
     tabs()
@@ -255,6 +313,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function formSubmit() {
+
+    }
 
 })
 

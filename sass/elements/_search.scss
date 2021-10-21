@@ -76,3 +76,16 @@
         }
     }
 }
+
+// В разделах с фильтром
+.search_settings {
+
+    & .search__input {
+        border: 2px solid $main;
+    }
+
+    & .search__send {
+        background: $main;
+    }
+
+}

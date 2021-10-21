@@ -7,6 +7,10 @@
     & span {
         font-size: 16px;
         color: #838383;
+
+        @media screen and (max-width: $wwa3 + px) {
+          font-size: 12px;
+        }
     }
 }
 

@@ -100,25 +100,3 @@
       margin: 32px 0 0 0;
     }
 }
-
-// .main-slide {
-//     opacity: 0;
-//     transition: .5s;
-
-//     &.swiper-slide-active {
-//         opacity: 1;
-//         z-index: 1;
-//     }
-
-//     &.swiper-slide-next {
-//         opacity: 1;
-//         top: 90px;
-//         left: -55px;
-//         z-index: -1;
-        
-//         & .student-card {
-//             transform: scale(0.6);
-//         }
-//     }
-// }
-

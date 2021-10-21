@@ -10,19 +10,28 @@
     transition: $tr;
     border-radius: 30px;
     text-transform: uppercase;
+    cursor: pointer;
 
     img{
         margin-left: 9px;
     }
     
-    span{ 
-        position: relative;
-        top: 12px; 
+    // span{ 
+    //     position: relative;
+    //     top: 12px; 
+    // }
+
+    @media screen and (max-width: $wwa3 + px) {
+      font-size: 14px;
     }
 }
     
 .btn_border {
     border: 2px solid;
+
+    &:hover {
+        color: #212C52 !important;
+    }
 }
 
 .btn_accent{
@@ -53,14 +62,6 @@
         background: #212C52;
     }
     
-}
-
-.btn_border:hover {
-    color: #212C52 !important;
-}
-
-.btn:hover{
-    cursor: pointer;
 }
 
 .btn_center {

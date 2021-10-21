@@ -1,8 +1,8 @@
-.students {
+.students-section {
 
 }
 
-.container_students {
+.container_students-section {
     
     @media screen and (max-width: 900px) {      
         max-width: none;
@@ -18,16 +18,16 @@
 
 }
 
-.students__body {
+.students-section__body {
     margin: 20px 0 0 0;
 }
 
-.students-slider {
+.students-section-slider {
     overflow: hidden;
     padding: 20px 16px;
 }
 
-.students-slide {
+.students-section-slide {
     display: flex;
     justify-content: center;
 

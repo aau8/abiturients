@@ -1,4 +1,95 @@
-   
+.form {
+
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        // margin: 0 0 30px 0;
+    }
+}
+
+.form__label {
+    font-size: 14px;
+    margin: 0 0 4px 0;
+}
+
+.form__field {
+
+    & input,
+    & textarea,
+    & select {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        // color: $outline;
+        border: 1px solid $outline;
+        border-radius: 5px;
+        padding: 6px 20px;
+
+        @media screen and (max-width: $wwa3 + px) {
+          font-size: 16px;
+          padding: 6px 15px;
+        }
+    }
+
+    & select {
+        color: $outline;
+        background: url(../img/icons/select-dropdown.svg) no-repeat right 13px center;
+
+        // Убираем дефолтную стрелку
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+// Select
+.form__block_select {
+
+    & .form__field_select {
+        height: 38px;
+    }
+}
+
+// Textarea
+.form__block_textarea {
+    
+    & .form__field {
+        width: 100%;
+        
+        & textarea {
+            max-width: 440px;
+            // min-width: 440px;
+            width: 100%;
+            min-height: 100px;
+            height: 130px;
+            padding: 10px 20px;
+
+            @media screen and (max-width: $wwa3 + px) {
+              padding: 6px 15px;
+            }
+        }
+    }
+}
+
+.form__block_input {
+
+    & label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    & input {
+        font-size: 22px; 
+        font-weight: 400;
+        padding: 3px 20px;
+    }
+}
+
 // input, textarea{
 //     border: none;
 // }

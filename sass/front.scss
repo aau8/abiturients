@@ -12,9 +12,20 @@
 @import 'elements/_page';
 @import 'elements/_aside';
 @import 'elements/_breadcrumbs';
+@import 'elements/_forms'; 
+@import 'elements/_accordion'; 
+@import 'elements/_filter'; 
+@import 'elements/_estim'; 
 
-// Главная страница 
-@import 'pages/from-page/main';
+// Страницы 
+@import 'pages/_main';
+@import 'pages/_help';
+@import 'pages/_faq';
+@import 'pages/_students';
+@import 'pages/_requests';
+@import 'pages/_abit';
+@import 'pages/_abit-edit';
+@import 'pages/_student-profile';
 
 // Секции
 @import '_header';

@@ -20,7 +20,7 @@ $wwa3: 670;
     --accent-hover: #212C52;
     --accent2: #4744E9;
     --accent2-hover: #4744E9;
-    --outline: #CCCCCC;
+    --outline: #C0C0C0;
     --bg-light: #F0F7F9;
     --bg-modal: rgba(0, 0, 0, .5);
 }
@@ -85,6 +85,10 @@ $paddingContainerwwa2: 16;
         max-width: 644px;
         padding: 0 16px;
     }
+}
+
+.container_header {
+    max-width: 1368px;
 }
 
 
