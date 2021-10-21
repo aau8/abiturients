@@ -2353,7 +2353,7 @@ h2 {
   margin: 0 0 40px 0;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 550px) {
   .abit-info__row:not(:last-child) {
     margin: 0 0 16px 0;
   }
