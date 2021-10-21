@@ -3108,6 +3108,13 @@ h2 {
   height: 100%;
 }
 
+.student-edit-rating .section-title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .student-edit-rating__body {
   margin: 30px 0 60px 0;
 }
@@ -3217,6 +3224,12 @@ h2 {
   color: #838383;
   text-transform: none;
   text-align: center;
+}
+
+@media (max-width: 670px) {
+  .student-edit-rating__subtitle {
+    text-align: left;
+  }
 }
 
 .student-edit-rating__list-star {

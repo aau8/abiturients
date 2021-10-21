@@ -158,6 +158,10 @@
 
 .student-edit-rating {
 
+
+    & .section-title {
+        justify-content: flex-start;
+    }
 }
 
 .student-edit-rating__body {
@@ -229,6 +233,10 @@
     color: #838383;
     text-transform: none;
     text-align: center;
+
+    @media (max-width: $wwa3 + px) {
+      text-align: left;
+    }
 }
 
 .student-edit-rating__list-star {
