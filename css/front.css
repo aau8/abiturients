@@ -3028,6 +3028,9 @@ h2 {
 
 .student-edit-how__footer-save {
   margin: 0 0 0 24px;
+  -webkit-transform: translate(0px, -4px);
+      -ms-transform: translate(0px, -4px);
+          transform: translate(0px, -4px);
 }
 
 @media (max-width: 670px) {
@@ -3039,6 +3042,19 @@ h2 {
 .student-edit-docs__doc {
   max-width: 127px;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .student-edit-docs__img {
@@ -3050,6 +3066,17 @@ h2 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.student-edit-docs__delete {
+  width: 25px;
+  height: 25px;
+  margin: 16px 0 0 0;
+}
+
+.student-edit-docs__delete svg {
+  width: 100%;
+  height: 100%;
 }
 
 .student-edit-rating__body {

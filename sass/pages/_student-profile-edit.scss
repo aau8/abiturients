@@ -94,6 +94,7 @@
 
 .student-edit-how__footer-save {
     margin: 0 0 0 24px;
+    transform: translate(0px, -4px);
 
     @media (max-width: $wwa3 + px) {
       margin: 16px 0 0 0;
@@ -103,6 +104,9 @@
 .student-edit-docs__doc {
     max-width: 127px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .student-edit-docs__img {
@@ -112,6 +116,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.student-edit-docs__delete {
+    width: 25px;
+    height: 25px;
+    margin: 16px 0 0 0;
+
+    & svg {
+        width: 100%;
+        height: 100%;
     }
 }
 
