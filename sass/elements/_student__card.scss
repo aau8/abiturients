@@ -232,6 +232,8 @@
 }
 
 .student-about__list-item {
+    display: block;
+    font-size: 16px;
     background: #fff;
     padding: 12px;
     border-radius: 6px;
@@ -241,6 +243,12 @@
     &:hover {
         transform: translate(2px, 4px);
         box-shadow: 2px 0 6px rgba(0, 0, 0, 0);
+    }
+
+    @media screen and (max-width: $wwa3 + px) {
+      font-size: 12px;
+      padding: 6px 12px;
+      margin: 0 6px 6px 0;
     }
 }
 

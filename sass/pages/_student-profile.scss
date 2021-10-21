@@ -123,6 +123,7 @@
 
     @media screen and (max-width: $wwa3 + px) {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
 
     @media screen and (max-width: 450px) {
@@ -169,6 +170,10 @@
 }
 
 // Документы
+.student-profile-docs {
+    padding: 50px 0 0 0;
+}
+
 .student-profile-docs__body {
     margin: 20px 0 0 0;
 }
@@ -206,4 +211,15 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.student-profile-how {
+    padding: 40px 0 80px 0;
+}
+
+.student-profile-how__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
 }

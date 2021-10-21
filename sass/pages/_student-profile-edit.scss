@@ -1,0 +1,116 @@
+.student-edit-main {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.student-edit-main__block {
+    max-width: 444px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 96px;
+
+    & .form__block {
+
+        &:first-child {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    & .form__block_textarea {
+        height: 100%;
+
+        & textarea {
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: $wwa + px) {
+      margin: 0 auto 0 40px;
+    }
+
+    @media screen and (max-width: $wwa2 + px) {
+        max-width: none;
+        margin: 20px 0 0 0;
+
+        & textarea {
+            max-width: none!important;
+        }
+    }
+}
+
+.student-edit-section__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: $wwa2 + px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+}
+
+.student-edit-abroad__list {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+
+    @media screen and (max-width: $wwa2 + px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.student-edit-how__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40px 0 0 0;    
+    
+    @media screen and (max-width: $wwa3 + px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
+.student-edit-how__footer-textarea {
+    max-width: 700px;
+    width: 100%;
+}
+
+.student-edit-how__footer-save {
+    margin: 0 0 0 24px;
+
+    @media screen and (max-width: $wwa3 + px) {
+      margin: 16px 0 0 0;
+    }
+}
+
+.student-edit-docs__doc {
+    max-width: 127px;
+    width: 100%;
+}
+
+.student-edit-docs__img {
+    width: 100%;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.student-edit-docs__delete {
+
+}
