@@ -167,3 +167,43 @@
 .student-profile-section__list {
     margin: 30px 0 0 0;
 }
+
+// Документы
+.student-profile-docs__body {
+    margin: 20px 0 0 0;
+}
+
+.student-profile-docs__list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 30px;
+    row-gap: 16px;
+
+    @media screen and (max-width: $wwa + px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media screen and (max-width: $wwa2 + px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: $wwa3 + px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 490px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.student-profile-docs__doc {
+    width: 127px;
+    height: 180px;
+    background: #E5E5E5;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
