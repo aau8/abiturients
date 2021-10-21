@@ -39,6 +39,13 @@
     }
 }
 
+.student-edit-section {
+
+    @media (max-width: $wwa3 + px) {
+      padding-top: 0;
+    }
+}
+
 .student-edit-section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,6 +105,25 @@
 
     @media (max-width: $wwa3 + px) {
       margin: 16px 0 0 0;
+    }
+}
+
+.student-edit__section-title {
+    align-items: flex-start;
+
+    & .section-title__add {
+        transform: translate(0, 8px);
+    }
+}
+
+.student-edit__section-title-container {
+
+    & .section-title__text {
+        margin: 20px 0 0 0;
+
+        @media (max-width: $wwa3 + px) {
+          margin: 10px 0 0 0;
+        }
     }
 }
 
@@ -190,6 +216,10 @@
         @media (max-width: $wwa3 + px) {
           margin: 0;
         }
+    }
+
+    @media (max-width: $wwa3 + px) {
+      align-items: flex-start;
     }
 }
 
