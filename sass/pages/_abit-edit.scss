@@ -19,7 +19,14 @@
 }
 
 .abit-edit-main__img {
-
+    width: 260px;
+    height: 260px;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .abit-edit-main__upload {
