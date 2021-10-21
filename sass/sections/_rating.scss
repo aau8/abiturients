@@ -1,5 +1,9 @@
 .rating {
     margin: 30px 0 60px 0;
+
+    & .section-title {
+        justify-content: flex-start;
+    }
 }
 
 .rating__body {
@@ -9,7 +13,7 @@
     row-gap: 16px;
     margin: 30px 0 0 0;
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
       grid-template-columns: 1fr;
     }
 }
@@ -19,7 +23,7 @@
     border-radius: 5px;
     padding: 30px 20px;
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
       padding: 16px 10px 20px 10px;
     }
 }
@@ -34,7 +38,7 @@
     font-size: 22px;
     font-weight: 500;
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
       font-size: 18px;
     }
 }
@@ -46,7 +50,7 @@
     row-gap: 20px;
     margin: 30px 0 0 0;
 
-    @media screen and (max-width: 360px) {
+    @media (max-width: 360px) {
         column-gap: 24px;
     //   grid-template-columns: 1fr;
     }
@@ -59,7 +63,7 @@
     color: #838383;
     white-space: nowrap;
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
       white-space: normal;
     }
 }
@@ -104,7 +108,7 @@
 .rating-card__comment {
     margin: 30px 0 0 0;
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
       margin: 20px 0 0 0;
     }
 }

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         flex-direction: column;
     }
 }
@@ -15,7 +15,7 @@
     max-width: 370px;
     width: 100%;
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         max-width: none;
     }
 }
@@ -23,7 +23,7 @@
 .about__title {
 
     
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         text-align: center;
     }
 }
@@ -32,7 +32,7 @@
     font-size: 22px;
     margin: 32px 0 0 0;
     
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         font-size: 18px;
         text-align: center;
         margin: 20px 0 0 0;
@@ -51,7 +51,7 @@
         box-shadow: 0px 4.92969px 24.6484px rgba(0, 0, 0, 0.2);
     }
     
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         max-width: none;
         margin: 24px 0 0 0;
     }

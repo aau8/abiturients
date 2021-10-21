@@ -148,11 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1.5,
         spaceBetween: 32,
         loop: true,
-        speed: 2000,
-        // centeredSlides: true,
+        speed: 5000,
         autoplay: {
-            duration: 5000,
-        	delay: 2000,
+        	delay: 0,
         }, 
     
         breakpoints: {
@@ -168,15 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             1200: {
                 slidesPerView: 4,
-                // spaceBetween: 32,
-                // allowTouchMove: false,
             },
         },
-    
-        // navigation: {
-        //     nextEl: '.popular__slider-arrow_next',
-        //     prevEl: '.popular__slider-arrow_prev',
-        // },
     });
 
     headerFixed()

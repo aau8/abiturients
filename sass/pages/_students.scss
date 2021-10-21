@@ -7,7 +7,7 @@
 
 .students-settings__header {
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
         display: grid;
         grid-template-columns: 1fr 52px;
         column-gap: 8px;
@@ -30,15 +30,15 @@
         max-width: none;
     }
 
-    @media screen and (max-width: $wwa + px) {
+    @media (max-width: $wwa + px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
       grid-template-columns: repeat(1, 1fr);
     }
 }

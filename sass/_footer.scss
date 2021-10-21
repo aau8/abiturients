@@ -9,12 +9,12 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
     
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 24px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -22,7 +22,7 @@
 .footer__block {
 
 
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
         text-align: center;
     }
 }
@@ -33,7 +33,7 @@
 
 .footer-logo {
 
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
       justify-content: center;
     }
 }

@@ -10,7 +10,7 @@
 .student-card_big {
     padding: 0;
 
-    @media screen and (max-width: $wwa2 + px) {
+    @media (max-width: $wwa2 + px) {
       max-width: none;
     }
 
@@ -19,7 +19,7 @@
         position: relative;
         padding: 7px 21px 20px;
 
-        @media screen and (max-width: $wwa2 + px) {
+        @media (max-width: $wwa2 + px) {
             width: 100%;
         }
     }
@@ -34,12 +34,12 @@
         padding: 15px 21px 28px;
         background: #F0F7F9;
 
-        @media screen and (max-width: $wwa2 + px) {
+        @media (max-width: $wwa2 + px) {
             width: 100%;
         }
     }
 
-    @media screen and (min-width: $wwa2 + px) {
+    @media (min-width: $wwa2 + px) {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -245,7 +245,7 @@
         box-shadow: 2px 0 6px rgba(0, 0, 0, 0);
     }
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
       font-size: 12px;
       padding: 6px 12px;
       margin: 0 6px 6px 0;

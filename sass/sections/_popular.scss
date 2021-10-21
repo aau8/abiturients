@@ -2,7 +2,7 @@
     background: $bg-light;
     padding: 110px 0;
 
-    @media screen and (max-width: 670px) {
+    @media (max-width: 670px) {
         padding: 30px 0;
       
         & .container {
@@ -34,7 +34,7 @@
         
     }
 
-    @media screen and (max-width: 670px) {
+    @media (max-width: 670px) {
         overflow: visible;
     }
 }
@@ -50,7 +50,7 @@
         transform: scale(1.05);
     }
 
-    @media screen and (max-width: 670px) {
+    @media (max-width: 670px) {
 
         // &::before {
         //     content: '';
@@ -90,7 +90,7 @@
 
 .popular__slide-img {
 
-    @media screen and (max-width: 670px) {
+    @media (max-width: 670px) {
         position: relative;
         // overflow: hidden;
         
@@ -159,7 +159,7 @@
 
 .popular__slider-arrow {
 
-    @media screen and (max-width: 670px) {
+    @media (max-width: 670px) {
       display: none;
     }
 }

@@ -50,7 +50,7 @@ body {
         overflow: hidden;
     }
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
         font-size: 14px;
     }
 }
@@ -64,33 +64,7 @@ body {
     position: relative;
 }
 
-$maxWidthContainer: 1042;
-$maxWidthContainerwwa: 840;
-$maxWidthContainerwwa2: 612;
-
-// 24: 24;
-$paddingContainerwwa2: 16;
-
-.container {
-    max-width: 1208px;
-    margin: 0 auto;
-    padding: 0 24px;
-
-    @media screen and (max-width: $wwa + px) {
-        max-width: 888px;
-        padding: 0 24px;
-    }
-
-    @media screen and (max-width: $wwa2 + px) {
-        max-width: 644px;
-        padding: 0 16px;
-    }
-}
-
-.container_header {
-    max-width: 1368px;
-}
-
+@import '_grid';
 
 // Для ленивой загрузки изображений
 // img[data-src] {

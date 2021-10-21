@@ -1,6 +1,6 @@
 .container_faq {
 
-    @media screen and (max-width: $wwa3 + px) {
+    @media (max-width: $wwa3 + px) {
       padding: 0;
     }
 }
@@ -27,7 +27,7 @@
             }
         }
 
-        @media screen and (max-width: $wwa3 + px) {
+        @media (max-width: $wwa3 + px) {
           padding: 20px 0 20px 12px;
         }
     }
