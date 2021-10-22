@@ -16,6 +16,7 @@
 @import 'elements/_accordion'; 
 @import 'elements/_filter'; 
 @import 'elements/_estim'; 
+@import 'elements/_course-card'; 
 
 // Страницы 
 @import 'pages/_main';
@@ -23,10 +24,13 @@
 @import 'pages/_faq';
 @import 'pages/_students';
 @import 'pages/_requests';
+@import 'pages/_no-requests';
 @import 'pages/_abit';
 @import 'pages/_abit-edit';
 @import 'pages/_student-profile';
 @import 'pages/_student-profile-edit';
+@import 'pages/_payment';
+@import 'pages/_categories';
 
 // Секции
 @import '_header';
