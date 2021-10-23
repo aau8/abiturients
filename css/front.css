@@ -2447,7 +2447,7 @@ h2 {
 
 @media (max-width: 670px) {
   .main-body {
-    padding: 50px 0 30px 0;
+    padding: 36px 0 30px 0;
   }
 }
 
@@ -2480,7 +2480,7 @@ h2 {
 
 @media (max-width: 670px) {
   .main__slogan {
-    font-size: 16px;
+    display: none;
   }
 }
 
@@ -2495,8 +2495,10 @@ h2 {
 
 @media (max-width: 670px) {
   .main__title {
-    font-size: 22px;
-    margin: 8px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
   }
 }
 
@@ -4354,6 +4356,15 @@ h2 {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media (max-width: 670px) {
+  .header_page-main {
+    background: -webkit-gradient(linear, left top, right top, from(#212C52), to(#27B0C7));
+    background: -webkit-linear-gradient(left, #212C52 0%, #27B0C7 100%);
+    background: -o-linear-gradient(left, #212C52 0%, #27B0C7 100%);
+    background: linear-gradient(90deg, #212C52 0%, #27B0C7 100%);
+  }
 }
 
 .header_page-main .burger span {

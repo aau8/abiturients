@@ -37,7 +37,7 @@
     }
 
     @media (max-width: $wwa3 + px) {
-        padding: 50px 0 30px 0;
+        padding: 36px 0 30px 0;
     }
 
     @media (max-width: 540px) {
@@ -63,7 +63,8 @@
     text-transform: uppercase;
 
     @media (max-width: $wwa3 + px) {
-      font-size: 16px;
+    //   font-size: 16px;
+        display: none;
     }
 }
 
@@ -76,8 +77,12 @@
     margin: 12px 0 0 0;
 
     @media (max-width: $wwa3 + px) {
-      font-size: 22px;
-      margin: 8px 0 0 0;
+    //   font-size: 22px;
+    //   margin: 8px 0 0 0;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+        margin: 0;
     }
 }
 

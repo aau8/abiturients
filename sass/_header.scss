@@ -31,6 +31,10 @@
     background: none;
     box-shadow: none;
 
+    @media (max-width: $wwa3 + px) {
+        background: linear-gradient(90deg, #212C52 0%, #27B0C7 100%);
+    }
+
     & .burger span {
         background: #fff;
 
