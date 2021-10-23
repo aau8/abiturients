@@ -4760,6 +4760,12 @@ h2 {
   margin: 0 0 30px 0;
 }
 
+@media (max-width: 670px) {
+  .popular__header-title {
+    text-align: center;
+  }
+}
+
 .popular__body {
   position: relative;
   display: -webkit-box;

@@ -20,6 +20,10 @@
 }
 
 .popular__header-title {
+
+    @media (max-width: $wwa3 + px) {
+      text-align: center;
+    }
 }
 
 .popular__body {
