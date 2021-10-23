@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainSlider = new Swiper('.main-slider', {
   
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 10,
     loop: true,
-    simulateTouch: false,
-    speed: 500,
+    // simulateTouch: false,
+    // speed: 500,
 	autoplay: {
-		delay: 3000,
+		delay: 5000,
 	},
 
     breakpoints: {

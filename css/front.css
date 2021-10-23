@@ -2544,6 +2544,8 @@ h2 {
 .main-slider {
   width: 240px;
   overflow: visible;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 2px 5px 15px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.25) 2px 5px 15px);
 }
 
 @media (max-width: 1200px) {
@@ -2569,6 +2571,11 @@ h2 {
 
 .main-slide {
   opacity: 0;
+  -webkit-transition: opacity .1s, -webkit-transform .2s;
+  transition: opacity .1s, -webkit-transform .2s;
+  -o-transition: opacity .1s, transform .2s;
+  transition: opacity .1s, transform .2s;
+  transition: opacity .1s, transform .2s, -webkit-transform .2s;
 }
 
 .main-slide .student-tooltip {
@@ -2600,9 +2607,6 @@ h2 {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
   z-index: 1;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
 }
 
 .main-slide.swiper-slide-active .student-tooltip {
@@ -2649,15 +2653,9 @@ h2 {
 .main-slide.swiper-slide-next {
   opacity: 1;
   z-index: -1;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
-}
-
-.main-slide.swiper-slide-next .student-card {
   position: relative;
   top: 100px;
-  left: -100px;
+  left: -60px;
   z-index: -1;
   -webkit-transform: scale(0.6);
       -ms-transform: scale(0.6);
