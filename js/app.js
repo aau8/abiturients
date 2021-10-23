@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainSlider = new Swiper('.main-slider', {
   
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 50,
     loop: true,
-    // simulateTouch: false,
+    simulateTouch: false,
 	autoplay: {
 		delay: 2000,
 	},
@@ -40,23 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
         700: {
 
         },
-        400: {
-
+        620: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        540: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         }
-    },
-
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    navigation: {
-        nextEl: '.swiper__arrow-next',
-        prevEl: '.swiper__arrow-prev',
-    },
-
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    }
     });
 
     const popularSlider = new Swiper('.popular__slider', {

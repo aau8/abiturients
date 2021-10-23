@@ -29,11 +29,19 @@
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: 50px 0 80px 0;
+    padding: 90px 0 120px 0;
+    overflow: hidden;
 
-    @media (max-width: $wwa2 + px) {
+    @media (max-width: $wwa + px) {
       flex-direction: column;
+    }
 
+    @media (max-width: $wwa3 + px) {
+        padding: 50px 0 30px 0;
+    }
+
+    @media (max-width: 540px) {
+      overflow: visible;
     }
 }
 
@@ -53,6 +61,10 @@
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
+
+    @media (max-width: $wwa3 + px) {
+      font-size: 16px;
+    }
 }
 
 .main__title {
@@ -62,6 +74,11 @@
     color: #fff;
     text-transform: uppercase;
     margin: 12px 0 0 0;
+
+    @media (max-width: $wwa3 + px) {
+      font-size: 22px;
+      margin: 8px 0 0 0;
+    }
 }
 
 .main__tag-list {
@@ -94,9 +111,101 @@
 
 .main-slider {
     width: 240px;
-    overflow: hidden;
+    overflow: visible;
 
-    @media (max-width: $wwa2 + px) {
+    @media (max-width: $wwa + px) {
       margin: 32px 0 0 0;
+      max-width: 240px;
+      width: 100%;
+    }
+    
+    @media (max-width: 540px) {
+        max-width: none;
+        margin-top: -20px;
+    }
+
+    @media (max-width: 420px) {
+      width: 140%;
+    }
+}
+
+.main-slide {
+    opacity: 0;
+    // transition: $tr;
+
+    .student-tooltip {
+        position: absolute;
+        top: 20px;
+        right: -140px;
+        max-width: 186px;
+        width: 100%;
+        background: linear-gradient(102.51deg, #C5F7FF 4.8%, #FFFFFF 112.27%);
+        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 15px 17px 19px;
+        opacity: 0;
+    }
+
+    .student-tooltip__content {
+
+    }
+
+    .student-tooltip__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    &.swiper-slide-active {
+        opacity: 1;
+        transform: scale(1.1);
+
+        & .student-tooltip {
+            transform: scale(.85);
+            opacity: 1;
+
+            @media (max-width: 540px) {
+              transform: scale(1.2);
+              top: 90px;
+              right: -160px;
+            }
+        }
+
+        @media (max-width: $wwa3 + px) {
+          transform: scale(1);
+        }
+
+        @media (max-width: 540px) {
+          transform: scale(.8);
+        }
+
+        @media (max-width: 420px) {
+          transform: scale(.7);
+        }
+    }
+
+    &.swiper-slide-next {
+        opacity: 1;
+
+        & .student-card {
+            position: relative;
+            top: 100px;
+            left: -100px;
+            z-index: -1;
+            transform: scale(.6);
+        }
+
+        @media (max-width: 620px) {
+            opacity: 0;
+        }
+    }
+}
+
+.main-reg {
+    display: none;
+
+    @media (max-width: 600px) {
+      display: block;
+      margin-top: -20px;
     }
 }

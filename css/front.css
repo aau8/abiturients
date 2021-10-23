@@ -361,7 +361,7 @@ body._lock {
 }
 
 .section-title__descr {
-  max-width: 800px;
+  max-width: 390px;
   width: 100%;
   font-size: 14px;
   font-weight: 500;
@@ -718,6 +718,18 @@ h2 {
   .student-card {
     position: relative;
   }
+}
+
+.student-card_main-slider .estim__rating {
+  display: none;
+}
+
+.student-card_main-slider .estim-like {
+  display: none;
+}
+
+.student-card_main-slider .student-briefly__call {
+  pointer-events: none;
 }
 
 .student-card_big {
@@ -1107,6 +1119,8 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
+  width: 72px;
+  height: 72px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1891,6 +1905,7 @@ h2 {
 .accordion__title {
   font-size: 18px;
   font-weight: 500;
+  margin: 0 auto 0 0;
 }
 
 .accordion__icon {
@@ -2416,16 +2431,29 @@ h2 {
           align-items: center;
   position: relative;
   z-index: 2;
-  padding: 50px 0 80px 0;
+  padding: 90px 0 120px 0;
+  overflow: hidden;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .main-body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 670px) {
+  .main-body {
+    padding: 50px 0 30px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-body {
+    overflow: visible;
   }
 }
 
@@ -2450,6 +2478,12 @@ h2 {
   text-transform: uppercase;
 }
 
+@media (max-width: 670px) {
+  .main__slogan {
+    font-size: 16px;
+  }
+}
+
 .main__title {
   font-size: 28px;
   font-weight: 700;
@@ -2457,6 +2491,13 @@ h2 {
   color: #fff;
   text-transform: uppercase;
   margin: 12px 0 0 0;
+}
+
+@media (max-width: 670px) {
+  .main__title {
+    font-size: 22px;
+    margin: 8px 0 0 0;
+  }
 }
 
 .main__tag-list {
@@ -2500,12 +2541,133 @@ h2 {
 
 .main-slider {
   width: 240px;
-  overflow: hidden;
+  overflow: visible;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .main-slider {
     margin: 32px 0 0 0;
+    max-width: 240px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-slider {
+    max-width: none;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-slider {
+    width: 140%;
+  }
+}
+
+.main-slide {
+  opacity: 0;
+}
+
+.main-slide .student-tooltip {
+  position: absolute;
+  top: 20px;
+  right: -140px;
+  max-width: 186px;
+  width: 100%;
+  background: -webkit-linear-gradient(347.49deg, #C5F7FF 4.8%, #FFFFFF 112.27%);
+  background: -o-linear-gradient(347.49deg, #C5F7FF 4.8%, #FFFFFF 112.27%);
+  background: linear-gradient(102.51deg, #C5F7FF 4.8%, #FFFFFF 112.27%);
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 15px 17px 19px;
+  opacity: 0;
+}
+
+.main-slide .student-tooltip__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.main-slide.swiper-slide-active {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-slide.swiper-slide-active .student-tooltip {
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
+  opacity: 1;
+}
+
+@media (max-width: 540px) {
+  .main-slide.swiper-slide-active .student-tooltip {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    top: 90px;
+    right: -160px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main-slide.swiper-slide-active {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 540px) {
+  .main-slide.swiper-slide-active {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 420px) {
+  .main-slide.swiper-slide-active {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+.main-slide.swiper-slide-next {
+  opacity: 1;
+}
+
+.main-slide.swiper-slide-next .student-card {
+  position: relative;
+  top: 100px;
+  left: -100px;
+  z-index: -1;
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+@media (max-width: 620px) {
+  .main-slide.swiper-slide-next {
+    opacity: 0;
+  }
+}
+
+.main-reg {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main-reg {
+    display: block;
+    margin-top: -20px;
   }
 }
 
@@ -2574,6 +2736,10 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+}
+
+.accordion_faq_section {
+  width: 100%;
 }
 
 .accordion_faq_section .accordion__header {
@@ -4286,6 +4452,9 @@ h2 {
 
 .logo__link {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 50px;
 }
 
@@ -4964,6 +5133,8 @@ h2 {
 .advisor-message__avatar img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 450px) {

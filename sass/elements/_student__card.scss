@@ -11,6 +11,21 @@
     }
 }
 
+.student-card_main-slider {
+
+    & .estim__rating {
+        display: none;
+    }
+
+    & .estim-like {
+        display: none;
+    }
+
+    & .student-briefly__call {
+        pointer-events: none;
+    }
+}
+
 .student-card_big {
     padding: 0;
 
@@ -156,6 +171,7 @@
     font-weight: 500;
     margin: 10px 0 0 0;
 }
+
 
 
 // Подробнее о студенте
@@ -308,6 +324,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 72px;
+    height: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
