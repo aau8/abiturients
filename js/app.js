@@ -29,8 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 50,
     loop: true,
     simulateTouch: false,
+    speed: 500,
 	autoplay: {
-		delay: 2000,
+		delay: 3000,
 	},
 
     breakpoints: {

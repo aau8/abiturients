@@ -2599,6 +2599,10 @@ h2 {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  z-index: 1;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .main-slide.swiper-slide-active .student-tooltip {
@@ -2644,6 +2648,10 @@ h2 {
 
 .main-slide.swiper-slide-next {
   opacity: 1;
+  z-index: -1;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .main-slide.swiper-slide-next .student-card {
