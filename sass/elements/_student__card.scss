@@ -5,10 +5,6 @@
     border-radius: 6px;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
     padding: 12px 18px 30px;
-
-    @media (max-width: $wwa3 + px) {
-      position: relative;
-    }
 }
 
 .student-card_main-slider {
@@ -40,10 +36,6 @@
 
         @media (max-width: $wwa2 + px) {
             width: 100%;
-        }
-
-        @media (max-width: $wwa3 + px) {
-            padding-top: 45px;
         }
     }
 
@@ -320,20 +312,46 @@
 }
 
 // Состояние сообщения
+.student-card_condition {
+    
+    @media (max-width: $wwa2 + px) {
+      position: relative;
+    }
+
+    & .student-briefly {
+        
+        @media (max-width: $wwa2 + px) {
+            padding-top: 45px;
+        }
+    }
+
+    & .student-message {
+
+        @media (max-width: $wwa2 + px) {
+            position: initial;
+        }
+    }
+
+    & .student-message-condition {
+        display: flex;
+    }
+}
+
 .student-message-condition {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     width: 72px;
     height: 72px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 5px;
     border-radius: 0 5px 0 5px;
 
-    @media (max-width: $wwa3 + px) {
+    @media (max-width: $wwa2 + px) {
         width: 100%;
+        height: auto;
         flex-direction: row;
         justify-content: center;
         border-radius: 5px 5px 0 0;
@@ -346,10 +364,6 @@
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
-
-    @media (max-width: $wwa3 + px) {
-      
-    }
 }
 
 .student-message-condition__icon {
@@ -357,7 +371,7 @@
     height: 32px;
     margin: 5px 0 0 0;
 
-    @media (max-width: $wwa3 + px) {
+    @media (max-width: $wwa2 + px) {
         width: 20px;
         height: 20px;
         margin: 0 0 0 9px;

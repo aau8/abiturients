@@ -163,6 +163,19 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    
+    const univerSlider = new Swiper('.univers__slider', {
+    
+        slidesPerView: 1,
+        spaceBetween: 0, 
+        loop: true, 
+    
+        pagination: {
+        el: '.univers__slider-pagination',
+        clickable: true,
+        }
+    });  
+
     headerFixed()
     function headerFixed() {
         const header = document.querySelector('.header')
