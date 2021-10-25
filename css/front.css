@@ -4003,6 +4003,137 @@ h2 {
   margin: 0 0 0 5px;
 }
 
+.modal-page {
+  background: #F0F7F9;
+}
+
+@media (max-width: 670px) {
+  .modal-page {
+    background: #fff;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.modal__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px 0;
+}
+
+.modal__content {
+  max-width: 738px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 60px 24px 80px;
+}
+
+@media (max-width: 670px) {
+  .modal__content {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.modal__title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media (max-width: 670px) {
+  .modal__title {
+    font-size: 24px;
+  }
+}
+
+.modal__text {
+  max-width: 430px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+@media (max-width: 670px) {
+  .modal__text {
+    max-width: 225px;
+    font-size: 14px;
+    margin: 16px 0 0 0;
+  }
+}
+
+.modal__img {
+  margin: 25px 0;
+}
+
+.modal__buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__buttons .btn:last-child {
+  margin: 0 0 0 20px;
+}
+
+.modal__button-second {
+  color: var(--accent);
+  padding: 13px 38px;
+}
+
 .main {
   width: 100%;
   background: url(../img/main-bg.png) center no-repeat, var(--main);

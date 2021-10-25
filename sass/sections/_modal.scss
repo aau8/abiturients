@@ -1,0 +1,89 @@
+.modal-page {
+    background: #F0F7F9;
+
+    @media (max-width: $wwa3 + px) {
+        background: #fff;
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.modal__body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.modal__content {
+    max-width: 738px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 60px 24px 80px;
+
+    @media (max-width: $wwa3 + px) {
+        box-shadow: none;
+    }
+}
+
+.modal__title {
+    font-size: 36px;
+    font-weight: 500;
+
+    @media (max-width: $wwa3 + px) {
+        font-size: 24px;
+    }
+}
+
+.modal__text {
+    max-width: 430px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0 0 0;
+    text-align: center;
+
+    @media (max-width: $wwa3 + px) {
+        max-width: 225px;
+        font-size: 14px;
+        margin: 16px 0 0 0;
+    }
+}
+
+.modal__img {
+    margin: 25px 0;
+}
+
+.modal__buttons {
+    display: flex;
+    align-items: center;
+
+    & .btn {
+        
+        &:last-child {
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+.modal__button-second {
+    color: $accent;
+    padding: 13px 38px;
+}
+
+.modal__button-main {
+
+}
