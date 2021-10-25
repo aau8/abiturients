@@ -88,6 +88,7 @@
 
 .advisor-message {
     display: flex;
+    justify-content: flex-start;
 
     &:not(:last-child) {
         margin: 0 0 36px 0;
@@ -154,7 +155,7 @@
 .advisor-message__avatar {
     min-width: 80px;
     height: 80px;
-    border-radius: 200px;
+    border-radius: 100%;
     overflow: hidden;
 
     & img {

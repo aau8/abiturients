@@ -15,8 +15,18 @@
 @import 'elements/_forms'; 
 @import 'elements/_accordion'; 
 @import 'elements/_filter'; 
-@import 'elements/_estim'; 
-@import 'elements/_course-card'; 
+@import 'elements/_estim';
+@import 'elements/_course-card';
+@import 'elements/_review-card';
+
+// Секции
+@import '_header';
+@import 'sections/_popular';
+@import 'sections/_advisor';
+@import 'sections/_works';
+@import 'sections/_about';
+@import 'sections/_students';
+@import 'sections/_rating';
 
 // Страницы 
 @import 'pages/_main';
@@ -32,15 +42,9 @@
 @import 'pages/_payment';
 @import 'pages/_categories';
 @import 'pages/_universities';
+@import 'pages/_university';
+@import 'pages/_faculty';
 
-// Секции
-@import '_header';
-@import 'sections/_popular';
-@import 'sections/_advisor';
-@import 'sections/_works';
-@import 'sections/_about';
-@import 'sections/_students';
-@import 'sections/_rating';
 // @import 'sections/_popular-categories';
 // @import 'sections/_find-consultant';
 // @import 'sections/_how-work';

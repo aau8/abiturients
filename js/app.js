@@ -278,6 +278,20 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         })
     }
+    
+    hiddenPaginationIfBulletAlone()
+    function hiddenPaginationIfBulletAlone() {
+        const sliderElems = document.querySelectorAll('.works-slider')
+        for (let i = 0; i < sliderElems.length; i++) {
+            const slider = sliderElems[i];
+            const pagin = slider.nextElementSibling
+            const bulletElems = pagin.querySelectorAll('.swiper-pagination-bullet')
+
+            if (bulletElems.length > 1) {
+                pagin.classList.add('_show')
+            }
+        }
+    }
 
     tabs()
     function tabs() {
@@ -295,6 +309,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 removeAll(tabParent.querySelectorAll('.tabs-btn'), '_active')
                 tabBtn.classList.add('_active')
+
+                trackShowBullet = setInterval(() => {
+                    if (tabBody.querySelector('.swiper-pagination')) {
+                        hiddenPaginationIfBulletAlone()
+                        clearInterval(trackShowBullet)
+                    }
+                }, 100)
             })
         }
     }

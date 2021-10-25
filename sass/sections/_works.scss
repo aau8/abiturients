@@ -78,6 +78,15 @@
     width: 100%;
 }
 
+.works-slider__pagination {
+    opacity: 0;
+    transition: $tr;
+
+    &._show {
+        opacity: 1;
+    }
+}
+
 .works-card {
     border-radius: 5px;
     padding: 20px 24px 50px;
