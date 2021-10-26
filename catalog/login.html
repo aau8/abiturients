@@ -87,15 +87,30 @@
             </div>
         </header>
 
-        <div class="modal">
-            <div class="modal__body">
-                <div class="modal__content">
-                    <h1 class="modal__title">Ваша заявка оплачена</h1>
-                    <p class="modal__text">Отслеживайте статус заявки в личном кабинете <br>в разделе Заявки</p>
-                    <div class="modal__img"><img src="../img/modals/paid.svg" alt="error-paymet"></div>
-                    <div class="modal__buttons">
-                        <a href="#" class="btn btn_border modal__button-second">закрыть</a>
-                        <a href="#" class="btn btn_full modal__button-main">в личный кабинет</a>
+        <div class="modal login">
+            <div class="modal__wrap login__wrap">
+                <div class="modal__content login__content">
+                    <div class="login__header">
+                        <a href="#" class="login__header-tab _active">LOG IN</a>
+                        <a href="#" class="login__header-tab">Registrieren</a>
+                    </div>
+                    <div class="login__body">
+                        <form action="#" class="login__form">
+                            <div class="form__block _error">
+                                <label for="problems" class="form__label">Email</label>
+                                <div class="form__field">
+                                    <input type="text" placeholder="Введите ваш email">
+                                </div>
+                            </div>
+                            <div class="form__block">
+                                <label for="problems" class="form__label">Пароль</label>
+                                <div class="form__field">
+                                    <input type="text" placeholder="Введите ваш пароль">
+                                </div>
+                            </div>
+                            <button class="btn btn_center login__form-submit _disabled" type="submit">Log in</button>
+                            <a href="#" class="login__form-forgot-pass">Забыли пароль?</a>
+                        </form>
                     </div>
                 </div>
             </div>

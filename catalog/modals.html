@@ -87,19 +87,85 @@
             </div>
         </header>
 
-        <div class="modal">
-            <div class="modal__body">
-                <div class="modal__content">
-                    <h1 class="modal__title">Удалить карту?</h1>
-                    <p class="modal__text">Вы действительно хотите удалить карту?</p>
-                    <div class="modal__img"><img src="../img/modals/delete-card.svg" alt="error-paymet"></div>
-                    <div class="modal__buttons">
-                        <a href="#" class="btn btn_border modal__button-second">да, удалить</a>
-                        <a href="#" class="btn btn_full modal__button-main">Оставить</a>
+        <section class="section" aria-label='delete-card'>
+            <div class="modal">
+                <div class="modal__wrap">
+                    <div class="modal__content">
+                        <h1 class="modal__title">Удалить карту?</h1>
+                        <p class="modal__text">Вы действительно хотите удалить карту?</p>
+                        <div class="modal__img"><img src="../img/modals/delete-card.svg" alt="error-paymet"></div>
+                        <div class="modal__buttons">
+                            <a href="#" class="btn btn_border modal__button-second">да, удалить</a>
+                            <a href="#" class="btn btn_full modal__button-main">Оставить</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section" aria-label="success-payment">
+            <div class="modal">
+                <div class="modal__wrap">
+                    <div class="modal__content">
+                        <h1 class="modal__title">Ваша заявка оплачена</h1>
+                        <p class="modal__text">Отслеживайте статус заявки в личном кабинете <br>в разделе Заявки</p>
+                        <div class="modal__img"><img src="../img/modals/paid.svg" alt="error-paymet"></div>
+                        <div class="modal__buttons">
+                            <a href="#" class="btn btn_border modal__button-second">закрыть</a>
+                            <a href="#" class="btn btn_full modal__button-main">в личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-label="error-payment">
+            <div class="modal">
+                <div class="modal__wrap">
+                    <div class="modal__content">
+                        <h1 class="modal__title">Ошибка оплаты</h1>
+                        <p class="modal__text">Что-то пошло не так, <br>попробуйте оплатить еще раз</p>
+                        <div class="modal__img"><img src="../img/modals/error-paymet.svg" alt="error-paymet"></div>
+                        <div class="modal__buttons">
+                            <a href="#" class="btn btn_border modal__button-second">позже</a>
+                            <a href="#" class="btn btn_full modal__button-main">оплатить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-label="new-card-done">
+            <div class="modal">
+                <div class="modal__wrap">
+                    <div class="modal__content">
+                        <h1 class="modal__title">Карта добавлена</h1>
+                        <p class="modal__text">Вы сможете редактировать <br>платежные данные в вашем профиле</p>
+                        <div class="modal__img"><img src="../img/modals/add-card.svg" alt="error-paymet"></div>
+                        <div class="modal__buttons">
+                            <a href="#" class="btn btn_border modal__button-second">закрыть</a>
+                            <a href="#" class="btn btn_full modal__button-main">в профиль</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-label="logout">
+            <div class="modal">
+                <div class="modal__wrap">
+                    <div class="modal__content">
+                        <h1 class="modal__title">Выйти</h1>
+                        <p class="modal__text">Вы уверены, что хотите выйти <br>из аккаунта?</p>
+                        <div class="modal__img"><img src="../img/modals/logout.svg" alt="404"></div>
+                        <div class="modal__buttons">
+                            <a href="#" class="btn btn_border modal__button-second">закрыть</a>
+                            <a href="#" class="btn btn_full modal__button-main">выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		<footer class="footer">
 			<div class="container">
